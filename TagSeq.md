@@ -75,14 +75,14 @@ is a 200bp oligo as positive control for 2nd ligation through PCR. Use 1.25uM (0
 
 ---
 
-MAIN PROTOCOL
-====
+# MAIN PROTOCOL
+
 
 ---
 
 
 
-1.. Check RNA quality by running on the Agilent Bioanalyzer
+### 1.. Check RNA quality by running on the Agilent Bioanalyzer
 
 - Place 0.5-5 ug of total RNA in a tube. For large numbers of samples, the input per sample could be reduced as to not exceed the maximum input of RiboZero (5ug) at step 5. Since about 25% of the input remains prior to adaptor ligation, less than 20ug total RNA per pool (end of step 4) is recommended. For smaller number of samples, higher input is recommended to ensure sufficient material remains after rRNA depletion.
 - Increase the volume to 30uL with Nuclease free water
@@ -92,7 +92,7 @@ MAIN PROTOCOL
 
 **PAUSE POINT**
 
-2.. Fragment RNA using 2x FastAP buffer
+### 2.. Fragment RNA using 2x FastAP buffer
 
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
@@ -101,7 +101,7 @@ MAIN PROTOCOL
 **MUST CONTINUE**
 
 
-3.. Digest DNA and repair RNA: Combination DNase/FastAP treatment
+### 3.. Digest DNA and repair RNA: Combination DNase/FastAP treatment
 
   - Make a DNase/FastAP master mix, 40uL per sample:
 
@@ -120,7 +120,7 @@ MAIN PROTOCOL
 
 **MUST CONTINUE**
 
-4.. Cleanup (2x SPRI) to remove enzymes and reaction buffer
+### 4.. Cleanup (2x SPRI) to remove enzymes and reaction buffer
 
   - Add 2.0x reaction volume of Agencourt RNAClean XP beads (160 uL) and capture RNA on beads:
   - Incubate at room temperature, on HULA MIXER for 15min to bind RNA
@@ -136,12 +136,12 @@ MAIN PROTOCOL
 
 **PAUSE POINT**
 
-5.. Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA)
+### 5.. Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA)
 
   - Add 1 uL of barcoded RNATag adaptor (100 pmole = 1 uL of 100 uM) to 5 uL of dephosphorylated RNA
   - Heat at 70°C for 2 min, place in cold block on ice
 
-6.. Set up First Ligation master mix below NOTE:
+### 6.. Set up First Ligation master mix below NOTE:
 
   - All reagents except enzymes (-20°C ) should be stored at -80°C in single use aliquots and brought to room temp just before use
   - Make up mix at room temp so the reagents don’t start precipitating when combined (if DMSO is added directly into cold buffer it will precipitate)
@@ -165,7 +165,7 @@ MAIN PROTOCOL
 
 **MUST CONTINUE**
 
-7.. Pool barcoded RNA: RLT buffer + Zymo column
+### 7.. Pool barcoded RNA: RLT buffer + Zymo column
 
   - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. Attempt to normalize the amounts (using your QC in step 4, or even 1) based on the amount of non-ribosomal RNA in each pool, or your other needs.
 
@@ -180,14 +180,14 @@ MAIN PROTOCOL
 
 **PAUSE POINT**
 
-8.. Deplete ribosomal RNA with polyA kit. 
+### 8.. Deplete ribosomal RNA with polyA kit. 
 
   - Will add kit instructions.
   - MAKE SURE TO WASH BEADS BEFORE USE!!!!
 
 **MUST CONTINUE**
 
-9.. Synthesize First Strand cDNA
+### 9.. Synthesize First Strand cDNA
 
   - Take 12 uL rRNA depleted RNA (use all the material from Ribo-Zero)
   - Add 2 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’ AR2, 53% GC, 19bp.
@@ -196,7 +196,7 @@ MAIN PROTOCOL
 
 **MUST CONTINUE**
 
-10.. Make RT master mix
+### 10.. Make RT master mix
 
   - Add in order on ice (the below volums build in a little extra for pipetting errors)
 
@@ -218,7 +218,7 @@ MAIN PROTOCOL
 **MUST CONTINUE**
 
 
-11.. Degrade RNA after reverse transcription
+### 11.. Degrade RNA after reverse transcription
 
   - NOTE: make fresh working stock solutions of NaOH and Acetic Acid
   - Add 10% reaction vol. of 1M NaOH (2 uL) to each reaction
@@ -229,7 +229,7 @@ MAIN PROTOCOL
 **MUST CONTINUE**
 
 
-12.. Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
+### 12.. Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
 
   - Add 14 uL of sterile water to each reaction for a final volume of 40 uL
   - Transfer to new tubes (NaOH may start degrading tubes)
@@ -244,7 +244,7 @@ MAIN PROTOCOL
 **MUST CONTINUE**
 
 
-13.. Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
+### 13.. Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
   - NOTE: 3Tr3 adaptor: 5’-/5Phos/AGA TCG GAA GAG CAC ACG TCT G-/3SpC3/ 3’, 55% GC, 22bp, 5’-Phos and 3’-C3 spacer (or ddC, or dye).
 
   - Add 2 uL (80 pmoles) of 3Tr3 adaptor to cDNA
@@ -273,41 +273,44 @@ MAIN PROTOCOL
 **MUST CONTINUE**
 
 
-14.. Cleanup (2x SPRI) to remove adaptors
+### 14.. Cleanup (2x SPRI) to remove adaptors
 
-Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
-Incubate at room temperature for 15min
-Place on magnet for 5 min or until solution is clear
-Pipette out and discard clear solution
-Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off discard the EtOH.
-Repeat 80% EtOH wash, and let air dry for 3min
-Elute DNA by adding 30 uL RNase/DNase free water, transfer to new tube.
-2nd Cleanup (1.5x SPRI) to remove the remaining adaptors
+  - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
+  - Incubate at room temperature for 15min
+  - Place on magnet for 5 min or until solution is clear
+  - Pipette out and discard clear solution
+  - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off discard the EtOH.
+  - Repeat 80% EtOH wash, and let air dry for 3min
+  - Elute DNA by adding 30 uL RNase/DNase free water, transfer to new tube.
+  - **2nd Cleanup (1.5x SPRI) to remove the remaining adaptors**
 
-Add 1.5x reaction volume SPRI beads (45 uL) to the sample in new tubes, and mix up/down 10x
-Incubate at room temperature for 15min
-Place on magnet for 5 min or until solution is clear
-Pipette out and discard clear solution
-Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-Repeat 80% EtOH wash, and let air dry for 3min
-Elute DNA by adding 25 uL RNase/DNase free water, transfer to new tube.
-PAUSE POINT
+  - Add 1.5x reaction volume SPRI beads (45 uL) to the sample in new tubes, and mix up/down 10x
+  - Incubate at room temperature for 15min
+  - Place on magnet for 5 min or until solution is clear
+  - Pipette out and discard clear solution
+  - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
+  - Repeat 80% EtOH wash, and let air dry for 3min 
+  - Elute DNA by adding 25 uL RNase/DNase free water, transfer to new tube.
 
-TEST PCR Amplification to determine final cycle number
-NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’, 52% GC, 58bp; standard DNA oligo. Make 100uM stock and 12.5uM working stock.
+**PAUSE POINT**
 
-Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
-Include a negative control (water) for each primer set
-Make PCR Master Mix (4 rxns=2 libraries, +ve ctrl, -ve ctrl):
+### 15.. TEST PCR Amplification to determine final cycle number
+  - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’, 52% GC, 58bp; standard DNA oligo. Make 100uM stock and 12.5uM working stock.
 
-Add in order:
-Reagent (for PCR master mix)	1 rxn	4 rxns
-Water, PCR-clean	14.3 uL	57.2 uL
-10X Pfu Ultra II Buffer	2.5 uL	10 uL
-dNTP mix (10mM each)	0.7 uL	2.8 uL
-P5 primer (P5_RNATag, 12.5 uM)	1 uL	4 uL
-———————————	———	———
-Total	18.5 uL	74 uL
+  - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
+  - Include a negative control (water) for each primer set
+  - Make PCR Master Mix (4 rxns=2 libraries, +ve ctrl, -ve ctrl):
+
+  - Add in order:
+
+   | Reagent (for PCR master mix)	| 1 rxn	| 3 rxns
+   | -------------------------------| ------| ------
+   | Water, PCR-clean	| 14.3 uL	| 57.2 uL
+   | 10X Pfu Ultra II Buffer	| 2.5 uL	| 10 uL
+   | dNTP mix (10mM each)	| 0.7 uL	| 2.8 uL
+   | P5 primer (P5_RNATag, | 12.5 uM)	| 1 uL	| 4 uL
+   | Total	| 18.5 uL	| 74 uL
+
 Mix well
 Aliquot 18.5 uL / sample into PCR tubes
 Add 1 uL of appropriate P7 index primer to each well
