@@ -30,9 +30,10 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 #### Step 10. Degrade RNA
 #### Step 11. Cleanup
 #### Step 12. Ligate 3’ Universal Adaptor
-#### Step 13. Cleanup
 
 ## Day 3
+
+#### Step 13. Cleanup
 #### Step 14. Test PCR
 #### Step 15. Cleanup
 QC Step: You should have X ng/uL and a Tapestation trace like this.
@@ -42,6 +43,40 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 #### Step 19. DNA Tapestation
 QC Step: You should have X ng/uL and a Tapestation trace like this.
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 **(Notes)**
@@ -64,6 +99,21 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
    - Elute: remove from magnet, pipette 40uL water or low TE buffer onto beads, pipette up and down 10X, replace on magnet and wait 5min (this is easiest with at least 40uL, hellish with 10uL).
    - Unless otherwise specified, take clear liquid to new tube, carefully not disturbing beads.
 - Barcoded adaptors are listed in appendix, requiring 5’ Phosphate group (/5Phos/) and 3’ blocking spacer (/3SpC3/). The combination to use should be chosen carefully: plan a spreadsheet listing the sample name, conditions, and which RNAtag adaptor (step 3) and P7 adaptor (step 14/17, PCR after pooling) will be used. In each set of sequencing libraries combined on an Illumina sequencing run, there must be at least 3 distinct nt in all of the initial 4 nt of the sequenced adaptor for the sequencing machine to recognize clusters properly. (e.g. ATTA, GCAC, CAGT work, ATTA, GTAC, CTGT don’t due to the common T.)
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 ## MAIN PROTOCOL
