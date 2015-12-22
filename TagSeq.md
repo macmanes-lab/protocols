@@ -1,47 +1,16 @@
-RNATagSeq
---
+# RNATagSeq
 
-@(General Genomics)[TagSeq, Protocol]
+
+@(General Genomics)[TagSeq, Protocol, Slack]
 
 05 November 2015
 This protocol is for RNA sequencing (RNASeq) library preparation using the RNATagSeq method of Shishkin, et al. (2015). Simultaneous generation of many RNA-seq libraries in a single reaction. Nature Methods, 12(4), 323–325. http://doi.org/10.1038/nmeth.3313 (Broad institute).
 
 
 
-Reagents
----
 
-
-**Wet reagents**
-
-
-- Turbo DNase; Ambion/Applied Biosystems, Cat.# AM2239
-- FastAP Thermosensitive Alkaline Phosphatase; Thermo Scientific, Cat.# EF0651
-- RLT buffer (RNeasy Lysis Buffer); Qiagen, Cat.# 79216 (220mL)
-- T4 RNA Ligase 1; 30,000U/mL (0.5mL) Cat.# MO437M and comes with the following:
-- ATP(100mM) (make 10uL aliquots and store at -80°C, always use fresh aliquot)
-- PEG8000,50% in water
-- DMSO (100%); Sigma, Cat.# D8418-50ML for Molecular Biology
-- RNase Inhibitor, Murine (40U/uL); NEB, Cat.# M0314S (3,000 units)
-- SUPERase-IN 20U/uL (Ambion; AM2694; 2500U)
-- AffinityScript Multiple Temperature cDNA Synthesis Kit, 50 reaction; Agilent, Cat.# 200436. includes the
-- dNTPs, 10x RT buffer, RNase Block Ribonuclease Inhibitor (40U/uL)
-- 10X AffinityScript RT buffer; Agilent, Cat.# 600100-52
-- RNA Clean & ConcentratorTM-5 columns; Zymo Research, Cat. #R1015 (50 preps)
-- SPRI beads:
-- RNAClean XP beads; Agencourt/Beckman, Cat.# A63987 (40mL); (mix well, make 1.5mL and 0.5mL aliquots, store at 4 °C)
-    - For steps after cDNA synthesis, can use non-RNA certified, AMPure XP beads Cat.# A63881.
-
-- Sodium hydroxide solution (5M); Sigma-Aldrich, Cat.# 656046
-- Glacial acetic acid (17.4M); Sigma-Aldrich, Cat.# ARK2183
-- Nuclease free water; Affymetrix Cat.#71786 100 ML or Ambion, Cat.# 4387936
-- 1x low TE (10mM Tris pH 8.0, 0.1mM EDTA); Affymetrix Cat.# 75793
-- PfuUltra II Fusion HS DNA Polymerase; Agilent Cat.# 600670
-- 10X PfuUltra II Reaction Buffer
-
-
-**Notes**
-
+**(Notes)**
+--
 
 - This is not a protocol where you can cut corners. To save time and anguish, plan thoroughly, work cleanly, QC your samples and intermediate steps.
 - Label everything and lay out tubes neurotically to avoid pipette error.
@@ -61,25 +30,8 @@ Reagents
    - Unless otherwise specified, take clear liquid to new tube, carefully not disturbing beads.
 - Barcoded adaptors are listed in appendix, requiring 5’ Phosphate group (/5Phos/) and 3’ blocking spacer (/3SpC3/). The combination to use should be chosen carefully: plan a spreadsheet listing the sample name, conditions, and which RNAtag adaptor (step 3) and P7 adaptor (step 14/17, PCR after pooling) will be used. In each set of sequencing libraries combined on an Illumina sequencing run, there must be at least 3 distinct nt in all of the initial 4 nt of the sequenced adaptor for the sequencing machine to recognize clusters properly. (e.g. ATTA, GCAC, CAGT work, ATTA, GTAC, CTGT don’t due to the common T.)
 
-**Control oligos:** 
---
-MacManes Lab is not currently using, though maybe we should?
-
-- Tag33FAM
-   - 5’ - /5Phos/AG AAC GAT TAG ATC GGA AGA GCG TCG TGT A/36-FAM/ - 3’
-is a fluorescent positive control oligo for first ligation and sample pooling. Use in place of a barcoded adaptor, for one sample, in first ligation, step 5. Success is indicated if fluorescence appears in 200-500nt smear:
-- TagDNA+
-   - 5’-TAC ACG ACG CTC TTC CGA TCT TCA GTC AGT ATG TAC GCG TAG CGC AGC GAG CGG CGG GTG GCC ACG TCG CGG CAC ACG CGG ATG GAC AGG ATC GGG CCG GCG GGC AGG AAC TTC TCG TAG AGC ATG GCC TCG GTC ACG TCG GCG TGC AGG TCG CCC ACG TAG AGC GAG GCC AGC GGG TAC CCC GGG CCG CTG GCG TTC AT - 3’
-is a 200bp oligo as positive control for 2nd ligation through PCR. Use 1.25uM (0.5uL of 100uM stock) in place of cDNA in control reaction in step 11. Its 3’ end resembles a cDNA product for a library with Tag barcode CTGACTGA (distinct from Tag1-32, Tag33FAM), and the insert is “random” (elephant PABP 1st exon).
-
-
----
 
 # MAIN PROTOCOL
-
-
----
-
 
 
 ### 1.. Check RNA quality by running on the Agilent Bioanalyzer
@@ -311,88 +263,137 @@ is a 200bp oligo as positive control for 2nd ligation through PCR. Use 1.25uM (0
    | P5 primer (P5_RNATag, | 12.5 uM)	| 1 uL	| 4 uL
    | Total	| 18.5 uL	| 74 uL
 
-Mix well
-Aliquot 18.5 uL / sample into PCR tubes
-Add 1 uL of appropriate P7 index primer to each well
-
-Add 5 uL of ss cDNA from step 11, or water (for negative control)
-
-Add 0.5 uL of Pfu Ultra II Polymerase.
-
-Mix well and aliquot 8 ul into each of 3 tubes
+  - Mix well
+  - Aliquot 18.5 uL / sample into PCR tubes
+  - Add 1 uL of appropriate P7 index primer to each well
+  - Add 5 uL of ss cDNA from step 11, or water (for negative control)
+  - Add 0.5 uL of Pfu Ultra II Polymerase.
+  - Mix well and aliquot 8 ul into each of 3 tubes
 
 Place each in a thermal cycler with cycling conditions:
 
-start: 98°C, 3min
-cycle: 9, 12, 15 cycles (for test PCR) 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
-end: 70°C, 2min; 4°C, hold
-Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+  - start: 98°C, 3min
+  - cycle: 9, 12, 15 cycles (for test PCR) 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
+  - end: 70°C, 2min; 4°C, hold
 
-increase reaction to 40uL with sterile water
-Add 1.5x reaction volume SPRI beads (60 uL) to the sample in new tubes, and mix up/down 10x
-Incubate at room temperature for 15min
-Place on magnet for 5 min or until solution is clear
-Pipette out and discard clear solution
-Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-Repeat 80% EtOH wash, and let air dry for 3min
-Elute off beads with 10 uL 1x low TE (10 mM Tris, 0.1M EDTA)
-QC test PCR amplification on Agilent DNA HS chip
+**MUST CONTINUE**
 
-Based on test results change the cycle number, if necessary, and set up more reactions to provide enough material to send for sequencing
-UChicago functional genomics core asks for ~15 uL of 10 nM library; aim for at least 25 uL = 0.25 pmol = 60 ng of 400nt dsDNA (~250 kDa).
-To pass QC, library should have smooth profile 200-500nt long; visible single bands, or a “shoulder” of larger products, indicate PCR artefacts.
-PAUSE POINT
 
-PCR for Sequencing library
+### 16.. Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
-Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
-Include a negative control (water) for each primer set
-Make PCR Master Mix (3 rxns=2 libraries, half size +ve ctrl, half size -ve ctrl):
+  - increase reaction to 40uL with sterile water
+  - Add 1.5x reaction volume SPRI beads (60 uL) to the sample in new tubes, and mix up/down 10x
+  - Incubate at room temperature for 15min
+  - Place on magnet for 5 min or until solution is clear
+  - Pipette out and discard clear solution
+  - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
+  - Repeat 80% EtOH wash, and let air dry for 3min
+  - Elute off beads with 10 uL 1x low TE (10 mM Tris, 0.1M EDTA)
+  - QC test PCR amplification on Agilent DNA HS chip
 
-Add in order:
-Reagent (for PCR master mix)	1 rxn	3 rxns
-Water, PCR-clean	28.6 uL	85.8 uL
-10X Pfu Ultra II Buffer	5 uL	15 uL
-dNTP mix (10mM each)	1.4 uL	4.2 uL
-P5 primer (P5_RNATag, 12.5 uM)	2 uL	6 uL
-———————————	———	———-
-Total	37 uL	111 uL
-Mix well
-Aliquot 37 uL / sample into PCR tubes
-Add 2 uL of appropriate P7 index primer to each well
+  - **NOTE:** Based on test results change the cycle number, if necessary, and set up more reactions to provide enough material to send for sequencing. Library should have smooth profile 200-500nt long; visible single bands, or a “shoulder” of larger products, indicate PCR artefacts.
 
-Add 10 uL of ss cDNA from step 11, or water (for negative control)
 
-Add 1 uL of Pfu Ultra II Polymerase.
+**PAUSE POINT**
 
-Mix well and aliquot 10 ul into each of 5 wells of a 96-well plate (amplification is apparently more robust in smaller volumes), cap.
 
-Place each in a thermal cycler with the cycling conditions:
+### 17.. PCR for Sequencing library
 
-start: 98°C, 3min
-cycle: # determined from test PCR 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
-end: 70°C, 2min; 4°C, hold
-Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+  - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
+  - Include a negative control (water) for each primer set
+  - Make PCR Master Mix (3 rxns=2 libraries, half size +ve ctrl, half size -ve ctrl):
 
-Pool PCR reaction (50 uL)
-Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
-Incubate at room temperature for 15min
-Place on magnet for 5 min or until solution is clear
-Pipette out and discard clear solution
-Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-Repeat 80% EtOH wash, and let air dry for 3min
-Elute off beads with 50 uL water and transfer to new tubes.
-Final Cleanup (0.8x SPRI) to remove remaining PCR primers:
+  - Add in order:
 
-Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
-Incubate at room temperature for 15min
-Place on magnet for 5 min or until solution is clear
-Pipette out and discard clear solution
-Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-Repeat 80% EtOH wash, and let air dry for 3min
-Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
-Proceed to sequence
 
-Check quantity/quality on Bioanalyzer with Agilent DNA HS chip as step 16.
-Submit to genomics core for sequencing.
-If desired to combine multiple libraries PCR’d separately, they must have different barcoded P7 primers. Amounts of sequenceable material must be carefully measured to ensure even coverage across libraries, e.g. with the KAPA biosystems kit (Cat. # KK4824). The genomics core can do this for a fee.
+   | Reagent (for PCR master mix)	| 1 rxn	| 3 rxns
+   | -------------------------------| ------| ------
+   | Water, PCR-clean	| 28.6 uL	| 57.2 uL
+   | 10X Pfu Ultra II Buffer	| 5 uL	| 10 uL
+   | dNTP mix (10mM each)	| 1.4 uL	| 2.8 uL
+   | P5 primer (P5_RNATag, | 12.5 uM)	| 2 uL	| 4 uL
+   | Total	| 37 uL	| 74 uL
+
+  - Mix well
+  - Aliquot 37 uL / sample into PCR tubes
+  - Add 2 uL of appropriate P7 index primer to each well
+  - Add 10 uL of ss cDNA from step 11, or water (for negative control)
+  - Add 1 uL of Pfu Ultra II Polymerase.
+
+  - Mix well and aliquot 10 ul into each of 5 wells of a strip tube (amplification is apparently more robust in smaller volumes).
+
+  - Place each in a thermal cycler with the cycling conditions:
+
+    - start: 98°C, 3min  
+    - cycle: # determined from test PCR 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
+    - end: 70°C, 2min; 4°C, hold
+
+**MUST CONTINUE**
+
+
+### 18.. Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+
+  - Pool PCR reaction (50 uL)
+  - Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
+  - Incubate at room temperature for 15min
+  - Place on magnet for 5 min or until solution is clear
+  - Pipette out and discard clear solution
+  - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
+  - Repeat 80% EtOH wash, and let air dry for 3min
+  - Elute off beads with 50 uL water and transfer to new tubes.
+  - Final Cleanup (0.8x SPRI) to remove remaining PCR primers:
+
+### 19.. Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+
+  - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
+  - Incubate at room temperature for 15min
+  - Place on magnet for 5 min or until solution is clear
+  - Pipette out and discard clear solution
+  - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
+  - Repeat 80% EtOH wash, and let air dry for 3min
+  - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
+
+### 20.. Check quantity/quality on Tapestation.
+
+
+Reagents
+---
+
+
+- Turbo DNase; Ambion/Applied Biosystems, Cat.# AM2239
+- FastAP Thermosensitive Alkaline Phosphatase; Thermo Scientific, Cat.# EF0651
+- RLT buffer (RNeasy Lysis Buffer); Qiagen, Cat.# 79216 (220mL)
+- T4 RNA Ligase 1; 30,000U/mL (0.5mL) Cat.# MO437M and comes with the following:
+- ATP(100mM) (make 10uL aliquots and store at -80°C, always use fresh aliquot)
+- PEG8000,50% in water
+- DMSO (100%); Sigma, Cat.# D8418-50ML for Molecular Biology
+- RNase Inhibitor, Murine (40U/uL); NEB, Cat.# M0314S (3,000 units)
+- SUPERase-IN 20U/uL (Ambion; AM2694; 2500U)
+- AffinityScript Multiple Temperature cDNA Synthesis Kit, 50 reaction; Agilent, Cat.# 200436. includes the
+- dNTPs, 10x RT buffer, RNase Block Ribonuclease Inhibitor (40U/uL)
+- 10X AffinityScript RT buffer; Agilent, Cat.# 600100-52
+- RNA Clean & ConcentratorTM-5 columns; Zymo Research, Cat. #R1015 (50 preps)
+- SPRI beads:
+- RNAClean XP beads; Agencourt/Beckman, Cat.# A63987 (40mL); (mix well, make 1.5mL and 0.5mL aliquots, store at 4 °C)
+    - For steps after cDNA synthesis, can use non-RNA certified, AMPure XP beads Cat.# A63881.
+
+- Sodium hydroxide solution (5M); Sigma-Aldrich, Cat.# 656046
+- Glacial acetic acid (17.4M); Sigma-Aldrich, Cat.# ARK2183
+- Nuclease free water; Affymetrix Cat.#71786 100 ML or Ambion, Cat.# 4387936
+- 1x low TE (10mM Tris pH 8.0, 0.1mM EDTA); Affymetrix Cat.# 75793
+- PfuUltra II Fusion HS DNA Polymerase; Agilent Cat.# 600670
+- 10X PfuUltra II Reaction Buffer
+
+**Control oligos:** 
+--
+MacManes Lab is not currently using, though maybe we should?
+
+- Tag33FAM
+   - 5’ - /5Phos/AG AAC GAT TAG ATC GGA AGA GCG TCG TGT A/36-FAM/ - 3’
+is a fluorescent positive control oligo for first ligation and sample pooling. Use in place of a barcoded adaptor, for one sample, in first ligation, step 5. Success is indicated if fluorescence appears in 200-500nt smear:
+- TagDNA+
+   - 5’-TAC ACG ACG CTC TTC CGA TCT TCA GTC AGT ATG TAC GCG TAG CGC AGC GAG CGG CGG GTG GCC ACG TCG CGG CAC ACG CGG ATG GAC AGG ATC GGG CCG GCG GGC AGG AAC TTC TCG TAG AGC ATG GCC TCG GTC ACG TCG GCG TGC AGG TCG CCC ACG TAG AGC GAG GCC AGC GGG TAC CCC GGG CCG CTG GCG TTC AT - 3’
+is a 200bp oligo as positive control for 2nd ligation through PCR. Use 1.25uM (0.5uL of 100uM stock) in place of cDNA in control reaction in step 11. Its 3’ end resembles a cDNA product for a library with Tag barcode CTGACTGA (distinct from Tag1-32, Tag33FAM), and the insert is “random” (elephant PABP 1st exon).
+
+
+---
