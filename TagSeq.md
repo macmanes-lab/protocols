@@ -31,10 +31,10 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 - Barcoded adaptors are listed in appendix, requiring 5’ Phosphate group (/5Phos/) and 3’ blocking spacer (/3SpC3/). The combination to use should be chosen carefully: plan a spreadsheet listing the sample name, conditions, and which RNAtag adaptor (step 3) and P7 adaptor (step 14/17, PCR after pooling) will be used. In each set of sequencing libraries combined on an Illumina sequencing run, there must be at least 3 distinct nt in all of the initial 4 nt of the sequenced adaptor for the sequencing machine to recognize clusters properly. (e.g. ATTA, GCAC, CAGT work, ATTA, GTAC, CTGT don’t due to the common T.)
 
 
-# MAIN PROTOCOL
+## MAIN PROTOCOL
 
 
-### 1) Check RNA quality by running on the Agilent Bioanalyzer
+#### 1) Check RNA quality by running on the Agilent Bioanalyzer
 
 - Place 0.5-5 ug of total RNA in a tube. For large numbers of samples, the input per sample could be reduced as to not exceed the maximum input of RiboZero (5ug) at step 5. Since about 25% of the input remains prior to adaptor ligation, less than 20ug total RNA per pool (end of step 4) is recommended. For smaller number of samples, higher input is recommended to ensure sufficient material remains after rRNA depletion.
 - Increase the volume to 30uL with Nuclease free water
@@ -44,7 +44,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 
 **PAUSE POINT**
 
-### 2) Fragment RNA using 2x FastAP buffer
+#### 2) Fragment RNA using 2x FastAP buffer
 
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
@@ -53,7 +53,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 **MUST CONTINUE**
 
 
-### 3) Digest DNA and repair RNA: Combination DNase/FastAP treatment
+#### 3) Digest DNA and repair RNA: Combination DNase/FastAP treatment
 
   - Make a DNase/FastAP master mix, 40uL per sample:
 
@@ -72,7 +72,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 
 **MUST CONTINUE**
 
-### 4.. Cleanup (2x SPRI) to remove enzymes and reaction buffer
+#### 4) Cleanup (2x SPRI) to remove enzymes and reaction buffer
 
   - Add 2.0x reaction volume of Agencourt RNAClean XP beads (160 uL) and capture RNA on beads:
   - Incubate at room temperature, on HULA MIXER for 15min to bind RNA
@@ -81,19 +81,31 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
   - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off supernatant.
   - Repeat 80% EtOH wash. Let air dry for 5min
   - Elute off beads with 24 uL nuclease free water
+
+  
+&nbsp;
+&nbsp;
+&nbsp;
+  
+#### 4A) Proceed
+
   - Take 5 uL of each sample and proceed to 1st ligation
+
+
+#### 4B) QC
+
   - QC: Save 1.2 uL from remaining RNA before addition of SUPERase-IN
-  - Run 16 random samplings on Tapestation RNA High Sensitivity tape to check the fragmentation profile of each batch of 32
+  - Run 8 random samplings on Qubit and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
   - Add 1uL SUPERase-IN (20U/uL) to the remaining material and store at -80°C. This can be used as backup if it is necessary to repeat process
 
 **PAUSE POINT**
 
-### 5.. Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA)
+#### 5) Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA)
 
   - Add 1 uL of barcoded RNATag adaptor (100 pmole = 1 uL of 100 uM) to 5 uL of dephosphorylated RNA
   - Heat at 70°C for 2 min, place in cold block on ice
 
-### 6.. Set up First Ligation master mix below NOTE:
+#### 6) Set up First Ligation master mix below NOTE:
 
   - All reagents except enzymes (-20°C ) should be stored at -80°C in single use aliquots and brought to room temp just before use
   - Make up mix at room temp so the reagents don’t start precipitating when combined (if DMSO is added directly into cold buffer it will precipitate)
@@ -106,7 +118,6 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
    | ATP (100 mM)	| 0.2 uL	| 1.7 uL| 
    | PEG 8000 (50%)	| 8 uL	| 68 uL| 
    | RNase inhibitor, Murine (40U/uL)	| 0.3 uL	| 2.5 uL| 
-   | RNA: up to 250ng	| 5 uL	| | 
    | Total	| 12.3 uL	| 105 uL| 
 
   - Mix really well by extensive vortexing tube since the solution is very viscous, then spin down briefly in microfuge
@@ -117,38 +128,36 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 
 **MUST CONTINUE**
 
-### 7.. Pool barcoded RNA: RLT buffer + Zymo column
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+#### 7) Pool barcoded RNA: RLT buffer + Zymo column
 
   - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. Attempt to normalize the amounts (using your QC in step 4, or even 1) based on the amount of non-ribosomal RNA in each pool, or your other needs.
 
-  - Add 60 uL of RLT buffer to each sample to inhibit ligase, and mix well (80 uL total)
-  - Add 2x reaction vol (160 uL=2x 80 uL) of 1:1 binding buffer: EtOH (100%) to each reaction. 
-  - Carefully add reactions to be pooled to a single Zymo column.
-  - YOU ARE DOING ZYMO TEST TODAY
-  - Wash and spin 1 min 12,000 g, then discard flow-through, once with 400 uL RNA Prep buffer, once with 800 uL RNA Wash buffer, once with 400uL Wash buffer, spin another 1min with no buffer.
-  - Elute 2 times with 16 uL nuclease free water for a total volume of 32 uL
-  - NOTE: 2 elutions help improve recovery/yield of RNA
-  - Save 2 uL for QC-Run on Agilent RNA pico chip to check quantity and fragmentation profile
+  - **LAUREN/ANDREW:** Write up protocol based on your tests!
 
 **PAUSE POINT**
 
-### 8.. Deplete ribosomal RNA with polyA kit. 
+#### 8) Deplete ribosomal RNA with polyA kit. 
 
   - Will add kit instructions.
   - MAKE SURE TO WASH BEADS BEFORE USE!!!!
 
 **MUST CONTINUE**
 
-### 9.. Synthesize First Strand cDNA
+#### 9) Synthesize First Strand cDNA
 
   - Take 12 uL rRNA depleted RNA (use all the material from Ribo-Zero)
-  - Add 2 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’ AR2, 53% GC, 19bp.
+  - Add 2 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’
   - Mix well
   - Heat the mixture to 70°C for 2 min and immediately place on cold block on ice
 
 **MUST CONTINUE**
 
-### 10.. Make RT master mix
+#### 10) Make RT master mix
 
   - Add in order on ice (the below volums build in a little extra for pipetting errors)
 
@@ -170,7 +179,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 **MUST CONTINUE**
 
 
-### 11.. Degrade RNA after reverse transcription
+#### 11) Degrade RNA after reverse transcription
 
   - NOTE: make fresh working stock solutions of NaOH and Acetic Acid
   - Add 10% reaction vol. of 1M NaOH (2 uL) to each reaction
@@ -181,7 +190,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 **MUST CONTINUE**
 
 
-### 12.. Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
+#### 12) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
 
   - Add 14 uL of sterile water to each reaction for a final volume of 40 uL
   - Transfer to new tubes (NaOH may start degrading tubes)
@@ -196,8 +205,8 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 **MUST CONTINUE**
 
 
-### 13.. Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
-  - NOTE: 3Tr3 adaptor: 5’-/5Phos/AGA TCG GAA GAG CAC ACG TCT G-/3SpC3/ 3’, 55% GC, 22bp, 5’-Phos and 3’-C3 spacer (or ddC, or dye).
+#### 13) Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
+  - NOTE: 3Tr3 adaptor: 5’-/5Phos/AGA TCG GAA GAG CAC ACG TCT G-/3SpC3/ 3’
 
   - Add 2 uL (80 pmoles) of 3Tr3 adaptor to cDNA
   - Heat at 75°C for 3 min; Place on cold block on ice
@@ -224,8 +233,17 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 
 **MUST CONTINUE**
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-### 14.. Cleanup (2x SPRI) to remove adaptors
+#### 14) Cleanup (2x SPRI) to remove adaptors
 
   - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
@@ -246,8 +264,8 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 
 **PAUSE POINT**
 
-### 15.. TEST PCR Amplification to determine final cycle number
-  - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’, 52% GC, 58bp; standard DNA oligo. Make 100uM stock and 12.5uM working stock.
+#### 15) TEST PCR Amplification to determine final cycle number
+  - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’
 
   - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
   - Include a negative control (water) for each primer set
@@ -255,20 +273,25 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 
   - Add in order:
 
-   | Reagent (for PCR master mix)	| 1 rxn	| 3 rxns
-   | -------------------------------| ------| ------
-   | Water, PCR-clean	| 14.3 uL	| 57.2 uL
-   | 10X Pfu Ultra II Buffer	| 2.5 uL	| 10 uL
-   | dNTP mix (10mM each)	| 0.7 uL	| 2.8 uL
-   | P5 primer (P5_RNATag, | 12.5 uM)	| 1 uL	| 4 uL
-   | Total	| 18.5 uL	| 74 uL
+   | Reagent (for PCR master mix)	| 1 rxn	| 
+   | -------------------------------| 
+   | Water, PCR-clean	| 15.4 uL	| 
+   | 10X AccuPrime Buffer	| 2.5 uL	| 
+   | P5_RNATag, 12.5 uM)	| 1 uL	| L
+   | P7 index primer | 1uL | 
+   | AccuPrime HiFi Taq | .1uL 
+   | cDNA from step 14 | 5uL
+   | Total	| 20 uL	| 74 uL
 
   - Mix well
-  - Aliquot 18.5 uL / sample into PCR tubes
-  - Add 1 uL of appropriate P7 index primer to each well
+  - Aliquot 20 uL / sample into PCR tubes
   - Add 5 uL of ss cDNA from step 11, or water (for negative control)
-  - Add 0.5 uL of Pfu Ultra II Polymerase.
   - Mix well and aliquot 8 ul into each of 3 tubes
+
+&nbsp;
+&nbsp;
+&nbsp;
+
 
 Place each in a thermal cycler with cycling conditions:
 
@@ -279,7 +302,7 @@ Place each in a thermal cycler with cycling conditions:
 **MUST CONTINUE**
 
 
-### 16.. Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 16) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - increase reaction to 40uL with sterile water
   - Add 1.5x reaction volume SPRI beads (60 uL) to the sample in new tubes, and mix up/down 10x
@@ -297,7 +320,7 @@ Place each in a thermal cycler with cycling conditions:
 **PAUSE POINT**
 
 
-### 17.. PCR for Sequencing library
+#### 17) PCR for Sequencing library
 
   - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
   - Include a negative control (water) for each primer set
@@ -322,16 +345,21 @@ Place each in a thermal cycler with cycling conditions:
 
   - Mix well and aliquot 10 ul into each of 5 wells of a strip tube (amplification is apparently more robust in smaller volumes).
 
-  - Place each in a thermal cycler with the cycling conditions:
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
-    - start: 98°C, 3min  
-    - cycle: # determined from test PCR 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
-    - end: 70°C, 2min; 4°C, hold
+Place each in a thermal cycler with the cycling conditions:
+
+  - start: 98°C, 3min  
+  - cycle: # determined from test PCR 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
+  - end: 70°C, 2min; 4°C, hold
 
 **MUST CONTINUE**
 
 
-### 18.. Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 18) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - Pool PCR reaction (50 uL)
   - Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
@@ -343,7 +371,7 @@ Place each in a thermal cycler with cycling conditions:
   - Elute off beads with 50 uL water and transfer to new tubes.
   - Final Cleanup (0.8x SPRI) to remove remaining PCR primers:
 
-### 19.. Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 19) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
@@ -353,8 +381,22 @@ Place each in a thermal cycler with cycling conditions:
   - Repeat 80% EtOH wash, and let air dry for 3min
   - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
 
-### 20.. Check quantity/quality on Tapestation.
+#### 20) Check quantity/quality on Tapestation.
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 Reagents
 ---
