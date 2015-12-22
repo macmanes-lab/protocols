@@ -34,7 +34,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 # MAIN PROTOCOL
 
 
-### 1.. Check RNA quality by running on the Agilent Bioanalyzer
+### 1) Check RNA quality by running on the Agilent Bioanalyzer
 
 - Place 0.5-5 ug of total RNA in a tube. For large numbers of samples, the input per sample could be reduced as to not exceed the maximum input of RiboZero (5ug) at step 5. Since about 25% of the input remains prior to adaptor ligation, less than 20ug total RNA per pool (end of step 4) is recommended. For smaller number of samples, higher input is recommended to ensure sufficient material remains after rRNA depletion.
 - Increase the volume to 30uL with Nuclease free water
@@ -44,7 +44,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 
 **PAUSE POINT**
 
-### 2.. Fragment RNA using 2x FastAP buffer
+### 2) Fragment RNA using 2x FastAP buffer
 
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
@@ -53,7 +53,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 **MUST CONTINUE**
 
 
-### 3.. Digest DNA and repair RNA: Combination DNase/FastAP treatment
+### 3) Digest DNA and repair RNA: Combination DNase/FastAP treatment
 
   - Make a DNase/FastAP master mix, 40uL per sample:
 
