@@ -113,7 +113,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
   - Add 12.3 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor.
   - Add 1.8 uL of T4 RNA Ligase 1 (30,000U/mL) to each tube/well. 20.1 uL reaction volume total.
   - Mix well many times; mix by flicking since the solution is very viscous
-  - Incubate at 22°C (room temp) for 1 hour 30 minutes.
+  - Incubate at 22°C (room temp), on HULA MIXER, for 1 hour 30 minutes.
 
 **MUST CONTINUE**
 
@@ -186,7 +186,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
   - Add 14 uL of sterile water to each reaction for a final volume of 40 uL
   - Transfer to new tubes (NaOH may start degrading tubes)
   - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
-  - Incubate at room temperature for 15min
+  - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
@@ -228,7 +228,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
 ### 14.. Cleanup (2x SPRI) to remove adaptors
 
   - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
-  - Incubate at room temperature for 15min
+  - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off discard the EtOH.
@@ -237,7 +237,7 @@ This protocol is for RNA sequencing (RNASeq) library preparation using the RNATa
   - **2nd Cleanup (1.5x SPRI) to remove the remaining adaptors**
 
   - Add 1.5x reaction volume SPRI beads (45 uL) to the sample in new tubes, and mix up/down 10x
-  - Incubate at room temperature for 15min
+  - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
@@ -283,7 +283,7 @@ Place each in a thermal cycler with cycling conditions:
 
   - increase reaction to 40uL with sterile water
   - Add 1.5x reaction volume SPRI beads (60 uL) to the sample in new tubes, and mix up/down 10x
-  - Incubate at room temperature for 15min
+  - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
@@ -335,7 +335,7 @@ Place each in a thermal cycler with cycling conditions:
 
   - Pool PCR reaction (50 uL)
   - Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
-  - Incubate at room temperature for 15min
+  - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
@@ -346,7 +346,7 @@ Place each in a thermal cycler with cycling conditions:
 ### 19.. Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
-  - Incubate at room temperature for 15min
+  - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
