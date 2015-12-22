@@ -35,10 +35,13 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 ## Day 3
 #### Step 14. Test PCR
 #### Step 15. Cleanup
+QC Step: You should have X ng/uL and a Tapestation trace like this.
 #### Step 16. Real PCR
 #### Step 17. Cleanup
 #### Step 18. Final Cleanup
 #### Step 19. DNA Tapestation
+QC Step: You should have X ng/uL and a Tapestation trace like this.
+
 
 
 **(Notes)**
@@ -467,3 +470,6 @@ is a fluorescent positive control oligo for first ligation and sample pooling. U
 - TagDNA+
    - 5’-TAC ACG ACG CTC TTC CGA TCT TCA GTC AGT ATG TAC GCG TAG CGC AGC GAG CGG CGG GTG GCC ACG TCG CGG CAC ACG CGG ATG GAC AGG ATC GGG CCG GCG GGC AGG AAC TTC TCG TAG AGC ATG GCC TCG GTC ACG TCG GCG TGC AGG TCG CCC ACG TAG AGC GAG GCC AGC GGG TAC CCC GGG CCG CTG GCG TTC AT - 3’
 is a 200bp oligo as positive control for 2nd ligation through PCR. Use 1.25uM (0.5uL of 100uM stock) in place of cDNA in control reaction in step 11. Its 3’ end resembles a cDNA product for a library with Tag barcode CTGACTGA (distinct from Tag1-32, Tag33FAM), and the insert is “random” (elephant PABP 1st exon).
+
+
+---
