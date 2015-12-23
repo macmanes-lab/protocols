@@ -150,6 +150,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
      - Remove the tubes from the magnetic stand.
      - Elute the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. Immediately, place the tubes on the magnetic rack
      - Collect the purified mRNA by transferring the supernatant to a clean nuclease-free PCR Tube
+  - QC: Take 1uL for tapestation. 
 
 **MUST CONTINUE**
 
@@ -181,7 +182,6 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 **MUST CONTINUE**
 
-&nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
@@ -245,16 +245,17 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 #### 7) Pool barcoded RNA: RLT buffer + Zymo column
 
-  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. Attempt to normalize the amounts (using your QC in step 4, or even 1) based on the amount of non-ribosomal RNA in each pool, or your other needs.
+  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. **Attempt to normalize** the amounts (using your Qubit-QC in step 5B) based on the amount of non-ribosomal RNA in each pool, or your other needs.
 
   - **LAUREN/ANDREW:** Write up protocol based on your tests!
+  - FINAL ELUTION== 12uL for taking into the next step. 
 
 **PAUSE POINT**
 
 
 #### 8) Synthesize First Strand cDNA
 
-  - Take 12 uL rRNA depleted RNA (use all the material from Ribo-Zero)
+  - Take 12 uL mRNA (use all the material from Ribo-Zero)
   - Add 2 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’
   - Mix well
   - Heat the mixture to 70°C for 2 min and immediately place on cold block on ice
