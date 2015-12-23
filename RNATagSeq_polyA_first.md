@@ -5,7 +5,10 @@
 
 05 November 2015
 This protocol is for RNA sequencing (RNASeq) library preparation using the RNATagSeq method of Shishkin, et al. (2015). Simultaneous generation of many RNA-seq libraries in a single reaction. Nature Methods, 12(4), 323–325. http://doi.org/10.1038/nmeth.3313 (Broad institute).
+
 This document is adapted from the Drummond lab: http://drummondlab.org/protocols/protocol/rnatagseq-library-prep/
+
+The signifocant modification here is using polyA purification instead of RiboZero. This means that the order of the protocol needs to be changed, mainly by bringing the polyA module to step 2. This also means that we start with 5ug total RNA, which is the max going into the polyA kit. 
 
 **(Protocol Overview)**
 --
@@ -44,27 +47,10 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 #### Step 19. DNA Tapestation
 QC Step: You should have X ng/uL and a Tapestation trace like this.
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+
+
+
+
 
 **(Notes)**
 --
