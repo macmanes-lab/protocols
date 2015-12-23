@@ -13,23 +13,24 @@ This document is adapted from the Drummond lab: http://drummondlab.org/protocols
 ## Day 1
 
 #### Step 1. Check RNA quality
-You should start the protocol with approximately 400ng total RNA per sample. Make sure the RNA is of high quality.
+You should start the protocol with approximately 400ng total RNA per sample. Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
 #### Step 2. Fragment RNA
 #### Step 3. Digest DNA and repair RNA
 #### Step 4. Cleanup
-This is an important QC point. You should have X ng/uL and a Tapestation trace like this.
+This is an important QC point. You should have  500-800pg/uL (per Tapestation) and a Tapestation trace like this.  ![enter image description here](http://i.imgur.com/TSAyIFO.jpg)
 
 ## Day 2
 
 #### Step 5. Ligate 3’ barcoded Adaptor
 #### Step 6. Pool barcoded RNA with Zymo
-QC Step: You should have X ng/uL and a Tapestation trace like this.
+QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.  ![Imgur](http://i.imgur.com/XiObeks.jpg)
+
 #### Step 7. polyA pulldown
 #### Step 8. First Strand cDNA
 #### Step 9. Second Strand cDNA
 #### Step 10. Degrade RNA
 #### Step 11. Cleanup
-#### Step 12. Ligate 3’ Universal Adaptor
+#### Step 12. Ligate 3’ Universal Adaptor (overnight ligation)
 
 ## Day 3
 
@@ -64,20 +65,6 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 &nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-
 
 **(Notes)**
 --
