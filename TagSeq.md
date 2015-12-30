@@ -72,10 +72,14 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 
-**(Protocol Differences)**
+**Protocol Differences**
+
 ****AL & LK note that we have been drying for 10 minutes (according to Shishkin) but Drummond recommends 2 minutes.
+
 ****AL & LK note that we have been using 70% ETOH (according to Shiskin) but Drummond recommends 80%.
+
 ****AL and LK note that we have been eluting with 12 uL water during Day 1 Step 4 (according to Shishkin) but Drummond elutes with 24 uL.  Drummond is effectively diluting their sample in half (because they proceed with 5 uL, which is the same as Shishkin).
+
 
 **(Notes)**
 --
@@ -125,6 +129,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 - Continue to next step or freeze at -80C until ready to process samples
 
 ***AL & LK originally input 400 ng total of each sample (for 8 samples: therefore 3.2 ug total RNA) in 15 uL of Water and added 1 uL SUPERase, for a final volume of 16 uL of each sample.  It appears as if this protocal (following Shishkin) yields not enough RNA.
+
 ***AL & LK CURRENTLY trialing 2.5 ug total of each sample (for 8 samples: therefore 20 ug total RNA) in 15 uL of Water and added 1 uL of SUPERase, for a final volume of 16 uL of each sample. This is more in keeping with amounts of RNA recommended by Drummond.
 
 **PAUSE POINT**
@@ -159,6 +164,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 ****AT THIS TIME, PUT ALL LIGATION REAGENTS AT ROOM TEMPERATURE AND PUT RNA TAPESTATION (Normal Sensitivity) AT ROOM TEMP
 
 ***AL & LK used half of these amounts (according to Shishkin): yielding 20 uL of RNA and 20 uL of master mix.
+
 **MUST CONTINUE**
 
 #### 4) Cleanup (2x SPRI) to remove enzymes and reaction buffer: 1 hour
@@ -227,11 +233,19 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 
-#### 6) Pool barcoded RNA: RLT buffer + Zymo column
+#### 6) Pool barcoded RNA: RLT buffer + Zymo column: 1 hour
 
-  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. Attempt to normalize the amounts (using your QC in step 4, or even 1) based on the amount of non-ribosomal RNA in each pool, or your other needs.
+  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. Attempt to normalize the amounts (using your QC in step 4B) based on the amount of non-ribosomal RNA in each pool, or your other needs.
+  - 
+***Matt, we do not understand what you are trying to say here regarding normalization and other needs.
 
-  - **LAUREN/ANDREW:** Write up protocol based on your tests!
+-Add 60 uL of RLT buffer to each sample. (You will now have 80 uL total becuase you had 20 uL of product to start with).  
+-Add 2 volumes (160 uL) of RNA Binding Buffer to each sample. (You have a total of 240 uL).
+-Add an equal volume (240 uL) of 100% Ethanol. (You have a total of 480 uL).
+-Pool your samples into one tube and mix.
+***If you prefer, you may pool all 8 of your samples into one 14 mL tube (160 uL total pooled sample), and add RLT buffer (480 uL), RNA Binding Buffer (1.28 mL), and 100% ETOH (1.28 mL) in proportional volumes to the pooled samples (for a total final volume of 3.2 mL).
+-
+-
 
 **PAUSE POINT**
 
