@@ -309,7 +309,8 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | Total	| 6.7 uL	|
 
 **** AL & LK did a different MM (based Shiskin)
-| Reagent (for RT master)	| 1 rxn	|  
+
+   | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
    | 10× AffinityScript RT Buffer	| 2 uL	
    | DTT (0.1M)	| 2 uL	| 
@@ -326,7 +327,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 **MUST CONTINUE**
 
 
-#### 12) Degrade RNA after reverse transcription
+#### 12) Degrade RNA after reverse transcription: 20 minutes
 
   - NOTE: make fresh working stock solutions of NaOH and Acetic Acid
   - Add 10% reaction vol. of 1M NaOH (2 uL) to each reaction
@@ -337,29 +338,32 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 **MUST CONTINUE**
 
 
-#### 13) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
+#### 13) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer: 40 minutes
+
+****At this time, put the ligation reagents at room temperature.
 
   - Add 14 uL of sterile water to each reaction for a final volume of 40 uL
   - Transfer to new tubes (NaOH may start degrading tubes)
-  - Add 2x reaction volume AmpureXP beads (80uL) to the sample in new tubes, and mix up/down 10x
+  - Add 2x reaction volume of RNA Clean XP beads (80uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min, remove from magnet.
+  - Repeat 80% EtOH wash, and let air dry for 3 min (OR IS IT 2 minutes or 10 minutes?), remove from magnet.
   - Add 5 uL RNase/DNase free water to beads – KEEP BEADS AND TUBES, do not transfer, do not pause
 
 **MUST CONTINUE**
 
 
-#### 15) Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
+#### 14A) Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads: 5 minutes 
   - NOTE: 3Tr3 adaptor: 5’-/5Phos/AGA TCG GAA GAG CAC ACG TCT G-/3SpC3/ 3’
 
   - Add 2 uL (80 pmoles) of 3Tr3 adaptor to cDNA
   - Heat at 75°C for 3 min; Place on cold block on ice
-  - Make ligation reaction master mix (can be prepared ahead of time, at RT):
+  - 
+  
+#### 14B) Make 2nd ligation reaction master mix (can be prepared ahead of time, at RT): 15 minutes AND then overnight incubation
 
-  - 2nd Ligation Master Mix:
   - Mix in order (the below volums build in a little extra for pipetting errors)
 
    | Reagent (for Ligation 2 master)	| 1 rxn	
