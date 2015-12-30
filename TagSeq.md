@@ -27,7 +27,8 @@ I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!
 
 #### Step 5. Ligate 3’ barcoded Adaptor
 #### Step 6. Pool barcoded RNA with Zymo
-QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.  ![Imgur](http://i.imgur.com/XiObeks.jpg)
+QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.  
+I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!![Imgur](http://i.imgur.com/XiObeks.jpg)
 #### Step 7. polyA pulldown
 QC Step: Much of the RNA will be lost. Please check quantities to confirm sufficient material to proceed.
 #### Step 8. First Strand cDNA
