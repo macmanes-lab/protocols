@@ -19,6 +19,7 @@ Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
 #### Step 2. Fragment RNA
 #### Step 3. Digest DNA and repair RNA
 #### Step 4. Cleanup (Using RNA Clean XP Beads UNTIL PCR enrichment test Day 3)
+SAFE STOPPING POINT!!!  If you are stopping here for the day, then add 2 uL of SUPERase (instead of 1 uL). 
 This is an important QC point. You should have  500-800pg/uL (per Tapestation) and a Tapestation trace like this.  
 I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!
 ![enter image description here](http://i.imgur.com/TSAyIFO.jpg)
@@ -34,7 +35,8 @@ QC Step: Much of the RNA will be lost. Please check quantities to confirm suffic
 #### Step 8. First Strand cDNA
 #### Step 9. Degrade RNA
 #### Step 10. 1st Strand Cleanup
-#### Step 11. Ligate 3’ Universal Adaptor (overnight ligation)
+#### Step 11. Ligate 3’ Universal Adaptor (overnight ligation at 22 degrees Celcius in PCR machine)
+THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 ## Day 3
 
