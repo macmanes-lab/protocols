@@ -360,11 +360,11 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
   - Add 2 uL (80 pmoles) of 3Tr3 adaptor to cDNA
   - Heat at 75°C for 3 min; Place on cold block on ice
-  - 
+ 
   
 #### 14B) Make 2nd ligation reaction master mix (can be prepared ahead of time, at RT): 15 minutes AND then overnight incubation
 
-  - Mix in order (the below volums build in a little extra for pipetting errors)
+  - Mix in order (the below volumes build in a little extra for pipetting errors)
 
    | Reagent (for Ligation 2 master)	| 1 rxn	
    | -----------------------------------| ------
@@ -375,14 +375,26 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | T4 RNA Ligase 1 (30,000U/mL)	| 1.7 uL
    | Total	| 13.0 uL
 
+****AL and LK used a slightly different MM (as per Shishkin) see below:
+
+   | Reagent (for Ligation 2 master)	| 1 rxn	
+   | -----------------------------------| ------
+   | 10× T4 RNA Ligase Buffer	| 2 uL
+   | DMSO (100%)	| .8 uL
+   | ATP (100 mM)	| 0.2 uL
+   | PEG 8000 (50%)	| 8.5 uL
+   | T4 RNA Ligase 1 (30,000U/mL)	| 1.5 uL
+   | Total	| 13 uL
+
   - Mix really well by extensive vortexing tube since the solution is very viscous
   - Spin down briefly in microfuge
   - Swirl the 7uL cDNA/beads/water with pipet tip, THEN add 13 uL ligation 2 master mix.
   - Mix well by pipetting up and down 20x or cap tubes and flick several times; solution is viscous
   - Quick spin (low speed centrifuge, to get everything to bottom of tube)
-  - Incubate overnight at 22 °C
+  - Incubate overnight at 22 °C  
 
-**MUST CONTINUE**
+****NOT a long term stopping point, just an overnight incubation
+
 
 &nbsp;
 &nbsp;
@@ -394,28 +406,31 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 &nbsp;
 &nbsp;
 
-#### 16) Cleanup (2x SPRI) to remove adaptors
+#### 15) Cleanup (2x SPRI) to remove adaptors: 1 hour 45 minutes
 
+****LK and AL increased to 2x reaction volume with water (we added 40 ul of water to dilute out viscous ligation reaction)
   - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min
+  - Repeat 80% EtOH wash, and let air dry for 3min (***how many minutes actually??)
   - Elute DNA by adding 30 uL RNase/DNase free water, transfer to new tube.
-  - **2nd Cleanup (1.5x SPRI) to remove the remaining adaptors**
+****AL and LK used 25 uL of water (as per Shishkin)
 
+  - **2nd Cleanup (1.5x SPRI) to remove the remaining adaptors**
   - Add 1.5x reaction volume SPRI beads (45 uL) to the sample in new tubes, and mix up/down 10x
+****AL and LK used 37.5 uL of beads (25 uL x 1.5 = 37.5 uL)
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min 
+  - Repeat 80% EtOH wash, and let air dry for 3min (***how many minutes actually??)
   - Elute DNA by adding 25 uL RNase/DNase free water, transfer to new tube.
 
 **PAUSE POINT**
 
-#### 17) Test PCR Amplification to determine final cycle number
+#### 16) Test PCR Amplification to determine final cycle number
   - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’
 
   - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
