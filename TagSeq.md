@@ -44,10 +44,10 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 #### Step 16. Test PCR (Using Ampure XP Beads beginning here and for the remainder of the protocol)
 #### Step 17. Cleanup
 #### Step 18. QC Point. Chose between your three cycle settings based upon which pcr product looks optimal.  You should have X ng/uL and a Tapestation trace like this.
-#### Step 15. Real PCR
-#### Step 16. Cleanup
-#### Step 17. Final Cleanup
-#### Step 18. DNA Tapestation QC Point. You should have X ng/uL and a Tapestation trace like this.
+#### Step 19. Real PCR
+#### Step 20. Cleanup
+#### Step 21. Final Cleanup
+#### Step 22. DNA Tapestation QC Point. You should have X ng/uL and a Tapestation trace like this.
 
 &nbsp;
 &nbsp;
