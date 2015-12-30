@@ -13,7 +13,9 @@ This document is adapted from the Drummond lab: http://drummondlab.org/protocols
 ## Day 1
 
 #### Step 1. Check RNA quality
-You should start the protocol with approximately 400ng total RNA per sample. Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
+You should start the protocol with approximately 400ng (nano grams) total RNA per sample (according to Shishkin et al 2015) 
+OR 20ug (micro grams) total from across all samples (according to Drummond et al 2015)
+Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
 #### Step 2. Fragment RNA
 #### Step 3. Digest DNA and repair RNA
 #### Step 4. Cleanup
