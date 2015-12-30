@@ -32,7 +32,7 @@ I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!
 I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!![Imgur](http://i.imgur.com/XiObeks.jpg)
 #### Step 9. PolyA pulldown
 #### Step 10. QC Point. Much of the RNA will be lost. Please check quantities to confirm sufficient material to proceed.
-#### Step 11. First Strand cDNA
+#### Step 11. First Strand cDNA and Reverse Transcription
 #### Step 12. Degrade RNA
 #### Step 13. 1st Strand Cleanup
 #### Step 14. Ligate 3’ Universal Adaptor (overnight ligation at 22 degrees Celcius in PCR machine)
@@ -235,7 +235,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 #### 7) Pool barcoded RNA: RLT buffer + Zymo column: 1 hour
 
   - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. Attempt to normalize the amounts (using your QC in step 4B) based on the amount of non-ribosomal RNA in each pool, or your other needs.
-  - 
+
 ***Matt, we do not understand what you are trying to say here regarding normalization and other needs.
 
    - Add 60 uL of RLT buffer to each sample. (You will now have 80 uL total becuase you had 20 uL of product to start with).  
@@ -245,15 +245,16 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 ***If you prefer, you may pool all 8 of your samples into one 14 mL tube (160 uL total pooled sample), and add RLT buffer (480 uL), RNA Binding Buffer (1.28 mL), and 100% ETOH (1.28 mL) in proportional volumes to the pooled samples (for a total final volume of 3.2 mL).
 
-   - Add 700 uL of your pooled samples to a single zymo column.  Spin at Room Temperature for 30 seconds at 10,000g.
-   - Discard the flow-through, keep the column, and add another 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
-   - Repeat the previous step until you have spun all of your pooled sample through the zymo column (discarding all the flow through).
+   - Add a maximum of 700 uL of your pooled samples to a single zymo column.  Spin at Room Temperature for 30 seconds at 10,000g.
+   - Discard the flow-through, keep the column, and add another maximum of 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
+   - Repeat the previous step until you have spun all of your pooled sample through the single zymo column (discarding all the flow-through).
    - Add 400 uL of RNA Prep Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
    - Add 700 uL of RNA Wash Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
    - Add ANOTHER 400 uL of RNA Wash Buffer to the column and centrifuge for 2 minutes at 10,000g, then discard the flow-through.
-   - Transfer the zymo column into an RNase-free epindorf tube and add 16 uL of DNase/RNase-free water directly to the column filter and centrifuge for 30 seconds at 10,000g.
+   - Transfer the zymo column into an RNase-free epindorf tube (cut off the cap) and add 16 uL of DNase/RNase-free water directly to the column filter and centrifuge for 30 seconds at 10,000g. 
    - KEEP flow-through in the epindorf tube and add an additional 16 uL of water to the column filter, and centrifuge for 30 seconds at 10,000g. 
    - KEEP flow through. You have 32 uL of RNA. Use immidiately or store at -80 degrees Celcius.
+   - ***PLEASE NOTE*** Only 50 uL total can be put through the Poly A module.  Therefore, if you need to use multiple columns (because each column can only take up to 5 ug RNA), please plan accordingly so that your total elution does not exceed 50 uL).
 
 
 #### 8A) Proceed : 5 minutes
@@ -266,7 +267,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
   - QC: Save 2 uL of RNA for Qubit and Tapestation.
   - Run sample on Qubit Tapestation RNA High Sensitivity tape to check the fragmentation profile.
 
-**PAUSE POINT**
+**PAUSE POINT** FOR serious??
 
 #### 9) Deplete ribosomal RNA with polyA kit. 
 
@@ -285,7 +286,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **MUST CONTINUE**
 
-#### 11) Synthesize First Strand cDNA
+#### 11A) Synthesize First Strand cDNA: 10 minutes
 
   - Take 12 uL rRNA depleted RNA (use all the material from Ribo-Zero)
   - Add 2 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’
@@ -294,29 +295,38 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **MUST CONTINUE**
 
-#### 12) Second Strand cDNA synthesis
+#### 11B) Reverse Transcription: 1 hour 10 minutes
 
   - Add in order on ice (the below volums build in a little extra for pipetting errors)
 
    | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
    | 10× AffinityScript RT Buffer	| 2.2 uL	
-   | DTT (0.1M)	| 2.2 uL	| 
+   | DTT (0.1M)	| 2.2 uL	 
    | 25mM dNTP Mix (25mM each)	| 1 uL
    | RNase inhibitor, murine (40U/uL)	| 0.5 uL
-   | Total	| 5.2 uL	|
+   | AffinityScript RT Enzyme	| 0.8 uL
+   | Total	| 6.7 uL	|
 
-
-  - Mix well
-  - Add 5.2 uL of RT mix to the 14 uL rRNA depleted RNA + AR2 RTprimer on ice
-  - Add 0.8 uL of AffinityScript RT Enzyme
+**** AL & LK did a different MM (based Shiskin)
+| Reagent (for RT master)	| 1 rxn	|  
+   | --------------------------| -------|  
+   | 10× AffinityScript RT Buffer	| 2 uL	
+   | DTT (0.1M)	| 2 uL	| 
+   | 25mM dNTP Mix (25mM each)	| 0.8 uL
+   | RNase inhibitor, murine (40U/uL)	| 0.4 uL
+   | AffinityScript RT Enzyme	| 0.8 uL
+   | Total	| 6 uL	|
+  
+   - Mix well
+  - Add 6 uL of RT mix to the 14 uL rRNA depleted RNA + AR2 RTprimer on ice
   - Mix well and spin for 5 sec
   - Place in preheated (55 °C) incubator or thermocycler. Incubate at 55 °C for 55 minutes.
 
 **MUST CONTINUE**
 
 
-#### 13) Degrade RNA after reverse transcription
+#### 12) Degrade RNA after reverse transcription
 
   - NOTE: make fresh working stock solutions of NaOH and Acetic Acid
   - Add 10% reaction vol. of 1M NaOH (2 uL) to each reaction
@@ -327,7 +337,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 **MUST CONTINUE**
 
 
-#### 14) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
+#### 13) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
 
   - Add 14 uL of sterile water to each reaction for a final volume of 40 uL
   - Transfer to new tubes (NaOH may start degrading tubes)
