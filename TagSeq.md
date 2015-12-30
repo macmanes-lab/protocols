@@ -443,7 +443,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | -------------------------------| 
    | Water, PCR-clean	| 15.4 uL	| 
    | 10X AccuPrime Buffer	| 2.5 uL	| 
-   | P5_RNATag, 12.5 uM)	| 1 uL	| L
+   | P5_RNATag, 12.5 uM)	| 1 uL	|
    | P7 index primer | 1uL | 
    | AccuPrime HiFi Taq | .1uL 
    | cDNA from step 14 | 5uL
