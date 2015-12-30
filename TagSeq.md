@@ -72,9 +72,13 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 
+**(Protocol Differences)**
+****AL & LK note that we have been drying for 10 minutes (according to Shishkin) but Drummond recommends 2 minutes.
+****AL & LK note that we have been using 70% ETOH (according to Shiskin) but Drummond recommends 80%.
+****AL and LK note that we have been eluting with 12 uL water during Day 1 Step 4 (according to Shishkin) but Drummond elutes with 24 uL.  Drummond is effectively diluting their sample in half (because they proceed with 5 uL, which is the same as Shishkin).
+
 **(Notes)**
 --
-
 - This is not a protocol where you can cut corners. To save time and anguish, plan thoroughly, work cleanly, QC your samples and intermediate steps.
 - Label everything and lay out tubes neurotically to avoid pipette error.
 - Observe RNase-free sample prep, for steps 1-8, also neurotically. Clean your workspace and pipettes with 50% Ethanol and RNAse-Zap, use reserved RNase-free pipettes and RNAse-free (non-autoclaved) tips, ensure all tubes and reagents (including water) are RNase-free.
@@ -112,7 +116,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 ## MAIN PROTOCOL
 
 
-#### 1) Check RNA quality by running on the Agilent Bioanalyzer
+#### 1) Check RNA quality by running on the Agilent Bioanalyzer: 1 hour
 
 - Place 0.5-5 ug of total RNA in a tube. For large numbers of samples, the input per sample could be reduced as to not exceed the maximum input of RiboZero (5ug) at step 5. Since about 25% of the input remains prior to adaptor ligation, less than 20ug total RNA per pool (end of step 4) is recommended. For smaller number of samples, higher input is recommended to ensure sufficient material remains after rRNA depletion.
 - Increase the volume to 30uL with Nuclease free water
@@ -120,18 +124,22 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 - Final total volume = 32uL (25ng/uL)
 - Continue to next step or freeze at -80C until ready to process samples
 
+***AL & LK originally input 400 ng total of each sample (for 8 samples: therefore 3.2 ug total RNA) in 15 uL of Water and added 1 uL SUPERase, for a final volume of 16 uL of each sample.  It appears as if this protocal (following Shishkin) yields not enough RNA.
+***AL & LK CURRENTLY trialing 2.5 ug total of each sample (for 8 samples: therefore 20 ug total RNA) in 15 uL of Water and added 1 uL of SUPERase, for a final volume of 16 uL of each sample. This is more in keeping with amounts of RNA recommended by Drummond.
+
 **PAUSE POINT**
 
-#### 2) Fragment RNA using 2x FastAP buffer
+#### 2) Fragment RNA using 2x FastAP buffer: 5 minutes
 
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
   - Place on cold block on ice.
 
+***AL & LK used half these amounts (according to Shishkin): 4 uL of FastAP buffer to 16 uL of RNA from step 1.
 **MUST CONTINUE**
 
 
-#### 3) Digest DNA and repair RNA: Combination DNase/FastAP treatment
+#### 3) Digest DNA and repair RNA: Combination DNase/FastAP treatment : 15 minute prep + 30 min incubation = 45 minutes total
 
   - Make a DNase/FastAP master mix, 40uL per sample:
 
@@ -148,58 +156,67 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
   - Mix well
   - Incubate on preheated thermal cycler for 30 min at 37°C
 
+****AT THIS TIME, PUT ALL LIGATION REAGENTS AT ROOM TEMPERATURE AND PUT RNA TAPESTATION (Normal Sensitivity) AT ROOM TEMP
+
+***AL & LK used half of these amounts (according to Shishkin): yielding 20 uL of RNA and 20 uL of master mix.
 **MUST CONTINUE**
 
-#### 4) Cleanup (2x SPRI) to remove enzymes and reaction buffer
+#### 4) Cleanup (2x SPRI) to remove enzymes and reaction buffer: 1 hour
+
+***AL & LK added 40 ul of water (as per Shishkin), bringing reaction volume up to 80 uL before begining the cleanup.
 
   - Add 2.0x reaction volume of Agencourt RNAClean XP beads (160 uL) and capture RNA on beads:
   - Incubate at room temperature, on HULA MIXER for 15min to bind RNA
   - Place on magnet for 5min, until solution is clear
   - Pipette out and discard clear solution
   - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off supernatant.
-  - Repeat 80% EtOH wash. Let air dry for 5min
+  - Repeat 80% EtOH wash. Let air dry for 5min  ***Drummond Notes said 2 minutes, Shishkin says 10 min. Inconsistant?????
   - Elute off beads with 24 uL nuclease free water
+
+****AL & LK eluted off beads with 12 uL of nuclease free water.
 
   
 &nbsp;
 &nbsp;
 
-#### 4A) Proceed
+#### 4A) Proceed : 5 minutes
 
-  - Take 5 uL of each sample and proceed to 1st ligation
+  - Take 5 uL of each sample and proceed to 1st ligation IF NOT STOPPING FOR THE DAY
 
 
-#### 4B) QC
+#### 4B) QC: 40 minutes
 
   - QC: Save 1.2 uL from remaining RNA before addition of SUPERase-IN
-  - Run 8 random samplings on Qubit and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
-  - Add 1uL SUPERase-IN (20U/uL) to the remaining material and store at -80°C. This can be used as backup if it is necessary to repeat process
+  - Run 8 random samples on Qubit and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
+  - Add 1uL SUPERase-IN (20U/uL) to the remaining material and store at -80°C. This can be used as backup if it is necessary to repeat process.  OR Add 2 uL to the sample if stopping for the day or multiple days. 
+
+****If only running 8 samples total, do all on Tapestation and Qubit
 
 **PAUSE POINT**
 
-#### 5A) Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA)
+#### 5A) Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA): 10 minutes
 
   - Add 1 uL of barcoded RNATag adaptor (100 pmole = 1 uL of 100 uM) to 5 uL of dephosphorylated RNA
   - Heat at 70°C for 2 min, place in cold block on ice
 
-#### 5B) Set up First Ligation master mix below NOTE:
+#### 5B) Set up First Ligation master mix below NOTE:  30 minutes + 1 hour 30 minute incubation = 2 hours
 
   - All reagents except enzymes (-20°C ) should be stored at -80°C in single use aliquots and brought to room temp just before use
   - Make up mix at room temp so the reagents don’t start precipitating when combined (if DMSO is added directly into cold buffer it will precipitate)
   - Pipette very slowly for accurate aspiration of PEG (very viscous)
 
-   | Reagent (for Ligation master)	| 1 rxn	| 8 rxns
+   | Reagent (for Ligation master)	| 1 rxn	| 10 rxns
    |-------------------------------| -------| ---------
-   | 10× T4 RNA Ligase Buffer	| 2 uL	| 18 uL| 
-   | DMSO (100%)	| 1.8 uL	| 14.9 uL| 
-   | ATP (100 mM)	| 0.2 uL	| 1.7 uL| 
-   | PEG 8000 (50%)	| 8 uL	| 68 uL| 
-   | RNase inhibitor, Murine (40U/uL)	| 0.3 uL	| 2.5 uL| 
-   | Total	| 12.3 uL	| 105 uL| 
+   | 10× T4 RNA Ligase Buffer	| 2 uL	| 20 uL| 
+   | DMSO (100%)	| 1.8 uL	|  18 uL| 
+   | ATP (100 mM)	| 0.2 uL	| 2 uL| 
+   | PEG 8000 (50%)	| 8 uL	| 80 uL| 
+   | RNase inhibitor, Murine (40U/uL)	| 0.3 uL	| 3 uL| 
+   | T4 RNA Ligase 1 (30,000 U/mL)	| 1.8 uL	| 18 uL|
+   | MasterMix Total	| 14.1 uL	| 141 uL| 
 
   - Mix really well by extensive vortexing tube since the solution is very viscous, then spin down briefly in microfuge
-  - Add 12.3 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor.
-  - Add 1.8 uL of T4 RNA Ligase 1 (30,000U/mL) to each tube/well. 20.1 uL reaction volume total.
+  - Add 14.1 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor (from step 5A) for 20.1 uL reaction volume total.
   - Mix well many times; mix by flicking since the solution is very viscous
   - Incubate at 22°C (room temp), on HULA MIXER, for 1 hour 30 minutes.
 
