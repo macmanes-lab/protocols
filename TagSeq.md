@@ -242,7 +242,9 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    - Add 2 volumes (160 uL) of RNA Binding Buffer to each sample. (You have a total of 240 uL).
    - Add an equal volume (240 uL) of 100% Ethanol. (You have a total of 480 uL).
    - Pool your samples into one tube and mix.
+   - 
 ***If you prefer, you may pool all 8 of your samples into one 14 mL tube (160 uL total pooled sample), and add RLT buffer (480 uL), RNA Binding Buffer (1.28 mL), and 100% ETOH (1.28 mL) in proportional volumes to the pooled samples (for a total final volume of 3.2 mL).
+
    - Add 700 uL of your pooled samples to a single zymo column.  Spin at Room Temperature for 30 seconds at 10,000g.
    - Discard the flow-through, keep the column, and add another 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
    - Repeat the previous step until you have spun all of your pooled sample through the zymo column (discarding all the flow through).
