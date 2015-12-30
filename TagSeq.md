@@ -20,35 +20,34 @@ Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
 #### Step 3. Digest DNA and repair RNA
 #### Step 4. Cleanup (Using RNA Clean XP Beads UNTIL PCR enrichment test Day 3)
 SAFE STOPPING POINT!!!  If you are stopping here for the day, then add 2 uL of SUPERase (instead of 1 uL). 
-This is an important QC point. You should have  500-800pg/uL (per Tapestation) and a Tapestation trace like this.  
+#### Step 5. QC point. You should have  500-800pg/uL (per Tapestation) and a Tapestation trace like this.  
 I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!
 ![enter image description here](http://i.imgur.com/TSAyIFO.jpg)
 
 ## Day 2
 
-#### Step 5. Ligate 3’ barcoded Adaptor
-#### Step 6. Pool barcoded RNA with Zymo
-QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.  
+#### Step 6. Ligate 3’ barcoded Adaptor
+#### Step 7. Pool barcoded RNA with Zymo
+#### Step 8. QC point. You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.  
 I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!![Imgur](http://i.imgur.com/XiObeks.jpg)
-#### Step 7. polyA pulldown
-QC Step: Much of the RNA will be lost. Please check quantities to confirm sufficient material to proceed.
-#### Step 8. First Strand cDNA
-#### Step 9. Degrade RNA
-#### Step 10. 1st Strand Cleanup
-#### Step 11. Ligate 3’ Universal Adaptor (overnight ligation at 22 degrees Celcius in PCR machine)
+#### Step 9. PolyA pulldown
+#### Step 10. QC Point. Much of the RNA will be lost. Please check quantities to confirm sufficient material to proceed.
+#### Step 11. First Strand cDNA
+#### Step 12. Degrade RNA
+#### Step 13. 1st Strand Cleanup
+#### Step 14. Ligate 3’ Universal Adaptor (overnight ligation at 22 degrees Celcius in PCR machine)
 THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 ## Day 3
 
-#### Step 12. Cleanup (Last Step Still Using RNA Clean XP Beads)
-#### Step 13. Test PCR (Using Ampure XP Beads beginning here and for the remainder of the protocol)
-#### Step 14. Cleanup
-QC Step: You should have X ng/uL and a Tapestation trace like this.
+#### Step 15. Cleanup (Last Step Still Using RNA Clean XP Beads)
+#### Step 16. Test PCR (Using Ampure XP Beads beginning here and for the remainder of the protocol)
+#### Step 17. Cleanup
+#### Step 18. QC Point. You should have X ng/uL and a Tapestation trace like this.
 #### Step 15. Real PCR
 #### Step 16. Cleanup
 #### Step 17. Final Cleanup
-#### Step 18. DNA Tapestation
-QC Step: You should have X ng/uL and a Tapestation trace like this.
+#### Step 18. DNA Tapestation QC Point. You should have X ng/uL and a Tapestation trace like this.
 
 &nbsp;
 &nbsp;
@@ -185,12 +184,12 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 
-#### 4A) Proceed : 5 minutes
+#### 5A) Proceed : 5 minutes
 
   - Take 5 uL of each sample and proceed to 1st ligation IF NOT STOPPING FOR THE DAY
 
 
-#### 4B) QC: 40 minutes
+#### 5B) QC: 40 minutes
 
   - QC: Save 1.2 uL from remaining RNA before addition of SUPERase-IN
   - Run 8 random samples on Qubit and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
@@ -200,12 +199,12 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 **PAUSE POINT**
 
-#### 5A) Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA): 10 minutes
+#### 6A) Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA): 10 minutes
 
   - Add 1 uL of barcoded RNATag adaptor (100 pmole = 1 uL of 100 uM) to 5 uL of dephosphorylated RNA
   - Heat at 70°C for 2 min, place in cold block on ice
 
-#### 5B) Set up First Ligation master mix below NOTE:  30 minutes + 1 hour 30 minute incubation = 2 hours
+#### 6B) Set up First Ligation master mix below NOTE:  30 minutes + 1 hour 30 minute incubation = 2 hours
 
   - All reagents except enzymes (-20°C ) should be stored at -80°C in single use aliquots and brought to room temp just before use
   - Make up mix at room temp so the reagents don’t start precipitating when combined (if DMSO is added directly into cold buffer it will precipitate)
@@ -222,7 +221,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
    | MasterMix Total	| 14.1 uL	| 141 uL| 
 
   - Mix really well by extensive vortexing tube since the solution is very viscous, then spin down briefly in microfuge
-  - Add 14.1 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor (from step 5A) for 20.1 uL reaction volume total.
+  - Add 14.1 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor (from step 6A) for 20.1 uL reaction volume total.
   - Mix well many times; mix by flicking since the solution is very viscous
   - Incubate at 22°C (room temp), on HULA MIXER, for 1 hour 30 minutes.
 
@@ -233,7 +232,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 
-#### 6) Pool barcoded RNA: RLT buffer + Zymo column: 1 hour
+#### 7) Pool barcoded RNA: RLT buffer + Zymo column: 1 hour
 
   - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. Attempt to normalize the amounts (using your QC in step 4B) based on the amount of non-ribosomal RNA in each pool, or your other needs.
   - 
@@ -244,15 +243,43 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 -Add an equal volume (240 uL) of 100% Ethanol. (You have a total of 480 uL).
 -Pool your samples into one tube and mix.
 ***If you prefer, you may pool all 8 of your samples into one 14 mL tube (160 uL total pooled sample), and add RLT buffer (480 uL), RNA Binding Buffer (1.28 mL), and 100% ETOH (1.28 mL) in proportional volumes to the pooled samples (for a total final volume of 3.2 mL).
--
--
+-Add 700 uL of your pooled samples to a single zymo column.  Spin at Room Temperature for 30 seconds at 10,000g.
+-Discard the flow-through, keep the column, and add another 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
+-Repeat the previous step until you have spun all of your pooled sample through the zymo column (discarding all the flow through).
+-Add 400 uL of RNA Prep Burffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
+-Add 700 uL of RNA Wash Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
+-Add ANOTHER 400 uL of RNA Wash Buffer to the column and centrifuge for 2 minutes at 10,000g, then discard the flow-through.
+-Transfer the zymo column into an RNase-free epindorf tube and add 16 uL of DNase/RNase-free water directly to the column filter and centrifuge for 30 seconds at 10,000g.
+-KEEP flow-through in the epindorf tube and add an additional 16 uL of water to the column filter, and centrifuge for 30 seconds at 10,000g. 
+-KEEP flow through. You have 32 uL of RNA. Use immidiately or store at -80 degrees Celcius.
+
+
+#### 8A) Proceed : 5 minutes
+
+  - Take 30 uL of RNA to proceed to PolyA kit IF NOT STOPPING FOR THE DAY
+
+
+#### 8B) QC: 40 minutes
+
+  - QC: Save 2 uL of RNA for Qubit and Tapestation.
+  - Run sample on Qubit Tapestation RNA High Sensitivity tape to check the fragmentation profile.
 
 **PAUSE POINT**
 
-#### 7) Deplete ribosomal RNA with polyA kit. 
+#### 9) Deplete ribosomal RNA with polyA kit. 
 
   - Will add kit instructions.
   - MAKE SURE TO WASH BEADS BEFORE USE!!!!
+
+#### 10A) Proceed : 5 minutes
+
+  - Take 30 uL of RNA to proceed to PolyA kit IF NOT STOPPING FOR THE DAY
+
+
+#### 10B) QC: 40 minutes
+
+  - QC: Save 2 uL of RNA for Qubit and Tapestation.
+  - Run sample on Qubit Tapestation RNA High Sensitivity tape to check the fragmentation profile.
 
 **MUST CONTINUE**
 
