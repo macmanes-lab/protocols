@@ -43,7 +43,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 #### Step 15. Cleanup (Last Step Still Using RNA Clean XP Beads)
 #### Step 16. Test PCR (Using Ampure XP Beads beginning here and for the remainder of the protocol)
 #### Step 17. Cleanup
-#### Step 18. QC Point. You should have X ng/uL and a Tapestation trace like this.
+#### Step 18. QC Point. Chose between your three cycle settings based upon which pcr product looks optimal.  You should have X ng/uL and a Tapestation trace like this.
 #### Step 15. Real PCR
 #### Step 16. Cleanup
 #### Step 17. Final Cleanup
@@ -273,7 +273,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 #### 10A) Proceed : 5 minutes
 
-  - Take 30 uL of RNA to proceed to PolyA kit IF NOT STOPPING FOR THE DAY
+  - Take 12 uL of RNA for next step.
 
 
 #### 10B) QC: 40 minutes
@@ -283,7 +283,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **MUST CONTINUE**
 
-#### 8) Synthesize First Strand cDNA
+#### 11) Synthesize First Strand cDNA
 
   - Take 12 uL rRNA depleted RNA (use all the material from Ribo-Zero)
   - Add 2 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’
@@ -292,7 +292,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **MUST CONTINUE**
 
-#### 9) Second Strand cDNA synthesis
+#### 12) Second Strand cDNA synthesis
 
   - Add in order on ice (the below volums build in a little extra for pipetting errors)
 
@@ -314,7 +314,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 **MUST CONTINUE**
 
 
-#### 10) Degrade RNA after reverse transcription
+#### 13) Degrade RNA after reverse transcription
 
   - NOTE: make fresh working stock solutions of NaOH and Acetic Acid
   - Add 10% reaction vol. of 1M NaOH (2 uL) to each reaction
@@ -325,7 +325,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 **MUST CONTINUE**
 
 
-#### 11) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
+#### 14) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
 
   - Add 14 uL of sterile water to each reaction for a final volume of 40 uL
   - Transfer to new tubes (NaOH may start degrading tubes)
@@ -340,7 +340,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 **MUST CONTINUE**
 
 
-#### 12) Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
+#### 15) Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
   - NOTE: 3Tr3 adaptor: 5’-/5Phos/AGA TCG GAA GAG CAC ACG TCT G-/3SpC3/ 3’
 
   - Add 2 uL (80 pmoles) of 3Tr3 adaptor to cDNA
@@ -378,7 +378,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 &nbsp;
 &nbsp;
 
-#### 13) Cleanup (2x SPRI) to remove adaptors
+#### 16) Cleanup (2x SPRI) to remove adaptors
 
   - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
@@ -399,7 +399,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **PAUSE POINT**
 
-#### 14) Test PCR Amplification to determine final cycle number
+#### 17) Test PCR Amplification to determine final cycle number
   - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’
 
   - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
