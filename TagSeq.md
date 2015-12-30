@@ -18,32 +18,33 @@ OR 20ug (micro grams) total from across all samples (according to Drummond et al
 Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
 #### Step 2. Fragment RNA
 #### Step 3. Digest DNA and repair RNA
-#### Step 4. Cleanup
-This is an important QC point. You should have  500-800pg/uL (per Tapestation) and a Tapestation trace like this.  ![enter image description here](http://i.imgur.com/TSAyIFO.jpg)
+#### Step 4. Cleanup (Using RNA Clean XP Beads UNTIL PCR enrichment test Day 3)
+This is an important QC point. You should have  500-800pg/uL (per Tapestation) and a Tapestation trace like this.  
+I DO NOT KNOW THAT THESE TARGET QUANTITIES ARE CORRECT!
+![enter image description here](http://i.imgur.com/TSAyIFO.jpg)
 
 ## Day 2
 
 #### Step 5. Ligate 3’ barcoded Adaptor
 #### Step 6. Pool barcoded RNA with Zymo
 QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.  ![Imgur](http://i.imgur.com/XiObeks.jpg)
-
 #### Step 7. polyA pulldown
+QC Step: Much of the RNA will be lost. Please check quantities to confirm sufficient material to proceed.
 #### Step 8. First Strand cDNA
-#### Step 9. Second Strand cDNA
-#### Step 10. Degrade RNA
-#### Step 11. Cleanup
-#### Step 12. Ligate 3’ Universal Adaptor (overnight ligation)
+#### Step 9. Degrade RNA
+#### Step 10. 1st Strand Cleanup
+#### Step 11. Ligate 3’ Universal Adaptor (overnight ligation)
 
 ## Day 3
 
-#### Step 13. Cleanup
-#### Step 14. Test PCR
-#### Step 15. Cleanup
+#### Step 12. Cleanup (Last Step Still Using RNA Clean XP Beads)
+#### Step 13. Test PCR (Using Ampure XP Beads beginning here and for the remainder of the protocol)
+#### Step 14. Cleanup
 QC Step: You should have X ng/uL and a Tapestation trace like this.
-#### Step 16. Real PCR
-#### Step 17. Cleanup
-#### Step 18. Final Cleanup
-#### Step 19. DNA Tapestation
+#### Step 15. Real PCR
+#### Step 16. Cleanup
+#### Step 17. Final Cleanup
+#### Step 18. DNA Tapestation
 QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 &nbsp;
