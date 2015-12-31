@@ -439,7 +439,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 &nbsp;
 &nbsp;
 
-#### 15) Cleanup (2x SPRI) to remove adaptors: 1 hour 45 minutes
+#### 15) Cleanup (2x SPRI) to remove adaptors: 1 hour 45 minutes for 2x and 1.5x
 
 ****LK and AL increased to 2x reaction volume with water (we added 40 ul of water to dilute out viscous ligation reaction)
   - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
@@ -463,7 +463,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **PAUSE POINT**
 
-#### 16) Test PCR Amplification to determine final cycle number
+#### 16) Test PCR Amplification to determine final cycle number: prep 20 minutes + 1 hour incubation = 1 hour 20 minutes
   - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’
 
   - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
@@ -505,7 +505,7 @@ Place each in a thermal cycler with cycling conditions:
 **MUST CONTINUE**
 
 
-#### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
   - increase reaction to 40uL with sterile water
 ****LK & AL did not add any water at this point (Shishkin says to increase to 25uL with water, but we already had 25 uL)
@@ -518,7 +518,7 @@ Place each in a thermal cycler with cycling conditions:
   - Repeat 80% EtOH wash, and let air dry for 3min (HOW MANY MINUTES??)
   - Elute off beads with 10 uL 1x low TE (10 mM Tris, 0.1M EDTA)
 
-#### 18) QC TEST for Cycle Determination
+#### 18) QC TEST for Cycle Determination: 40 minutes
   - QC test PCR amplification on Agilent DNA HS chip
   - **NOTE:** Based on test results change the cycle number, if necessary, and set up more reactions to provide enough material to send for sequencing. Library should have smooth profile 200-500nt long; visible single bands, or a “shoulder” of larger products, indicate PCR artefacts.
 
@@ -526,7 +526,7 @@ Place each in a thermal cycler with cycling conditions:
 **PAUSE POINT**
 
 
-#### 19) PCR for Sequencing library
+#### 19) PCR for Sequencing library: 20 minutes prep + 1 hour incubation
 
   - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 18).
   - Include a negative control (water) for each primer set
@@ -581,7 +581,7 @@ Place each in a thermal cycler with the cycling conditions:
 **MUST CONTINUE**
 
 
-#### 20) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 20) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
   - Pool PCR reaction (50 uL)
 ****LK and AL did not do the above step, as it makes no sense.
@@ -595,7 +595,7 @@ Place each in a thermal cycler with the cycling conditions:
  ****Shishkin says elute with 25 uL of water instead!
 
 
-#### 21) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 21) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
   - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
 ****Shishkin says use a 0.7x (17.5 uL) ampure beads 
@@ -606,7 +606,7 @@ Place each in a thermal cycler with the cycling conditions:
   - Repeat 80% EtOH wash, and let air dry for 3min (how many minutes???)
   - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
 
-#### 22) Check quantity/quality on Tapestation.
+#### 22) Check quantity/quality on Tapestation. 40 minutes
 
 &nbsp;
 &nbsp;
