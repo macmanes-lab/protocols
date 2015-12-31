@@ -443,16 +443,18 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | -------------------------------| 
    | Water, PCR-clean	| 15.4 uL	| 
    | 10X AccuPrime Buffer	| 2.5 uL	| 
-   | P5_RNATag, 12.5 uM)	| 1 uL	|
-   | P7 index primer | 1uL | 
-   | AccuPrime HiFi Taq | .1uL 
-   | cDNA from step 14 | 5uL
-   | Total	| 20 uL	| 74 uL
+   |enrF  (12.5 uM)	| 1 uL
+   |p7enr1 (12.5 uM)	| 1 uL
+   | AccuPrime HiFi Taq | 0.1uL 
+   | Total	| 20 uL	| 
 
   - Mix well
   - Aliquot 20 uL / sample into PCR tubes
   - Add 5 uL of ss cDNA from step 11, or water (for negative control)
-  - Mix well and aliquot 8 ul into each of 3 tubes
+  - Place each of the three PCR tubes at different cycling conditions (negative control was in 12 cycle)
+****LK and AL did the protocl the above way (as per Shishkin).  This was accomplished differently by Drummond in order to waste less sample. We should evalute what is more appropriate by revisiting the Drummond Protocol.  However, once we figure out our cycle number, we will probably use that in the future and not need to test each time we do the protocol.
+
+
 
 &nbsp;
 &nbsp;
@@ -465,30 +467,35 @@ Place each in a thermal cycler with cycling conditions:
   - cycle: 9, 12, 15 cycles (for test PCR) 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
   - end: 70°C, 2min; 4°C, hold
 
+****LK and AL used 65 degrees instead of 70 degrees for the cycling steps. Which is more appropriate?
+
 **MUST CONTINUE**
 
 
-#### 15) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - increase reaction to 40uL with sterile water
+****LK & AL did not add any water at this point (Shishkin says to increase to 25uL with water, but we already had 25 uL)
   - Add 1.5x reaction volume SPRI beads (60 uL) to the sample in new tubes, and mix up/down 10x
+****LK and & AL added only 37.5 uL of beads at this step (per Shishkin)
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min
+  - Repeat 80% EtOH wash, and let air dry for 3min (HOW MANY MINUTES??)
   - Elute off beads with 10 uL 1x low TE (10 mM Tris, 0.1M EDTA)
-  - QC test PCR amplification on Agilent DNA HS chip
 
+#### 18) QC TEST for Cycle Determination
+  - QC test PCR amplification on Agilent DNA HS chip
   - **NOTE:** Based on test results change the cycle number, if necessary, and set up more reactions to provide enough material to send for sequencing. Library should have smooth profile 200-500nt long; visible single bands, or a “shoulder” of larger products, indicate PCR artefacts.
 
 
 **PAUSE POINT**
 
 
-#### 16) PCR for Sequencing library
+#### 19) PCR for Sequencing library
 
-  - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
+  - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 18).
   - Include a negative control (water) for each primer set
   - Make PCR Master Mix (3 rxns=2 libraries, half size +ve ctrl, half size -ve ctrl):
 
@@ -502,14 +509,28 @@ Place each in a thermal cycler with cycling conditions:
    | dNTP mix (10mM each)	| 1.4 uL	| 2.8 uL
    | P5 primer (P5_RNATag, | 12.5 uM)	| 2 uL	| 4 uL
    | Total	| 37 uL	| 74 uL
-
-  - Mix well
+ 
+   - Mix well
   - Aliquot 37 uL / sample into PCR tubes
   - Add 2 uL of appropriate P7 index primer to each well
   - Add 10 uL of ss cDNA from step 11, or water (for negative control)
   - Add 1 uL of Pfu Ultra II Polymerase.
-
   - Mix well and aliquot 10 ul into each of 5 wells of a strip tube (amplification is apparently more robust in smaller volumes).
+  
+****AL & LK used a different mastermix recipe with an alternative buffer containing dNTPs, shown below:
+
+   | Reagent (for PCR master mix)	| 1 rxn	
+   | -------------------------------| -----
+   | Water, PCR-clean	| 30.8 uL	
+   | 10X AccuPrime PCR Buffer 1	| 5 uL	
+   |enrF  (12.5 uM)	| 2 uL
+   |p7enr1 (12.5 uM)	| 2 uL
+   |AccuPrime HiFi Taq (5U/uL)	| 0.2 uL   
+   | Total	| 40 uL	
+
+  - Mix well
+  - Aliquot 40 uL / sample into PCR tubes
+  - Add 10 uL of ss cDNA 
 
 &nbsp;
 &nbsp;
@@ -522,12 +543,15 @@ Place each in a thermal cycler with the cycling conditions:
   - cycle: # determined from test PCR 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
   - end: 70°C, 2min; 4°C, hold
 
+****LK and AL used 65 degrees instead of 70 degrees for the cycling steps. Which is more appropriate?
+
 **MUST CONTINUE**
 
 
-#### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 20) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - Pool PCR reaction (50 uL)
+****LK and AL did not do the above step, as it makes no sense.
   - Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
@@ -535,19 +559,21 @@ Place each in a thermal cycler with the cycling conditions:
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
   - Repeat 80% EtOH wash, and let air dry for 3min
   - Elute off beads with 50 uL water and transfer to new tubes.
-  - Final Cleanup (0.8x SPRI) to remove remaining PCR primers:
+ ****Shishkin says elute with 25 uL of water instead!
 
-#### 18) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+
+#### 21) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
+****Shishkin says use a 0.7x (17.5 uL) ampure beads 
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min
+  - Repeat 80% EtOH wash, and let air dry for 3min (how many minutes???)
   - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
 
-#### 19) Check quantity/quality on Tapestation.
+#### 22) Check quantity/quality on Tapestation.
 
 &nbsp;
 &nbsp;
