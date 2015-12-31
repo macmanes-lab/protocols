@@ -271,8 +271,41 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 #### 9) Deplete ribosomal RNA with polyA kit. 
 
-  - Will add kit instructions.
   - MAKE SURE TO WASH BEADS BEFORE USE!!!!
+  - WASH BEADS
+     - Aliquot 20 μl of NEBNext Magnetic Oligo d(T)25 Beads into nuclease-free 0.2 ml PCR tube. 
+     - Wash the beads two times with 100 μl of RNA Binding Buffer and remove the supernatant. 
+     - Resuspend the beads in 50 μl of RNA Binding Buffer 
+  - First mRNA Purification
+     - To the washed beads, add the 50 μl of total RNA sample from step 1
+     - Place the tubes on the thermal cycler and heat the sample at 65°C for 5 minutes and hold at 4°C to denature the RNA and facilitate binding of the poly-A-RNA to the beads
+     - Remove tubes from the thermal cycler when the temperature reaches 4°C. 
+     - Place the tubes on the HULA MIXER and incubate at room temperature for 10 minutes to allow the RNA to bind to the beads.
+     - Place the tubes on the magnetic rack at room temperature for 2 minutes to separate the poly-A RNA bound to the beads from the solution
+     - Remove and discard all of the supernatant. Take care not to disturb the beads
+     - Remove the plate from the magnetic rack
+     - Wash the beads twice with 200 μl of Wash Buffer to remove unbound RNA. Pipette the entire volume up and down 6 times to mix thoroughly.
+     - Place the tubes on the magnetic rack at room temperature for 2 minutes.
+     - Remove and discard all the supernatant from each well of the plate using a multichannel pipette. Take care not to disturb the beads.
+     - Remove the tubes from the magnetic rack.
+     - Add 50 μl of Tris buffer to each well of the plate. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+     - Place the tubes on the thermal cycler. Close the lid and heat the sample at 80°C for 2 minutes, then hold at 25°C to elute the poly-A RNA from the beads
+     - Remove the tubes from the thermal cycler when the temperature reaches 25°C
+
+  - Second mRNA Purification 
+     - Add 50 μl of RNA binding buffer to each sample to allow the RNA to bind to the beads. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+     - Place the tubes on the HULA MIXER and incubate at room temperature for 10 minutes to allow the RNA to bind to the beads.
+     - Place the tubes on the magnetic stand at room temperature for 2 minutes. 
+     - Remove and discard all of the supernatant from each tube. Take care not to disturb the beads
+     - Remove the tubes from the magnetic stand.
+     - Wash the beads twice with 200 μl of Wash Buffer. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+     - Remove and discard all of the supernatant from each tube. Take care not to disturb the beads. 
+     - Remove the tubes from the magnetic stand.
+     - Elute the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. Immediately, place the tubes on the magnetic rack
+     - Collect the purified mRNA by transferring the supernatant to a clean nuclease-free PCR Tube
+  - QC: Take 1uL for tapestation. 
+
+**MUST CONTINUE**
 
 #### 10A) Proceed : 5 minutes
 
