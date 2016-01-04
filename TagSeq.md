@@ -346,7 +346,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
    | 10× AffinityScript RT Buffer	| 2 uL	
-   | DTT (0.1M)	| 2 uL	| 
+   | DTT (0.1M)	| 2 uL	 
    | 25mM dNTP Mix (25mM each)	| 0.8 uL
    | RNase inhibitor, murine (40U/uL)	| 0.4 uL
    | AffinityScript RT Enzyme	| 0.8 uL
