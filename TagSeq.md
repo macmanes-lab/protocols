@@ -477,16 +477,16 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
   - Include a negative control (water) for each primer set
   - Make PCR Master Mix (4 rxns=2 libraries, +ve ctrl, -ve ctrl):
 
-  - Add in order:
-
-   | Reagent (for PCR master mix)	| 1 rxn	| 
-   | -------------------------------| 
-   | Water, PCR-clean	| 15.4 uL	| 
-   | 10X AccuPrime Buffer	| 2.5 uL	| 
-   |enrF  (12.5 uM)	| 1 uL
-   |p7enr1 (12.5 uM)	| 1 uL
-   | AccuPrime HiFi Taq | 0.1uL 
-   | Total	| 20 uL	| 
+  - Add in order 
+  
+   | Reagent (for PCR Master Mix)	| 1 rxn	
+   | -----------------------------------| ------
+   | Water, PCR-Clean	| 15.4 uL
+   | 10X AccuPrime Buffer	| 2.5 uL
+   | enrF (12.5uM)	| 1 uL
+   | p7enr1 (12.5uM)	| 1 uL
+   | AccuPrime HiFi Taq	| 0.1 uL
+   | Total	| 20 uL
 
   - Mix well
   - Aliquot 20 uL / sample into PCR tubes
