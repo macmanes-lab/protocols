@@ -330,7 +330,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 #### 11B) Reverse Transcription: 1 hour 10 minutes
 
-  - Add in order on ice (the below volums build in a little extra for pipetting errors)
+  - Add in order on ice (the below volumes build in a little extra for pipetting errors)
 
    | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
@@ -342,8 +342,6 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | Total	| 6.7 uL	|
 
 **** AL & LK did a different MM (based Shiskin)
-
- - Add in order on ice (the below volums build in a little extra for pipetting errors)
 
    | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
