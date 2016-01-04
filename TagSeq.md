@@ -549,7 +549,7 @@ Place each in a thermal cycler with cycling conditions:
    | P5 primer (P5_RNATag, | 12.5 uM)	| 2 uL	| 4 uL
    | Total	| 37 uL	| 74 uL
  
-   - Mix well
+  - Mix well
   - Aliquot 37 uL / sample into PCR tubes
   - Add 2 uL of appropriate P7 index primer to each well
   - Add 10 uL of ss cDNA from step 11, or water (for negative control)
