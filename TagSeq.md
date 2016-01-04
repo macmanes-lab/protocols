@@ -343,6 +343,8 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **** AL & LK did a different MM (based Shiskin)
 
+ - Add in order on ice (the below volums build in a little extra for pipetting errors)
+
    | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
    | 10× AffinityScript RT Buffer	| 2 uL	
@@ -352,7 +354,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | AffinityScript RT Enzyme	| 0.8 uL
    | Total	| 6 uL	|
   
-   - Mix well
+  - Mix well
   - Add 6 uL of RT mix to the 14 uL rRNA depleted RNA + AR2 RTprimer on ice
   - Mix well and spin for 5 sec
   - Place in preheated (55 °C) incubator or thermocycler. Incubate at 55 °C for 55 minutes.
