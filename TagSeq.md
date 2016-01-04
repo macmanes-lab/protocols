@@ -343,6 +343,8 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 **** AL & LK did a different MM (based Shiskin)
 
+  - Add in order on ice 
+  
    | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
    | 10× AffinityScript RT Buffer	| 2 uL	
