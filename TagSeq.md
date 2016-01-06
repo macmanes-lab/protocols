@@ -135,15 +135,18 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 #### 2) Fragment RNA using 2x FastAP buffer: 5 minutes
 
+***AL & LK used half these amounts (according to Shishkin): 4 uL of FastAP buffer to 16 uL of RNA from step 1.
+
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
   - Place on cold block on ice.
 
-***AL & LK used half these amounts (according to Shishkin): 4 uL of FastAP buffer to 16 uL of RNA from step 1.
 **MUST CONTINUE**
 
 
 #### 3) Digest DNA and repair RNA: Combination DNase/FastAP treatment : 15 minute prep + 30 min incubation = 45 minutes total
+
+***AL & LK used half of these amounts (according to Shishkin): yielding 20 uL of RNA and 20 uL of master mix.
 
   - Make a DNase/FastAP master mix, 40uL per sample:
 
@@ -162,8 +165,6 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 ****AT THIS TIME, PUT ALL LIGATION REAGENTS AT ROOM TEMPERATURE AND PUT RNA TAPESTATION (Normal Sensitivity) AT ROOM TEMP
 
-***AL & LK used half of these amounts (according to Shishkin): yielding 20 uL of RNA and 20 uL of master mix.
-
 **MUST CONTINUE**
 
 #### 4) Cleanup (2x SPRI) to remove enzymes and reaction buffer: 1 hour
@@ -175,10 +176,8 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
   - Place on magnet for 5min, until solution is clear
   - Pipette out and discard clear solution
   - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off supernatant.
-  - Repeat 80% EtOH wash. Let air dry for 5min  ***Drummond Notes said 2 minutes, Shishkin says 10 min. Inconsistant?????
-  - Elute off beads with 24 uL nuclease free water
-
-****AL & LK eluted off beads with 12 uL of nuclease free water.
+  - Repeat 80% EtOH wash. Let air dry for 3min  
+  - Elute off beads with 24 uL nuclease free water ****AL & LK eluted off beads with 12 uL of nuclease free water.
 
   
 &nbsp;
@@ -385,7 +384,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3 min (OR IS IT 2 minutes or 10 minutes?), remove from magnet.
+  - Repeat 80% EtOH wash, spin down, and let air dry for 3 min, remove from magnet.
   - Add 5 uL RNase/DNase free water to beads – KEEP BEADS AND TUBES, do not transfer, do not pause
 
 **MUST CONTINUE**
@@ -426,10 +425,10 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
   - Mix really well by extensive vortexing tube since the solution is very viscous
   - Spin down briefly in microfuge
-  - Swirl the 7uL cDNA/beads/water with pipet tip, THEN add 13 uL ligation 2 master mix.
+  - Swirl the 7uL cDNA/beads/water with pipet tip, THEN add 13 uL ligation of master mix to sample.
   - Mix well by pipetting up and down 20x or cap tubes and flick several times; solution is viscous
   - Quick spin (low speed centrifuge, to get everything to bottom of tube)
-  - Incubate overnight at 22 °C  
+  - Incubate overnight at 22 °C in thermocycler
 
 ****NOT a long term stopping point, just an overnight incubation
 
@@ -446,8 +445,8 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
 #### 15) Cleanup (2x SPRI) to remove adaptors: 1 hour 45 minutes for 2x and 1.5x
 
-****LK and AL increased to 2x reaction volume with water (we added 40 ul of water to dilute out viscous ligation reaction)
-  - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
+****LK and AL increased to 2x reaction volume with water (we added 20 ul of water to dilute out viscous ligation reaction)
+  - Add 2x reaction volume Agencourt RNAClean XP beads (80uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
@@ -457,13 +456,13 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 ****AL and LK used 25 uL of water (as per Shishkin)
 
   - **2nd Cleanup (1.5x SPRI) to remove the remaining adaptors**
-  - Add 1.5x reaction volume SPRI beads (45 uL) to the sample in new tubes, and mix up/down 10x
+  - Add 1.5x reaction volume Agencourt RNAClean XP beads (45 uL) to the sample in new tubes, and mix up/down 10x
 ****AL and LK used 37.5 uL of beads (25 uL x 1.5 = 37.5 uL)
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min (***how many minutes actually??)
+  - Repeat 80% EtOH wash, spin down, and let air dry for 3min
   - Elute DNA by adding 25 uL RNase/DNase free water, transfer to new tube.
 
 **PAUSE POINT**
@@ -480,7 +479,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
    | Reagent (for PCR Master Mix)	| 1 rxn	
    | -----------------------------------| ------
    | Water, PCR-Clean	| 15.4 uL
-   | 10X AccuPrime Buffer	| 2.5 uL
+   | 10X AccuPrime Buffer I	| 2.5 uL
    | enrF (12.5uM)	| 1 uL
    | p7enr1 (12.5uM)	| 1 uL
    | AccuPrime HiFi Taq	| 0.1 uL
@@ -488,7 +487,7 @@ THIS IS NOT A SAFE STOPPING POINT FOR LONGER THAN AN OVERNIGHT INCUBATION.
 
   - Mix well
   - Aliquot 20 uL / sample into PCR tubes
-  - Add 5 uL of ss cDNA from step 11, or water (for negative control)
+  - Add 5 uL of ss cDNA from step 15, or water (for negative control)
   - Place each of the three PCR tubes at different cycling conditions (negative control was in 12 cycle)
 ****LK and AL did the protocl the above way (as per Shishkin).  This was accomplished differently by Drummond in order to waste less sample. We should evalute what is more appropriate by revisiting the Drummond Protocol.  However, once we figure out our cycle number, we will probably use that in the future and not need to test each time we do the protocol.
 
@@ -509,19 +508,20 @@ Place each in a thermal cycler with cycling conditions:
 
 **MUST CONTINUE**
 
+***Please note that the XP bead type is now changing from Agencourt RNAClean XP beads to AMPure XP beads for the remainder of the protocol*** 
 
 #### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
   - increase reaction to 40uL with sterile water
 ****LK & AL did not add any water at this point (Shishkin says to increase to 25uL with water, but we already had 25 uL)
-  - Add 1.5x reaction volume SPRI beads (60 uL) to the sample in new tubes, and mix up/down 10x
+  - Add 1.5x reaction volume AMPure XP beads (60 uL) to the sample in new tubes, and mix up/down 10x
 ****LK and & AL added only 37.5 uL of beads at this step (per Shishkin)
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min (HOW MANY MINUTES??)
-  - Elute off beads with 10 uL 1x low TE (10 mM Tris, 0.1M EDTA)
+  - Repeat 80% EtOH wash, spin down, and let air dry for 3min 
+  - Elute off beads with 10 uL 1x low TE (10 mM Tris, 0.1mM EDTA)
 
 #### 18) QC TEST for Cycle Determination: 40 minutes
   - QC test PCR amplification on Agilent DNA HS chip
@@ -536,26 +536,7 @@ Place each in a thermal cycler with cycling conditions:
   - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 18).
   - Include a negative control (water) for each primer set
   - Make PCR Master Mix (3 rxns=2 libraries, half size +ve ctrl, half size -ve ctrl):
-
-  - Add in order:
-
-   | Reagent (for PCR master mix)	| 1 rxn	| 3 rxns
-   | -------------------------------| ------| ------
-   | Water, PCR-clean	| 28.6 uL	| 57.2 uL
-   | 10X Pfu Ultra II Buffer	| 5 uL	| 10 uL
-   | dNTP mix (10mM each)	| 1.4 uL	| 2.8 uL
-   | P5 primer (P5_RNATag, | 12.5 uM)	| 2 uL	| 4 uL
-   | Total	| 37 uL	| 74 uL
- 
-  - Mix well
-  - Aliquot 37 uL / sample into PCR tubes
-  - Add 2 uL of appropriate P7 index primer to each well
-  - Add 10 uL of ss cDNA from step 11, or water (for negative control)
-  - Add 1 uL of Pfu Ultra II Polymerase.
-  - Mix well and aliquot 10 ul into each of 5 wells of a strip tube (amplification is apparently more robust in smaller volumes).
   
-****AL & LK used a different mastermix recipe with an alternative buffer containing dNTPs, shown below:
-
   - Add in order:
   
    | Reagent (for PCR master mix)	| 1 rxn	
@@ -603,14 +584,14 @@ Place each in a thermal cycler with the cycling conditions:
 
 #### 21) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
-  - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
-****Shishkin says use a 0.7x (17.5 uL) ampure beads 
+  - Add 0.8x reaction volume AMPure XP Beads (40 uL) to the sample in new tubes, and mix up/down 10x
+****Shishkin says use a 0.7x (17.5 uL) AMPure beads 
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
-  - Repeat 80% EtOH wash, and let air dry for 3min (how many minutes???)
-  - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
+  - Repeat 80% EtOH wash, spin down, and let air dry for 3min 
+  - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1mM EDTA)
 
 #### 22) Check quantity/quality on Tapestation. 40 minutes
 
