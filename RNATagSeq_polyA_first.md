@@ -1,9 +1,9 @@
 # RNATagSeq_polyA_first
 
 
-@(General Genomics)[TagSeq, Protocol, Slack]
+@(RNATagSeq)[TagSeq, Protocol, Slack]
 
-05 November 2015
+07 January 2015
 This protocol is for RNA sequencing (RNASeq) library preparation using the RNATagSeq method of Shishkin, et al. (2015). Simultaneous generation of many RNA-seq libraries in a single reaction. Nature Methods, 12(4), 323–325. http://doi.org/10.1038/nmeth.3313 (Broad institute).
 
 This document is adapted from the Drummond lab: http://drummondlab.org/protocols/protocol/rnatagseq-library-prep/
@@ -17,18 +17,27 @@ The signifocant modification here is using polyA purification instead of RiboZer
 
 #### Step 1. Check RNA quality
 You should start the protocol with approximately 5ug total RNA per sample. Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
 #### Step 2. polyA pulldown 
-Should have between ~500ng of RNA left, though only between 50-250 is mRNA. 
+Should have between ~25-50ng of RNA left (0.5% - 1% of input). ![polyA](http://i.imgur.com/qZ8MEq3.jpg)
 #### Step 3. Fragment RNA
 #### Step 4. Digest DNA and repair RNA
 #### Step 5. Cleanup
 This is an important QC point. You should have  500-800pg/uL (per Tapestation - though this number is likely to be **less** given polyA is now step 2) and a Tapestation trace like this  ![enter image description here](http://i.imgur.com/TSAyIFO.jpg)
 
+&nbsp;
+&nbsp;
 ## Day 2
 
 #### Step 6. Ligate 3’ barcoded Adaptor
 #### Step 7. Pool barcoded RNA with Zymo
-QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.  ![Imgur](http://i.imgur.com/XiObeks.jpg)
+QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.
 #### Step 8. First Strand cDNA
 #### Step 9. Second Strand cDNA
 #### Step 10. Degrade RNA
@@ -48,7 +57,17 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 
@@ -346,10 +365,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 &nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+
 
 #### 13) Cleanup (2x SPRI) to remove adaptors
 
