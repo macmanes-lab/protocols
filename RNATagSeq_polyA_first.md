@@ -3,12 +3,17 @@
 
 @(RNATagSeq)[TagSeq, Protocol, Slack]
 
-07 January 2015
+**VERSION Monday, January 11, 2016**
+
+***This protocol reflects the notes in the protocol LK and AL were trouble-shooting.***
+
 This protocol is for RNA sequencing (RNASeq) library preparation using the RNATagSeq method of Shishkin, et al. (2015). Simultaneous generation of many RNA-seq libraries in a single reaction. Nature Methods, 12(4), 323–325. http://doi.org/10.1038/nmeth.3313 (Broad institute).
 
 This document is adapted from the Drummond lab: http://drummondlab.org/protocols/protocol/rnatagseq-library-prep/
 
 The signifocant modification here is using polyA purification instead of RiboZero. This means that the order of the protocol needs to be changed, mainly by bringing the polyA module to step 2. This also means that we start with 5ug total RNA, which is the max going into the polyA kit. 
+
+Furthermore, the movement of the PolyA module to the front of the protocol changes the amounts of reagents and samples from the original Shishkin protocol.
 
 **(Protocol Overview)**
 --
@@ -25,11 +30,14 @@ You should start the protocol with approximately 5ug total RNA per sample. Make 
 
 
 #### Step 2. polyA pulldown 
-Should have between ~25-50ng of RNA left (0.5% - 1% of input). ![polyA](http://i.imgur.com/qZ8MEq3.jpg)
+Should have between ~25-50ng of RNA left (0.5% - 1% of input). A 1% return is the maximum yield retrieved by the kit (according to the manufacturer's technicians).
+ ![polyA](http://i.imgur.com/qZ8MEq3.jpg)
 #### Step 3. Fragment RNA
 #### Step 4. Digest DNA and repair RNA
 #### Step 5. Cleanup
-This is an important QC point. You should have  500-800pg/uL (per Tapestation - though this number is likely to be **less** given polyA is now step 2) and a Tapestation trace like this  ![enter image description here](http://i.imgur.com/TSAyIFO.jpg)
+This is an important QC point. You should have  x pg/uL (per Tapestation) and a Tapestation trace like this:
+
+WE NEED TO PUT A NEW TRACE HERE
 
 &nbsp;
 &nbsp;
@@ -37,9 +45,13 @@ This is an important QC point. You should have  500-800pg/uL (per Tapestation - 
 
 #### Step 6. Ligate 3’ barcoded Adaptor
 #### Step 7. Pool barcoded RNA with Zymo
-QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.
-#### Step 8. First Strand cDNA
-#### Step 9. Second Strand cDNA
+QC Step: You should have x ng/uL (per Qubit) and a Tapestation trace like this.
+
+
+WE NEED TO PUT A NEW TRACE HERE
+
+#### Step 8. First Strand cDNA 
+#### Step 9. Second Strand cDNA (reverse transcription step)
 #### Step 10. Degrade RNA
 #### Step 11. Cleanup
 #### Step 12. Ligate 3’ Universal Adaptor (overnight ligation)
@@ -50,12 +62,16 @@ QC Step: You should have 20 ng/uL (per Qubit) and a Tapestation trace like this.
 #### Step 14. Test PCR
 #### Step 15. Cleanup
 QC Step: You should have X ng/uL and a Tapestation trace like this.
+
+WE NEED TO PUT A NEW TRACE HERE
+
 #### Step 16. Real PCR
 #### Step 17. Cleanup
 #### Step 18. Final Cleanup
 #### Step 19. DNA Tapestation
 QC Step: You should have X ng/uL and a Tapestation trace like this.
 
+WE NEED TO PUT A NEW TRACE HERE
 
 &nbsp;
 &nbsp;
@@ -69,7 +85,15 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 &nbsp;
 &nbsp;
 
+Protocol Differences
 
+****AL & LK note that we have been drying for 10 minutes (according to Shishkin) but Drummond recommends 2 minutes.  We ARE NOW DRYING FOR 3 minutes!
+
+****AL & LK note that we have been using 70% ETOH (according to Shiskin) but Drummond recommends 80%.
+
+****AL and LK note that we have been eluting with 12 uL water during Day 1 Step 4 (according to Shishkin) but Drummond elutes with 24 uL. Drummond is effectively diluting their sample in half (because they proceed with 5 uL, which is the same as Shishkin).
+
+(Notes)
 
 **(Notes)**
 --
@@ -115,61 +139,66 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 - Place 5ug of total RNA in a tube.
 - Increase the volume to 50uL with Nuclease free water
-- Add 2.5uL of SUPERase-IN (20U/uL)
+- Add 2 uL of SUPERase-IN (20U/uL)
 - Final total volume = 52uL (100ng/uL)
 - Continue to next step or freeze at -80C until ready to process samples
+
+
+NOTE PREVIOUS PROTOCOL DIFFERENCES:
+
+***AL & LK originally input 400 ng total of each sample (for 8 samples: therefore 3.2 ug total RNA) in 15 uL of Water and added 1 uL SUPERase, for a final volume of 16 uL of each sample. It appears as if this protocal (following Shishkin) yields not enough RNA.
+
+***AL & LK previously trialed 2.5 ug total of each sample (for 8 samples: therefore 20 ug total RNA) in 15 uL of Water and added 1 uL of SUPERase, for a final volume of 16 uL of each sample. This is more in keeping with amounts of RNA recommended by Drummond.
 
 **PAUSE POINT**
 
 
 #### 2) Deplete ribosomal RNA with polyA kit. 
 
-  - WASH BEADS
-     - Aliquot 20 μl of NEBNext Magnetic Oligo d(T)25 Beads into nuclease-free 0.2 ml PCR tube. 
-     - Wash the beads two times with 100 μl of RNA Binding Buffer and remove the supernatant. 
-     - Resuspend the beads in 50 μl of RNA Binding Buffer 
-  - First mRNA Purification
-     - To the washed beads, add the 50 μl of total RNA sample from step 1
-     - Place the tubes on the thermal cycler and heat the sample at 65°C for 5 minutes and hold at 4°C to denature the RNA and facilitate binding of the poly-A-RNA to the beads
-     - Remove tubes from the thermal cycler when the temperature reaches 4°C. 
-     - Place the tubes on the HULA MIXER and incubate at room temperature for 10 minutes to allow the RNA to bind to the beads.
-     - Place the tubes on the magnetic rack at room temperature for 2 minutes to separate the poly-A RNA bound to the beads from the solution
-     - Remove and discard all of the supernatant. Take care not to disturb the beads
-     - Remove the plate from the magnetic rack
-     - Wash the beads twice with 200 μl of Wash Buffer to remove unbound RNA. Pipette the entire volume up and down 6 times to mix thoroughly.
-     - Place the tubes on the magnetic rack at room temperature for 2 minutes.
-     - Remove and discard all the supernatant from each well of the plate using a multichannel pipette. Take care not to disturb the beads.
-     - Remove the tubes from the magnetic rack.
-     - Add 50 μl of Tris buffer to each well of the plate. Gently pipette the entire volume up and down 6 times to mix thoroughly.
-     - Place the tubes on the thermal cycler. Close the lid and heat the sample at 80°C for 2 minutes, then hold at 25°C to elute the poly-A RNA from the beads
-     - Remove the tubes from the thermal cycler when the temperature reaches 25°C
+-MAKE SURE TO WASH BEADS BEFORE USE!!!!
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+**WASH BEADS**
 
+- Aliquot 20 μl of NEBNext Magnetic Oligo d(T)25 Beads into nuclease-free 0.2 ml PCR tube.
+- Place beads/buffer on magnet for 2 minutes and discard storage buffer (supernatant).
+- Wash the beads two times with 100 μl of RNA Binding Buffer and remove the supernatant.
+- Resuspend the beads in 50 μl of RNA Binding Buffer
 
-  - Second mRNA Purification 
-     - Add 50 μl of RNA binding buffer to each sample to allow the RNA to bind to the beads. Gently pipette the entire volume up and down 6 times to mix thoroughly.
-     - Place the tubes on the HULA MIXER and incubate at room temperature for 10 minutes to allow the RNA to bind to the beads.
-     - Place the tubes on the magnetic stand at room temperature for 2 minutes. 
-     - Remove and discard all of the supernatant from each tube. Take care not to disturb the beads
-     - Remove the tubes from the magnetic stand.
-     - Wash the beads twice with 200 μl of Wash Buffer. Gently pipette the entire volume up and down 6 times to mix thoroughly.
-     - Remove and discard all of the supernatant from each tube. Take care not to disturb the beads. 
-     - Remove the tubes from the magnetic stand.
-     - Elute the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. Immediately, place the tubes on the magnetic rack
-     - Collect the purified mRNA by transferring the supernatant to a clean nuclease-free PCR Tube
-  - QC: Take 1uL for tapestation. 
+**First mRNA Purification**
+
+- To the washed beads, add the 50 μl of total RNA sample diulted in H2O from step 8A (100ul total in tube).
+- Place the tubes on the thermal cycler and heat the sample at 65°C for 5 minutes and hold at 4°C to denature the RNA and facilitate binding of the poly-A-RNA to the beads
+- Remove tubes from the thermal cycler when the temperature reaches 4°C.
+- Vortex and place the tubes on HULA MIXER and incubate at room temperature for 10 minutes to allow the RNA to bind to the beads.
+- Place tubes on the magnetic rack at room temperature for 2 minutes to separate the poly-A RNA bound to the beads from the solution
+- Remove and discard all of the supernatant. Take care not to disturb the beads
+- Remove the plate from the magnetic rack
+- Wash the beads twice with 200 μl of Wash Buffer to remove unbound RNA. Pipette the entire volume up and down 6 times to mix thoroughly.
+- Place the tubes on the magnetic rack at room temperature for 2 minutes.
+- Remove and discard all the supernatant from each well of the plate using a multichannel pipette. Take care not to disturb the beads.
+- Remove the tubes from the magnetic rack.
+- Spin down sample so beads/RNA collect at the bottom of the tube.
+- Add 50 μl of Tris buffer to each well of the plate. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+- Place the tubes on the thermal cycler. Close the lid and heat the sample at 80°C for 2 minutes, then hold at 25°C to elute the poly-A RNA from the beads
+- Remove the tubes from the thermal cycler when the temperature reaches 25°C
+
+**Second mRNA Purification**
+
+- Add 50 μl of RNA binding buffer to each sample to allow the RNA to bind to the beads. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+- Vortex and place the tubes on HULA MIXER and incubate at room temperature for 10 minutes to allow the RNA to bind to the beads.
+- Place the tubes on the magnetic stand at room temperature for 2 minutes.
+- Remove and discard all of the supernatant from each tube. Take care not to disturb the beads.
+- Remove the tubes from the magnetic stand.
+- Wash the beads twice with 200 μl of Wash Buffer. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+- Place tube on magnetic rack for 2 minutes.
+- Remove and discard all of the supernatant from each tube. Take care not to disturb the beads.
+- Remove the tubes from the magnetic stand.
+- Spin down so beads/RNA collect at the bottom of the tube.
+- Remove the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. 
+- NOTE this is a different elution amount than listed in the product manufacturers' protocol!!
+- Immediately, place the tubes on the magnetic rack
+- Collect the purified mRNA by transferring the supernatant to a clean nuclease-free PCR Tube
+- QC: Take 1uL for tapestation. 
 
 **MUST CONTINUE**
 
@@ -178,11 +207,16 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
   - Place on cold block on ice.
+  
+PLEASE NOTE: AL & LK used half these amounts (according to Shishkin): 4 uL of FastAP buffer to 16 uL of RNA from step 1.
 
 **MUST CONTINUE**
 
 
 #### 4) Digest DNA and repair RNA: Combination DNase/FastAP treatment
+
+PLEASE NOTE AL & LK used half of these amounts (according to Shishkin): yielding 20 uL of RNA and 20 uL of master mix.
+
 
   - Make a DNase/FastAP master mix, 40uL per sample:
 
@@ -198,6 +232,8 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
   - Aliquot 40 uL into each tube/well with the 40uL of fragmented RNA from step 1.
   - Mix well
   - Incubate on preheated thermal cycler for 30 min at 37°C
+ 
+****AT THIS TIME, PUT ALL LIGATION REAGENTS AT ROOM TEMPERATURE 
 
 **MUST CONTINUE**
 
@@ -209,15 +245,21 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 #### 5) Cleanup (2x SPRI) to remove enzymes and reaction buffer
 
+
+PLEASE NOTE AL & LK added 40 ul of water (as per Shishkin), bringing reaction volume up to 80 uL before begining the cleanup.
+
   - Add 2.0x reaction volume of Agencourt RNAClean XP beads (160 uL) and capture RNA on beads:
   - Incubate at room temperature, on HULA MIXER for 15min to bind RNA
   - Place on magnet for 5min, until solution is clear
   - Pipette out and discard clear solution
   - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off supernatant.
   - Repeat 80% EtOH wash. Let air dry for 5min
-  - Elute off beads with 24 uL nuclease free water
+  - Elute off beads with 7 uL nuclease free water if you are not trying to have any in reserve, which is what we are doing now
 
-  
+PLEASE NOTE that Drummond says elute off beads with 24 uL of nuclease free water
+
+PLEASE NOTE AL & LK originally eluted off beads with 12 uL of nuclease free water.
+     
 
 
 #### 5A) Proceed
@@ -229,6 +271,7 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 
   - QC: Save 1.2 uL from remaining RNA before addition of SUPERase-IN
   - Run 8 random samplings on Qubit and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
+  - **If only running 8 samples total, do all on Tapestation and Qubit
   - Add 1uL SUPERase-IN (20U/uL) to the remaining material and store at -80°C. This can be used as backup if it is necessary to repeat process
 
 **PAUSE POINT**
@@ -244,34 +287,58 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
   - Make up mix at room temp so the reagents don’t start precipitating when combined (if DMSO is added directly into cold buffer it will precipitate)
   - Pipette very slowly for accurate aspiration of PEG (very viscous)
 
-   | Reagent (for Ligation master)	| 1 rxn	| 8 rxns
+   | Reagent (for Ligation master)	| 1 rxn	| 10 rxns
    |-------------------------------| -------| ---------
-   | 10× T4 RNA Ligase Buffer	| 2 uL	| 18 uL| 
-   | DMSO (100%)	| 1.8 uL	| 14.9 uL| 
-   | ATP (100 mM)	| 0.2 uL	| 1.7 uL| 
-   | PEG 8000 (50%)	| 8 uL	| 68 uL| 
-   | RNase inhibitor, Murine (40U/uL)	| 0.3 uL	| 2.5 uL| 
-   | Total	| 12.3 uL	| 105 uL| 
+   | 10× T4 RNA Ligase Buffer	| 2 uL	| 20 uL| 
+   | DMSO (100%)	| 1.8 uL	| 18 uL| 
+   | ATP (100 mM)	| 0.2 uL	| 2 uL| 
+   | PEG 8000 (50%)	| 8 uL	| 80 uL| 
+   | RNase inhibitor, Murine (40U/uL)	| 0.3 uL	| 3 uL 
+   | T4 RNA Ligase 1 (30,000 U/mL)	| 1.8 uL	| 18 uL
+   | Total	| 14.1 uL	| 141 uL| 
+
+***NOTE LK and AL add the T4 RNA Ligase 1 buffer to the MM (not as a separate step, so this protocol has been modified so that it is added as part of the MM, not added afterwards. HOWEVER, the enzyme cannot be added to the MM until right before it is added to the RNA.  So make up the MM without the enzyme with all the other reagents at room temperature, and then wait till the last possible minute to add the enzyme to the master mix, right before you use the MM.
 
   - Mix really well by extensive vortexing tube since the solution is very viscous, then spin down briefly in microfuge
-  - Add 12.3 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor.
-  - Add 1.8 uL of T4 RNA Ligase 1 (30,000U/mL) to each tube/well. 20.1 uL reaction volume total.
+  - Add 14.1 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor (for a 20.1 uL total reaction volumne).
   - Mix well many times; mix by flicking since the solution is very viscous
   - Incubate at 22°C (room temp), on HULA MIXER, for 1 hour 30 minutes.
+
+
 
 **MUST CONTINUE**
 
 
 #### 7) Pool barcoded RNA: RLT buffer + Zymo column
 
-  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. **Attempt to normalize** the amounts (using your Qubit-QC in step 5B) based on the amount of non-ribosomal RNA in each pool, or your other needs.
+  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. 
+  - **Attempt to normalize** the amounts (using your Qubit-QC in step 5B) based on the amount of non-ribsomal RNA in each pool, or your other needs.
 
-  - **LAUREN/ANDREW:** Write up protocol based on your tests!
-  - FINAL ELUTION== 12uL for taking into the next step. 
+NOTE that LK and AL have never normalized these amounts based upon previous QC
+
+- DO NOT ADD RLT lysis buffer!!! (We have been told not to by ZYMO technicians)
+- Pool all 8 samples into one tube (160 uL total)
+- Add 4 volumes (640uL) of RNA Binding Buffer to each sample, and vortex. (You will have a total of 800 uL liquid).
+- Add an equal volume (800 uL) of 100% Ethanol and votex. (You have a total of 1.6 mL of liquid).
+- Add a maximum of 700 uL of your pooled samples to a single zymo column. Spin at Room Temperature for 30 seconds at 10,000g.
+- Discard the flow-through, keep the column, and add another maximum of 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
+- Repeat the previous step until you have spun all of your pooled sample through the single zymo column (discarding all the flow-through).
+- Add 400 uL of RNA Prep Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
+- Add 700 uL of RNA Wash Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
+- Add ANOTHER 400 uL of RNA Wash Buffer to the column and centrifuge for 2 minutes at 10,000g, then discard the flow-through.
+- Transfer the zymo column into an RNase-free epindorf tube (cut off the cap) and add 7 uL of DNase/RNase-free water directly to the column filter and centrifuge for 30 seconds at 10,000g.
+- KEEP flow-through in the epindorf tube and add an additional 7 uL of water to the column filter, and centrifuge for 30 seconds at 10,000g.
+- KEEP flow through. You have ~14 uL of RNA. Use immidiately or store at -80 degrees Celcius.
+
+
+FINAL ELUTION== 12uL for taking into the next step. 
+
+PLEASE NOTE AL and LK previously did two elutions of 16 uL for a total of 32 uL final volume RNA, which they then added 20 ul of H2O to bring the total volume to ~50 uL for the PolyA step (which was the next step in the previous protocol). However, because the next step in this PolyA first protocol requires only a 12 uL elution for the first strand synthesis, this zymo elution has to be done now with only 7 uL per elution so that you have ~14 total (which will allow you 1-2 uL for the TapeStation and 12 uL for the next step). 
 
 **PAUSE POINT**
 
-
+***Editing stopped here***
+____________________________________________________________________________
 #### 8) Synthesize First Strand cDNA
 
   - Take 12 uL mRNA (use all the material from Ribo-Zero)
