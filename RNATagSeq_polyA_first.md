@@ -137,8 +137,9 @@ Protocol Differences
 
 ## MAIN PROTOCOL
 
+#### 0) EXTRACT RNA : 8 samples : 3 hours
 
-#### 1) Check RNA quality by running on the Agilent Bioanalyzer
+#### 1) Check RNA quality by running on the Agilent Bioanalyzer: 1 hour
 
 - Place 5ug of total RNA in a tube.
 - Increase the volume to 50uL with Nuclease free water
@@ -156,7 +157,7 @@ NOTE PREVIOUS PROTOCOL DIFFERENCES:
 **PAUSE POINT**
 
 
-#### 2) Deplete ribosomal RNA with polyA kit. 
+#### 2) Deplete ribosomal RNA with polyA kit : 1 hour + 30 min QC
 
 -MAKE SURE TO WASH BEADS BEFORE USE!!!!
 
@@ -205,7 +206,7 @@ NOTE PREVIOUS PROTOCOL DIFFERENCES:
 
 **MUST CONTINUE**
 
-#### 3) Fragment RNA using 2x FastAP buffer
+#### 3) Fragment RNA using 2x FastAP buffer : 5 min
 
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
@@ -216,7 +217,7 @@ PLEASE NOTE: AL & LK used half these amounts (according to Shishkin): 4 uL of Fa
 **MUST CONTINUE**
 
 
-#### 4) Digest DNA and repair RNA: Combination DNase/FastAP treatment
+#### 4) Digest DNA and repair RNA: Combination DNase/FastAP treatment : 15 min prep + 30 min INC
 
 PLEASE NOTE AL & LK used half of these amounts (according to Shishkin): yielding 20 uL of RNA and 20 uL of master mix.
 
@@ -246,7 +247,7 @@ PLEASE NOTE AL & LK used half of these amounts (according to Shishkin): yielding
 &nbsp;
 &nbsp;
 
-#### 5) Cleanup (2x SPRI) to remove enzymes and reaction buffer
+#### 5) Cleanup (2x SPRI) to remove enzymes and reaction buffer : 1 hour + 30 min QC
 
 
 PLEASE NOTE AL & LK added 40 ul of water (as per Shishkin), bringing reaction volume up to 80 uL before begining the cleanup.
@@ -279,12 +280,12 @@ PLEASE NOTE AL & LK originally eluted off beads with 12 uL of nuclease free wate
 
 **PAUSE POINT**
 
-#### 6A) Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA)
+#### 6A) Ligate 3’ barcoded Adaptor: First Ligation (ssRNA/ssDNA) : 10 minutes
 
   - Add 1 uL of barcoded RNATag adaptor (100 pmole = 1 uL of 100 uM) to 5 uL of dephosphorylated RNA
   - Heat at 70°C for 2 min, place in cold block on ice
 
-#### 6B) Set up First Ligation master mix below NOTE:
+#### 6B) Set up First Ligation master mix below NOTE: 30 minutes + 1 hour 30 min INC
 
   - All reagents except enzymes (-20°C ) should be stored at -80°C in single use aliquots and brought to room temp just before use
   - Make up mix at room temp so the reagents don’t start precipitating when combined (if DMSO is added directly into cold buffer it will precipitate)
@@ -312,7 +313,7 @@ PLEASE NOTE AL & LK originally eluted off beads with 12 uL of nuclease free wate
 **MUST CONTINUE**
 
 
-#### 7) Pool barcoded RNA: RLT buffer + Zymo column
+#### 7) Pool barcoded RNA: RLT buffer + Zymo column : 45 min + 30 min QC
 
   - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. 
   - **Attempt to normalize** the amounts (using your Qubit-QC in step 5B) based on the amount of non-ribsomal RNA in each pool, or your other needs.
@@ -344,7 +345,7 @@ However, because the next step in this PolyA first protocol requires only a 12 u
 **PAUSE POINT** 
 
 
-#### 8) Synthesize First Strand cDNA
+#### 8) Synthesize First Strand cDNA : 10 minutes
 
   - Take 24 uL mRNA (use all the material from previous step) 
   - (Was originally 12 uL mRNA, but we doubled it)
@@ -355,7 +356,7 @@ However, because the next step in this PolyA first protocol requires only a 12 u
 
 **MUST CONTINUE**
 
-#### 9) Second Strand cDNA synthesis (This is called Reverse Transcription in SHISHKIN)
+#### 9) Second Strand cDNA synthesis (This is called Reverse Transcription in SHISHKIN): 15 prep + 55 INC
 
   - Add in order on ice (the below volumes build in a little extra for pipetting errors)
 
@@ -408,7 +409,7 @@ PLEASE NOTE AL and LK used a slightly different MM recipe (as per SHISHKIN), see
 **MUST CONTINUE**
 
 
-#### 10) Degrade RNA after reverse transcription
+#### 10) Degrade RNA after reverse transcription : 20 minutes
 
   - NOTE: make fresh working stock solutions of NaOH and Acetic Acid
   - Add 10% reaction vol. of 1M NaOH (4 uL) to each reaction
@@ -425,7 +426,7 @@ PLEASE NOTE AL and LK used a slightly different MM recipe (as per SHISHKIN), see
 &nbsp;
 &nbsp;
 
-#### 11) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
+#### 11) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer : 40 minutes
 
 **AT this time put Ligation reagents at ROOM TEMP**
 
@@ -446,7 +447,7 @@ PLEASE NOTE AL and LK used a slightly different MM recipe (as per SHISHKIN), see
 **MUST CONTINUE**
 
 
-#### 12) Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads
+#### 12) Ligate 3’ Universal Adaptor: Second Ligation (ssDNA/ssDNA) with beads : 20 min prep + OVERNIGHT
   - NOTE: 3Tr3 adaptor: 5’-/5Phos/AGA TCG GAA GAG CAC ACG TCT G-/3SpC3/ 3’
 
   - Add 2 uL (80 pmoles) of 3Tr3 adaptor to cDNA
@@ -496,7 +497,7 @@ PLEASE NOTE LK AND AL did a different MM (as per SHISHKIN), see below:
 &nbsp;
 
 
-#### 13) Cleanup (2x SPRI) to remove adaptors
+#### 13) Cleanup (2x SPRI) to remove adaptors : 1 hour 45 min
 
 ***AL and LK increased to 2x reaction volume with water (added 20 UL of water), we think they just didn't list this step, but they must have done it!!
 
@@ -523,7 +524,7 @@ PLEASE NOTE LK AND AL did a different MM (as per SHISHKIN), see below:
 
 **PAUSE POINT**
 
-#### 14) Test PCR Amplification to determine final cycle number
+#### 14) Test PCR Amplification to determine final cycle number : 20 min prep + 1 hour inc
   - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’
 
   - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
@@ -565,10 +566,8 @@ Place each in a thermal cycler with cycling conditions:
 
 **Please note that the XP bead type is now changing from Agencourt RNAClean XP beads to AMPure XP beads for the remainder of the protocol**
 
-edits stopped here
-_____________________________________________________________
 
-#### 15) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 15) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 min + 30 min QC
 
   - increase reaction to 40uL with sterile water
   - (PLEASE NOTE LK & AL did not add any water at this point, Shishkin says to increase to 25uL with water, but we already had 25 uL)
@@ -588,7 +587,7 @@ _____________________________________________________________
 **PAUSE POINT**
 
 
-#### 16) PCR for Sequencing library
+#### 16) PCR for Sequencing library : 20  min prep + 1 hour INC
 
   - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
   - Include a negative control (water) for each primer set
@@ -645,7 +644,7 @@ PLEASE NOTE LK and AL used 65 degrees instead of 70 degrees for the cycling step
 **MUST CONTINUE**
 
 
-#### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
   - Pool PCR reaction (50 uL) ***THIS MAKES NO SENSE!!! 
   - Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
@@ -659,7 +658,7 @@ PLEASE NOTE LK and AL used 65 degrees instead of 70 degrees for the cycling step
   
 
 
-#### 18) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
+#### 18) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
   - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
   - ***Shishkin says use a 0.7x (17.5 uL) AMPure beads
@@ -670,7 +669,7 @@ PLEASE NOTE LK and AL used 65 degrees instead of 70 degrees for the cycling step
   - Repeat 80% EtOH wash, and let air dry for 3min
   - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
 
-#### 19) Check quantity/quality on Tapestation.
+#### 19) Check quantity/quality on Tapestation. 30 minutes
 
 &nbsp;
 &nbsp;
