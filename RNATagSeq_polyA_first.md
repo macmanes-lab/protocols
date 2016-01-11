@@ -17,11 +17,14 @@ Furthermore, the movement of the PolyA module to the front of the protocol chang
 
 **(Protocol Overview)**
 --
+## DAY 0
+RNA EXTRACTION: 3 hours for 8 samples
+
 
 ## Day 1
 
-#### Step 1. Check RNA quality
-You should start the protocol with approximately 5ug total RNA per sample. Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
+#### Step 1. Check RNA quality : 1 hour
+You should start the protocol with approximately 5-10 (10 is better if you can) ug total RNA per sample. Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
 
 &nbsp;
 &nbsp;
@@ -29,12 +32,12 @@ You should start the protocol with approximately 5ug total RNA per sample. Make 
 
 
 
-#### Step 2. polyA pulldown 
+#### Step 2. polyA pulldown : 1 hour + 30 min QC
 Should have between ~25-50ng of RNA left (0.5% - 1% of input). A 1% return is the maximum yield retrieved by the kit (according to the manufacturer's technicians).
  ![polyA](http://i.imgur.com/qZ8MEq3.jpg)
-#### Step 3. Fragment RNA
-#### Step 4. Digest DNA and repair RNA
-#### Step 5. Cleanup
+#### Step 3. Fragment RNA : 5 minutes
+#### Step 4. Digest DNA and repair RNA : 15 min prep + 30 min INC
+#### Step 5. Cleanup : 1 hour + 30 min QC
 This is an important QC point. You should have  x pg/uL (per Tapestation) and a Tapestation trace like this:
 
 WE NEED TO PUT A NEW TRACE HERE
@@ -43,32 +46,32 @@ WE NEED TO PUT A NEW TRACE HERE
 &nbsp;
 ## Day 2
 
-#### Step 6. Ligate 3’ barcoded Adaptor
-#### Step 7. Pool barcoded RNA with Zymo
+#### Step 6. Ligate 3’ barcoded Adaptor : 40 min prep + 1 1/2 hour INC
+#### Step 7. Pool barcoded RNA with Zymo : 45 min + 30 min QC
 QC Step: You should have x ng/uL (per Qubit) and a Tapestation trace like this.
 
 
 WE NEED TO PUT A NEW TRACE HERE
 
-#### Step 8. First Strand cDNA 
-#### Step 9. Second Strand cDNA (reverse transcription step)
-#### Step 10. Degrade RNA
-#### Step 11. Cleanup
-#### Step 12. Ligate 3’ Universal Adaptor (overnight ligation)
+#### Step 8. First Strand cDNA : 10 min
+#### Step 9. Second Strand cDNA (reverse transcription step):15 min prep + 55 min Inc
+#### Step 10. Degrade RNA : 20 min
+#### Step 11. Cleanup : 40 min
+#### Step 12. Ligate 3’ Universal Adaptor (overnight ligation): 20 min prep + OVERNIGHT
 
 ## Day 3
 
-#### Step 13. Cleanup
-#### Step 14. Test PCR
-#### Step 15. Cleanup
+#### Step 13. Cleanup : 1 hour 45 minutes
+#### Step 14. Test PCR : 20 min prep + 1 hour INC
+#### Step 15. Cleanup : 45 min + 30 min QC
 QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 WE NEED TO PUT A NEW TRACE HERE
 
-#### Step 16. Real PCR
-#### Step 17. Cleanup
-#### Step 18. Final Cleanup
-#### Step 19. DNA Tapestation
+#### Step 16. Real PCR : 20 min prep + 1 hour INC
+#### Step 17. Cleanup : 45 min
+#### Step 18. Final Cleanup : 45 min
+#### Step 19. DNA Tapestation : 30 min QC
 QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 WE NEED TO PUT A NEW TRACE HERE
