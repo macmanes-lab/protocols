@@ -318,39 +318,41 @@ NOTE that LK and AL have never normalized these amounts based upon previous QC
 
 - DO NOT ADD RLT lysis buffer!!! (We have been told not to by ZYMO technicians)
 - Pool all 8 samples into one tube (160 uL total)
-- Add 4 volumes (640uL) of RNA Binding Buffer to each sample, and vortex. (You will have a total of 800 uL liquid).
-- Add an equal volume (800 uL) of 100% Ethanol and votex. (You have a total of 1.6 mL of liquid).
+- **Add 4 volumes (640uL) of RNA Binding Buffer to each sample, and vortex. (You will have a total of 800 uL liquid).**???
+- **Add an equal volume (800 uL) of 100% Ethanol and votex. (You have a total of 1.6 mL of liquid).**????
 - Add a maximum of 700 uL of your pooled samples to a single zymo column. Spin at Room Temperature for 30 seconds at 10,000g.
 - Discard the flow-through, keep the column, and add another maximum of 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
 - Repeat the previous step until you have spun all of your pooled sample through the single zymo column (discarding all the flow-through).
 - Add 400 uL of RNA Prep Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
 - Add 700 uL of RNA Wash Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
 - Add ANOTHER 400 uL of RNA Wash Buffer to the column and centrifuge for 2 minutes at 10,000g, then discard the flow-through.
-- Transfer the zymo column into an RNase-free epindorf tube (cut off the cap) and add 7 uL of DNase/RNase-free water directly to the column filter and centrifuge for 30 seconds at 10,000g.
-- KEEP flow-through in the epindorf tube and add an additional 7 uL of water to the column filter, and centrifuge for 30 seconds at 10,000g.
-- KEEP flow through. You have ~14 uL of RNA. Use immidiately or store at -80 degrees Celcius.
+- Transfer the zymo column into an RNase-free epindorf tube (cut off the cap) and add 13 uL of DNase/RNase-free water directly to the column filter and centrifuge for 30 seconds at 10,000g.
+- KEEP flow-through in the epindorf tube and add an additional 13 uL of water to the column filter, and centrifuge for 30 seconds at 10,000g.
+- KEEP flow through. You have ~26 uL of RNA. 
+- QC on tape station with 2 uL sample
+- Use immediately or store at -80 degrees Celcius.
+
+PLEASE NOTE AL and LK previously did two elutions of 16 uL for a total of 32 uL final volume RNA, which they then added 20 ul of H2O to bring the total volume to ~50 uL for the PolyA step (which was the next step in the previous protocol). 
+
+However, because the next step in this PolyA first protocol requires only a 12 uL elution for the first strand synthesis, this zymo elution has to be done now with only 13 uL per elution so that you have ~26 total (which will allow you 2 uL for the TapeStation and ~24 uL for the next step, which is excellent because you then have double what you need for the next step, so we will do twice as much mastermix and use all the sample). 
+
+**PAUSE POINT** 
 
 
-FINAL ELUTION== 12uL for taking into the next step. 
-
-PLEASE NOTE AL and LK previously did two elutions of 16 uL for a total of 32 uL final volume RNA, which they then added 20 ul of H2O to bring the total volume to ~50 uL for the PolyA step (which was the next step in the previous protocol). However, because the next step in this PolyA first protocol requires only a 12 uL elution for the first strand synthesis, this zymo elution has to be done now with only 7 uL per elution so that you have ~14 total (which will allow you 1-2 uL for the TapeStation and 12 uL for the next step). 
-
-**PAUSE POINT**
-
-***Editing stopped here***
-____________________________________________________________________________
 #### 8) Synthesize First Strand cDNA
 
-  - Take 12 uL mRNA (use all the material from Ribo-Zero)
-  - Add 2 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’
+  - Take 24 uL mRNA (use all the material from previous step) 
+  - (Was originally 12 uL mRNA, but we doubled it)
+  - Add 4 (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’ 
+  - (Was originally 2 uL AR2 primer, but we doubled it)
   - Mix well
   - Heat the mixture to 70°C for 2 min and immediately place on cold block on ice
 
 **MUST CONTINUE**
 
-#### 9) Second Strand cDNA synthesis
+#### 9) Second Strand cDNA synthesis (This is called Reverse Transcription in SHISHKIN)
 
-  - Add in order on ice (the below volums build in a little extra for pipetting errors)
+  - Add in order on ice (the below volumes build in a little extra for pipetting errors)
 
    | Reagent (for RT master)	| 1 rxn	|  
    | --------------------------| -------|  
@@ -360,10 +362,41 @@ ____________________________________________________________________________
    | RNase inhibitor, murine (40U/uL)	| 0.5 uL
    | Total	| 5.2 uL	|
 
-
   - Mix well
   - Add 5.2 uL of RT mix to the 14 uL rRNA depleted RNA + AR2 RTprimer on ice
   - Add 0.8 uL of AffinityScript RT Enzyme
+  - Mix well and spin for 5 sec
+
+PLEASE NOTE AL and LK used a slightly different MM recipe (as per SHISHKIN), see below:
+
+   | Reagent (for RT master)	| 1 rxn	|  
+   | --------------------------| -------|  
+   | 10× AffinityScript RT Buffer	| 2.0 uL	
+   | DTT (0.1M)	| 2.0 uL	| 
+   | 25mM dNTP Mix (25mM each)	| 0.8 uL
+   | RNase inhibitor, murine (40U/uL)	| 0.4 uL
+   | AffinityScript RT Enzyme	| 0.8 u
+   | Total	| 6.0 uL	|
+
+
+  - Mix well
+  - Add 6.0 uL of RT mix to the 14 uL rRNA depleted RNA + AR2 RTprimer on ice
+  - Mix well and spin for 5 sec
+  - Place in preheated (55 °C) incubator or thermocycler. Incubate at 55 °C for 55 minutes.
+
+**HOWEVER, We doubled the recipe, to reflect twice as much mRNA from Zymo and twice as much First strand cDNA, see below for doubled recipe:**
+
+   | Reagent (for RT master)	| 1 rxn	|  
+   | --------------------------| -------|  
+   | 10× AffinityScript RT Buffer	| 4.0 uL	
+   | DTT (0.1M)	| 4.0 uL	| 
+   | 25mM dNTP Mix (25mM each)	| 1.6 uL
+   | RNase inhibitor, murine (40U/uL)	| 0.8 uL
+   | AffinityScript RT Enzyme	| 1.6 u
+   | Total	| 12.0 uL	|
+
+  - Mix well
+  - Add 12.0 uL of RT mix to the 28 uL rRNA depleted RNA + AR2 RTprimer on ice
   - Mix well and spin for 5 sec
   - Place in preheated (55 °C) incubator or thermocycler. Incubate at 55 °C for 55 minutes.
 
@@ -373,11 +406,14 @@ ____________________________________________________________________________
 #### 10) Degrade RNA after reverse transcription
 
   - NOTE: make fresh working stock solutions of NaOH and Acetic Acid
-  - Add 10% reaction vol. of 1M NaOH (2 uL) to each reaction
+  - Add 10% reaction vol. of 1M NaOH (4 uL) to each reaction
+  - (was previously 2 ul, but we doubled it)
   - Incubate at 70 °C for 12 minutes
-  - Neutralize with 4 uL of 0.5M Acetic Acid; mix well
-  - Total volume = 26 uL
-
+  - Neutralize with 8 uL of 0.5M Acetic Acid; mix well
+  - (was previously 4 ul, but we doubled it)
+  - Total volume = 52 uL
+  - (was previously Total volume = 26 uL, but we doubled everything)
+  
 **MUST CONTINUE**
 
 &nbsp;
@@ -386,15 +422,21 @@ ____________________________________________________________________________
 
 #### 11) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer
 
-  - Add 14 uL of sterile water to each reaction for a final volume of 40 uL
+**AT this time put Ligation reagents at ROOM TEMP**
+
+  - Add 28 uL of sterile water for a final reaction volume of 80 uL
+  - (We previously added 14 uL of sterile water to each reaction for a final volume of 40 uL, but that was before we doubled everything)
   - Transfer to new tubes (NaOH may start degrading tubes)
-  - Add 2x reaction volume AmpureXP beads (80uL) to the sample in new tubes, and mix up/down 10x
+  - Add 2x reaction volume RNACLEAN XP beads (160uL) to the sample in new tubes, and mix up/down 10x
+  - (We previously added 80 uL RNACLEAN XP beads, before we doubled)
+  - (Drummond said use AMPURE beads, but this is wrong. USE RNA clean beads)
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
   - Repeat 80% EtOH wash, and let air dry for 3min, remove from magnet.
-  - Add 5 uL RNase/DNase free water to beads – KEEP BEADS AND TUBES, do not transfer, do not pause
+  - Add 5 uL RNase/DNase free water to beads 
+  – KEEP BEADS AND TUBES, do not transfer, do not pause
 
 **MUST CONTINUE**
 
@@ -418,12 +460,27 @@ ____________________________________________________________________________
    | T4 RNA Ligase 1 (30,000U/mL)	| 1.7 uL
    | Total	| 13.0 uL
 
-  - Mix really well by extensive vortexing tube since the solution is very viscous
+
+PLEASE NOTE LK AND AL did a different MM (as per SHISHKIN), see below:
+
+   | Reagent (for Ligation 2 master)	| 1 rxn	
+   | -----------------------------------| ------
+   | 10× T4 RNA Ligase Buffer	| 2.0 uL
+   | DMSO (100%)	| 0.8 uL
+   | ATP (100 mM)	| 0.2 uL
+   | PEG 8000 (50%)	| 8.5 uL
+   | T4 RNA Ligase 1 (30,000U/mL)	| 1.5 uL
+   | Total	| 13.0 uL
+ 
+ - Mix really well by extensive vortexing tube since the solution is very viscous
   - Spin down briefly in microfuge
   - Swirl the 7uL cDNA/beads/water with pipet tip, THEN add 13 uL ligation 2 master mix.
   - Mix well by pipetting up and down 20x or cap tubes and flick several times; solution is viscous
   - Quick spin (low speed centrifuge, to get everything to bottom of tube)
   - Incubate overnight at 22 °C
+
+**THIS IS NOT A LONG TERM STOPPING POINT, JUST AN OVERNIGHT INCUBATION**
+
 
 **MUST CONTINUE**
 
@@ -436,7 +493,9 @@ ____________________________________________________________________________
 
 #### 13) Cleanup (2x SPRI) to remove adaptors
 
-  - Add 2x reaction volume SPRI beads (80uL) to the sample in new tubes, and mix up/down 10x
+***AL and LK increased to 2x reaction volume with water (added 20 UL of water), we think they just didn't list this step, but they must have done it!!
+
+  - Add 2x reaction volume Agencourt RNAClean XP beads (80uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
@@ -445,7 +504,11 @@ ____________________________________________________________________________
   - Elute DNA by adding 30 uL RNase/DNase free water, transfer to new tube.
   - **2nd Cleanup (1.5x SPRI) to remove the remaining adaptors**
 
-  - Add 1.5x reaction volume SPRI beads (45 uL) to the sample in new tubes, and mix up/down 10x
+
+(AL and LK used a different quantity (25 ul x 1.5 = 37.5 uL) but DISREGARD now)
+
+
+  - Add 1.5x reaction volume Agencourt RNAClean XP beads (45 uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
@@ -468,17 +531,17 @@ ____________________________________________________________________________
    | -------------------------------| 
    | Water, PCR-clean	| 15.4 uL	| 
    | 10X AccuPrime Buffer	| 2.5 uL	| 
-   | P5_RNATag, 12.5 uM)	| 1 uL	| L
-   | P7 index primer | 1uL | 
-   | AccuPrime HiFi Taq | .1uL 
-   | cDNA from step 14 | 5uL
-   | Total	| 20 uL	| 74 uL
+   | enrF (P5_RNATag, 12.5 uM)	| 1 uL	| L
+   | P7enr1 (P7 index primer, 12.5 uM) | 1uL | 
+   | AccuPrime HiFi Taq | 0.1uL 
+   | Total	| 20 uL	| 
 
   - Mix well
   - Aliquot 20 uL / sample into PCR tubes
-  - Add 5 uL of ss cDNA from step 11, or water (for negative control)
-  - Mix well and aliquot 8 ul into each of 3 tubes
-
+  - Add 5 uL of cDNA, or water (for negative control)
+  - Place each of the three PCR tubes at different cycling conditions (negative control was in 12 cycle) 
+  
+**LK and AL did the protocl the above way (as per Shishkin). This was accomplished differently by Drummond in order to waste less sample. We should evalute what is more appropriate by revisiting the Drummond Protocol. However, once we figure out our cycle number, we will probably use that in the future and not need to test each time we do the protocol.**
 &nbsp;
 &nbsp;
 &nbsp;
@@ -490,13 +553,22 @@ Place each in a thermal cycler with cycling conditions:
   - cycle: 9, 12, 15 cycles (for test PCR) 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
   - end: 70°C, 2min; 4°C, hold
 
+****LK and AL used 65 degrees instead of 70 degrees for the cycling steps. Which is more appropriate?
+
 **MUST CONTINUE**
 
+
+**Please note that the XP bead type is now changing from Agencourt RNAClean XP beads to AMPure XP beads for the remainder of the protocol**
+
+edits stopped here
+_____________________________________________________________
 
 #### 15) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - increase reaction to 40uL with sterile water
-  - Add 1.5x reaction volume SPRI beads (60 uL) to the sample in new tubes, and mix up/down 10x
+  - (PLEASE NOTE LK & AL did not add any water at this point, Shishkin says to increase to 25uL with water, but we already had 25 uL)
+  - Add 1.5x reaction volume AMPpure XP beads (60 uL) to the sample in new tubes, and mix up/down 10x
+  - (PLEASE NOTE LK and & AL added only 37.5 uL of beads at this step as per Shishkin)
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
@@ -536,6 +608,22 @@ Place each in a thermal cycler with cycling conditions:
 
   - Mix well and aliquot 10 ul into each of 5 wells of a strip tube (amplification is apparently more robust in smaller volumes).
 
+
+PLEASE NOTE LK and AL did their MM differently (as per Shishkin), see below:
+
+   | Reagent (for PCR master mix)  | 1 rxn
+   | Water, PCR-clean	| 30.8 uL
+   | 10X AccuPrime PCR Buffer 1	| 5 uL
+   | enrF (12.5 uM)	| 2 uL
+   | p7enr1 (12.5 uM)	| 2 uL
+   | AccuPrime HiFi Taq (5U/uL)	| 0.2 uL
+   | Total	| 40 uL
+
+  - Mix well
+  - Aliquot 40 uL / sample into PCR tubes
+  - Add 10 uL of ss cDNA
+
+
 &nbsp;
 &nbsp;
 &nbsp;
@@ -547,12 +635,14 @@ Place each in a thermal cycler with the cycling conditions:
   - cycle: # determined from test PCR 98°C, 30sec; 55°C, 30sec; 70°C, 30sec
   - end: 70°C, 2min; 4°C, hold
 
+PLEASE NOTE LK and AL used 65 degrees instead of 70 degrees for the cycling steps. Which is more appropriate?
+
 **MUST CONTINUE**
 
 
 #### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
-  - Pool PCR reaction (50 uL)
+  - Pool PCR reaction (50 uL) ***THIS MAKES NO SENSE!!! 
   - Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
@@ -560,11 +650,14 @@ Place each in a thermal cycler with the cycling conditions:
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
   - Repeat 80% EtOH wash, and let air dry for 3min
   - Elute off beads with 50 uL water and transfer to new tubes.
-  - Final Cleanup (0.8x SPRI) to remove remaining PCR primers:
+  - ***Shishkin says elute with 25 uL of water instead!
+  
+
 
 #### 18) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers:
 
   - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
+  - ***Shishkin says use a 0.7x (17.5 uL) AMPure beads
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
