@@ -318,9 +318,11 @@ NOTE that LK and AL have never normalized these amounts based upon previous QC
 
 - DO NOT ADD RLT lysis buffer!!! (We have been told not to by ZYMO technicians)
 - Pool all 8 samples into one tube (160 uL total)
-- **Add 4 volumes (640uL) of RNA Binding Buffer to each sample, and vortex. (You will have a total of 800 uL liquid).**???
-- **Add an equal volume (800 uL) of 100% Ethanol and votex. (You have a total of 1.6 mL of liquid).**????
+- **Add 2 volumes (320uL) of RNA Binding Buffer to each sample, and vortex. (You will have a total of 480 uL liquid).**
+- **Add an equal volume (480 uL) of 100% Ethanol and votex. (You have a total of 960 uL of liquid).**
+- PLEASE NOTE AL and LK have tried multiple permutations of this (with different quantities), and we think these amounts work.
 - Add a maximum of 700 uL of your pooled samples to a single zymo column. Spin at Room Temperature for 30 seconds at 10,000g.
+- Therefore add 480 uL twice!
 - Discard the flow-through, keep the column, and add another maximum of 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
 - Repeat the previous step until you have spun all of your pooled sample through the single zymo column (discarding all the flow-through).
 - Add 400 uL of RNA Prep Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
