@@ -15,8 +15,41 @@ The signifocant modification here is using polyA purification instead of RiboZer
 
 Furthermore, the movement of the PolyA module to the front of the protocol changes the amounts of reagents and samples from the original Shishkin protocol.
 
+Protocol Differences
+
+****AL & LK note that we have been drying for 10 minutes (according to Shishkin) but Drummond recommends 2 minutes.  We ARE NOW DRYING FOR 3 minutes!
+
+****AL & LK note that we have been using 70% ETOH (according to Shiskin) but Drummond recommends 80%.
+
+****AL and LK note that we have been eluting with 12 uL water during Day 1 Step 4 (according to Shishkin) but Drummond elutes with 24 uL. Drummond is effectively diluting their sample in half (because they proceed with 5 uL, which is the same as Shishkin).
+
+
+
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
 **(Protocol Overview)**
 --
+
 ## DAY 0
 RNA EXTRACTION: 3 hours for 8 samples
 
@@ -29,6 +62,18 @@ You should start the protocol with approximately 5-10 (10 is better if you can) 
 &nbsp;
 &nbsp;
 &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 
@@ -37,11 +82,29 @@ Should have between ~25-50ng of RNA left (0.5% - 1% of input). A 1% return is th
  ![polyA](http://i.imgur.com/qZ8MEq3.jpg)
 #### Step 3. Fragment RNA : 5 minutes
 #### Step 4. Digest DNA and repair RNA : 15 min prep + 30 min INC
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
 #### Step 5. Cleanup : 1 hour + 30 min QC
-This is an important QC point. You should have  x pg/uL (per Tapestation) and a Tapestation trace like this:
+This is an important QC point. You should have  ~2500 pg/uL (per Tapestation) and a Tapestation trace like this, noting mean size approx 300nt:
 
-WE NEED TO PUT A NEW TRACE HERE
-
+![post-fragmentation](http://i.imgur.com/HMWpzKy.jpg)
 &nbsp;
 &nbsp;
 ## Day 2
@@ -87,16 +150,19 @@ WE NEED TO PUT A NEW TRACE HERE
 &nbsp;
 &nbsp;
 &nbsp;
-
-Protocol Differences
-
-****AL & LK note that we have been drying for 10 minutes (according to Shishkin) but Drummond recommends 2 minutes.  We ARE NOW DRYING FOR 3 minutes!
-
-****AL & LK note that we have been using 70% ETOH (according to Shiskin) but Drummond recommends 80%.
-
-****AL and LK note that we have been eluting with 12 uL water during Day 1 Step 4 (according to Shishkin) but Drummond elutes with 24 uL. Drummond is effectively diluting their sample in half (because they proceed with 5 uL, which is the same as Shishkin).
-
-(Notes)
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 **(Notes)**
 --
@@ -217,6 +283,23 @@ PLEASE NOTE: AL & LK used half these amounts (according to Shishkin): 4 uL of Fa
 **MUST CONTINUE**
 
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
 #### 4) Digest DNA and repair RNA: Combination DNase/FastAP treatment : 15 min prep + 30 min INC
 
 PLEASE NOTE AL & LK used half of these amounts (according to Shishkin): yielding 20 uL of RNA and 20 uL of master mix.
@@ -241,11 +324,6 @@ PLEASE NOTE AL & LK used half of these amounts (according to Shishkin): yielding
 
 **MUST CONTINUE**
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 #### 5) Cleanup (2x SPRI) to remove enzymes and reaction buffer : 1 hour + 30 min QC
 
@@ -311,6 +389,21 @@ PLEASE NOTE AL & LK originally eluted off beads with 12 uL of nuclease free wate
 
 
 **MUST CONTINUE**
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 #### 7) Pool barcoded RNA: RLT buffer + Zymo column : 45 min + 30 min QC
