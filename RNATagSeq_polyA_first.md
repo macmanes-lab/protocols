@@ -40,7 +40,7 @@ Should have between ~25-50ng of RNA left (0.5% - 1% of input). A 1% return is th
 #### Step 5. Cleanup : 1 hour + 30 min QC
 This is an important QC point. You should have  x pg/uL (per Tapestation) and a Tapestation trace like this:
 
-WE NEED TO PUT A NEW TRACE HERE
+![post-fragmentation](http://i.imgur.com/HMWpzKy.jpg)
 
 &nbsp;
 &nbsp;
