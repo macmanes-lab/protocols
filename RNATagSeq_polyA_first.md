@@ -455,9 +455,10 @@ WE NEED TO PUT A NEW TRACE HERE
   - NOTE: MacManes Lab has named P5 primer: P5_RNATag as "enrF"
   - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR 
   - Include a negative control (water) for each primer set
-  - Make PCR Master Mix (4 rxns=2 libraries, +ve ctrl, -ve ctrl):
+  - Make PCR Master Mix (make additional reaction volume for neg/pos control):
 
   - Add in order:
+ 
 
    | Reagent (for PCR master mix)	| 1 rxn	| 
    | -------------------------------| 
@@ -512,7 +513,7 @@ Place each in a thermal cycler with cycling conditions:
 
   - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
   - Include a negative control (water) for each primer set
-  - Make PCR Master Mix (make additional rxn volume for neg/pos control):
+  - Make PCR Master Mix (make additional reaction volume for neg/pos control):
 
   - Add in order:
 
