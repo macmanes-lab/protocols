@@ -214,7 +214,7 @@ WE NEED TO PUT A NEW TRACE HERE
 - Remove the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. (NOTE this is a different elution amount than listed in the product manufacturers' protocol)
 - Immediately, place the tubes on the magnetic rack
 - Collect the purified mRNA by transferring the supernatant to a clean nuclease-free PCR Tube
-- QC: Take 1uL for tapestation. 
+- QC: Take 2uL for tapestation (RNA High Sensitivity). 
 
 **MUST CONTINUE**
 
@@ -240,7 +240,7 @@ WE NEED TO PUT A NEW TRACE HERE
    | Total	| 40 uL	| | 
 
   - Mix well
-  - Aliquot 40 uL into each tube/well with the 40uL of fragmented RNA from step 1.
+  - Aliquot 40 uL into each tube/well with the 40uL of fragmented RNA from step 3.
   - Mix well
   - Incubate on preheated thermal cycler for 30 min at 37°C
  
@@ -262,13 +262,13 @@ WE NEED TO PUT A NEW TRACE HERE
   - Pipette out and discard clear solution
   - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off supernatant.
   - Repeat 80% EtOH wash. Let air dry for 3min
-  - Elute off beads with 8 uL nuclease free water (uing the whole sample - not trying to have any in reserve)
+  - Elute off beads with 8 uL nuclease free water (using the whole sample - not trying to have any in reserve)
 
 
 
 #### QC
 
-  - QC: Save 1.2 uL from remaining RNA before addition of SUPERase-IN
+  - QC: Save 2 uL from remaining RNA before addition of SUPERase-IN
   - Run 8 random samples on Qubit (hsRNA) and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
   - **If only running 8 samples total, do all on Tapestation and Qubit
   - Add 1uL SUPERase-IN (20U/uL) to the sample and store at -80°C if not proceeding to ligation. 
@@ -359,7 +359,7 @@ WE NEED TO PUT A NEW TRACE HERE
    | Total	| 12.0 uL	|
 
   - Mix well
-  - Add 12.0 uL of RT mix to the 26 uL rRNA depleted RNA + AR2 RTprimer on ice
+  - Add 12.0 uL of RT mix to the 28 uL rRNA depleted RNA + AR2 RTprimer on ice
   - Mix well and spin for 5 sec
   - Place in preheated (55 °C) incubator or thermocycler. Incubate at 55 °C for 55 minutes.
 
@@ -401,10 +401,7 @@ WE NEED TO PUT A NEW TRACE HERE
 
   - Add 2 uL (80 pmoles) of 3Tr3 adaptor to cDNA
   - Heat at 75°C for 3 min; Place on cold block on ice
-  - Make ligation reaction master mix (can be prepared ahead of time, at RT):
-
-  - 2nd Ligation Master Mix:
-  - Mix in order (the below volumes build in a little extra for pipetting errors)
+  - 2nd Ligation Master Mix (can be prepared ahead of time, at RT): Mix in order
 
    | Reagent (for Ligation 2 master)	| 1 rxn	
    | -----------------------------------| ------
@@ -417,7 +414,7 @@ WE NEED TO PUT A NEW TRACE HERE
  
   - Mix really well by extensive vortexing tube since the solution is very viscous
   - Spin down briefly in microfuge
-  - Swirl the 7uL cDNA/beads/water with pipet tip, THEN add 13 uL ligation 2 master mix.
+  - Swirl the 7uL cDNA/beads/water with pipet tip, THEN add 13 uL 2nd Ligation Master Mix.
   - Mix well by pipetting up and down 20x or cap tubes and flick several times; solution is viscous
   - Quick spin (low speed centrifuge, to get everything to bottom of tube)
   - Incubate overnight at 22 °C
@@ -432,7 +429,7 @@ WE NEED TO PUT A NEW TRACE HERE
 
 #### 13) Cleanup (2x SPRI) to remove adaptors : 1 hour 45 min
 
-  - Increase to 2x reaction volume with water (add 20 UL of water)
+  - Increase to 2x reaction volume with water (add 20 uL of water)
   - Add 2x reaction volume Agencourt RNAClean XP beads (80uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
@@ -454,9 +451,9 @@ WE NEED TO PUT A NEW TRACE HERE
 **PAUSE POINT**
 
 #### 14) Test PCR Amplification to determine final cycle number : 20 min prep + 1 hour inc
-  - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’
-
-  - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR (based on experience with pool of 16 reactions, each starting with ~400ng total RNA)
+  - NOTE: P5 primer: P5_RNATag, 5’-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC T-3’ 
+  - NOTE: MacManes Lab has named P5 primer: P5_RNATag as "enrF"
+  - Set up a test PCR using 5 uL of ss cDNA sample and 9-12 cycles of PCR 
   - Include a negative control (water) for each primer set
   - Make PCR Master Mix (4 rxns=2 libraries, +ve ctrl, -ve ctrl):
 
@@ -503,7 +500,7 @@ Place each in a thermal cycler with cycling conditions:
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
   - Repeat 80% EtOH wash, and let air dry for 3min
   - Elute off beads with 10 uL 1x low TE (10 mM Tris, 0.1M EDTA)
-  - QC test PCR amplification on Agilent DNA HS chip
+  - QC test PCR amplification on Tapestation (D1000 Tape)
 
   - **NOTE:** Based on test results change the cycle number, if necessary, and set up more reactions to provide enough material to send for sequencing. Library should have smooth profile 200-500nt long; visible single bands, or a “shoulder” of larger products, indicate PCR artefacts.
 
@@ -515,7 +512,7 @@ Place each in a thermal cycler with cycling conditions:
 
   - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
   - Include a negative control (water) for each primer set
-  - Make PCR Master Mix (3 rxns=2 libraries, half size +ve ctrl, half size -ve ctrl):
+  - Make PCR Master Mix (make additional rxn volume for neg/pos control):
 
   - Add in order:
 
@@ -547,7 +544,7 @@ Place each in a thermal cycler with the cycling conditions:
 
 #### 17) Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
-  - Add 1.5x reaction volume SPRI beads (75 uL) to the sample in new tubes, and mix up/down 10x
+  - Add 1.5x reaction volume AMPure beads (75 uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
@@ -558,7 +555,7 @@ Place each in a thermal cycler with the cycling conditions:
 
 #### 18) Second Round Cleanup (1.5x SPRI) to remove reaction buffer and PCR primers: 45 minutes
 
-  - Add 0.8x reaction volume SPRI beads (40 uL) to the sample in new tubes, and mix up/down 10x
+  - Add 0.8x reaction volume AMPure beads (40 uL) to the sample in new tubes, and mix up/down 10x
   - Incubate at room temperature, on HULA MIXER for 15min
   - Place on magnet for 5 min or until solution is clear
   - Pipette out and discard clear solution
@@ -566,7 +563,7 @@ Place each in a thermal cycler with the cycling conditions:
   - Repeat 80% EtOH wash, and let air dry for 3min
   - Elute off beads with 25 uL 1x low TE (10 mM Tris, 0.1M EDTA)
 
-#### 19) Check quantity/quality on Tapestation. 30 minutes
+#### 19) Check quantity/quality on Tapestation (D1000 Tape). 30 minutes
 
 
 Reagents
@@ -599,7 +596,6 @@ Reagents
 
 **Control oligos:** 
 --
-MacManes Lab is not currently using, though maybe we should?
 
 - Tag33FAM
    - 5’ - /5Phos/AG AAC GAT TAG ATC GGA AGA GCG TCG TGT A/36-FAM/ - 3’
