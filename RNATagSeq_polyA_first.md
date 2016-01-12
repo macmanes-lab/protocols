@@ -3,7 +3,7 @@
 
 @(RNATagSeq)[TagSeq, Protocol, Slack]
 
-**VERSION Monday, January 11, 2016**
+**VERSION Monday, January 12, 2016**
 
 ***This protocol reflects the notes in the protocol LK and AL were trouble-shooting.***
 
@@ -15,35 +15,79 @@ The signifocant modification here is using polyA purification instead of RiboZer
 
 Furthermore, the movement of the PolyA module to the front of the protocol changes the amounts of reagents and samples from the original Shishkin protocol.
 
-**(Protocol Overview)**
---
-## DAY 0
-RNA EXTRACTION: 3 hours for 8 samples
 
+**(Notes)**
+--
+
+- This is not a protocol where you can cut corners. To save time and anguish, plan thoroughly, work cleanly, QC your samples and intermediate steps.
+- Label everything and lay out tubes neurotically to avoid pipette error.
+- Observe RNase-free sample prep, for steps 1-8, also neurotically. Clean your workspace and pipettes with 50% Ethanol and RNAse-Zap, use reserved RNase-free pipettes and RNAse-free (non-autoclaved) tips, ensure all tubes and reagents (including water) are RNase-free.
+- Avoid DNA contamination, especially from other sequencing libraries for steps 8+. Use filter tips for PCR reactions.
+- Points where the in-process libraries may be frozen at -80 C while you pause, are indicated as PAUSE POINT. Don’t take the risk of pausing elsewhere.
+- SPRI/XP beads take a bit of skill. “2x SPRI” refers to the ratio of beads to aqueous solution containing nucleic acids (NA); this ratio controls the size of NA retained (see http://core-genomics.blogspot.com/2012/04/how-do-spri-beads-work.html). Be patient; wait for binding and for magnetisation. 
+   - Prepare fresh 80% ethanol solution every day or two; the concentration drifts over time due to evaporation (manufacturer recommends 70% EtOH). Some reactions (2nd ligation, step 11) happen on-bead so change the elution step. Manufacturer’s protocol with tweaks is below; practice SPRI extraction on a DNA ladder or RNA ladder and ensure full recovery.
+   - Add appropriate ratio of beads to sample in PCR tube, pipette up and down 10x gently.
+   - Incubate beads and sample at room temperature for 15min to bind.
+   - Place on 96R plate magnet for 5min, until solution is clear
+   - Pipette out and discard clear solution (save this for troubleshooting)
+   - Wash: Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off clear solution.
+   - Repeat 80% EtOH wash, use additional 10uL pipette to remove residual EtOH if necessary.
+   - Let air dry for 2min. Apparently, drying too short is bad because residual ethanol interferes with downstream reactions, and too long is bad because beads may crack and/or bind hydrophobically, overly strongly, to your NA.
+   - Elute: remove from magnet, pipette 40uL water or low TE buffer onto beads, pipette up and down 10X, replace on magnet and wait 5min (this is easiest with at least 40uL, hellish with 10uL).
+   - Unless otherwise specified, take clear liquid to new tube, carefully not disturbing beads.
+- Barcoded adaptors are listed in appendix, requiring 5’ Phosphate group (/5Phos/) and 3’ blocking spacer (/3SpC3/). The combination to use should be chosen carefully: plan a spreadsheet listing the sample name, conditions, and which RNAtag adaptor (step 3) and P7 adaptor (step 14/17, PCR after pooling) will be used. In each set of sequencing libraries combined on an Illumina sequencing run, there must be at least 3 distinct nt in all of the initial 4 nt of the sequenced adaptor for the sequencing machine to recognize clusters properly. (e.g. ATTA, GCAC, CAGT work, ATTA, GTAC, CTGT don’t due to the common T.)
+
+
+
+##Protocol Overview
+## DAY 0
+#### Step 0. RNA extraction: ~3 hours for 8 samples
 
 ## Day 1
 
 #### Step 1. Check RNA quality : 1 hour
 You should start the protocol with approximately 5-10 (10 is better if you can) ug total RNA per sample. Make sure the RNA is of high quality. ![pic](http://i.imgur.com/srDKeKE.jpg)
 
-&nbsp;
-&nbsp;
-&nbsp;
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 #### Step 2. polyA pulldown : 1 hour + 30 min QC
-Should have between ~25-50ng of RNA left (0.5% - 1% of input). A 1% return is the maximum yield retrieved by the kit (according to the manufacturer's technicians).
+Should have between ~25-50ng of RNA left (0.5% - 1% of input). A 1% return is the maximum yield retrieved by the kit (according to the manufacturer).
  ![polyA](http://i.imgur.com/qZ8MEq3.jpg)
 #### Step 3. Fragment RNA : 5 minutes
 #### Step 4. Digest DNA and repair RNA : 15 min prep + 30 min INC
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
 #### Step 5. Cleanup : 1 hour + 30 min QC
-This is an important QC point. You should have  x pg/uL (per Tapestation) and a Tapestation trace like this:
+This is an important QC point. You should have  > 2000 pg/uL (per Tapestation) and a Tapestation trace like this:
 
 ![post-fragmentation](http://i.imgur.com/HMWpzKy.jpg)
 
-&nbsp;
-&nbsp;
+
 ## Day 2
 
 #### Step 6. Ligate 3’ barcoded Adaptor : 40 min prep + 1 1/2 hour INC
@@ -76,41 +120,9 @@ QC Step: You should have X ng/uL and a Tapestation trace like this.
 
 WE NEED TO PUT A NEW TRACE HERE
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 
-(Notes)
 
-**(Notes)**
---
-
-- This is not a protocol where you can cut corners. To save time and anguish, plan thoroughly, work cleanly, QC your samples and intermediate steps.
-- Label everything and lay out tubes neurotically to avoid pipette error.
-- Observe RNase-free sample prep, for steps 1-8, also neurotically. Clean your workspace and pipettes with 50% Ethanol and RNAse-Zap, use reserved RNase-free pipettes and RNAse-free (non-autoclaved) tips, ensure all tubes and reagents (including water) are RNase-free.
-- Avoid DNA contamination, especially from other sequencing libraries for steps 8+. Use filter tips for PCR reactions.
-- Points where the in-process libraries may be frozen at -80 C while you pause, are indicated as PAUSE POINT. Don’t take the risk of pausing elsewhere.
-- SPRI/XP beads take a bit of skill. “2x SPRI” refers to the ratio of beads to aqueous solution containing nucleic acids (NA); this ratio controls the size of NA retained (see http://core-genomics.blogspot.com/2012/04/how-do-spri-beads-work.html). Be patient; wait for binding and for magnetisation. 
-   - Prepare fresh 80% ethanol solution every day or two; the concentration drifts over time due to evaporation (manufacturer recommends 70% EtOH). Some reactions (2nd ligation, step 11) happen on-bead so change the elution step. Manufacturer’s protocol with tweaks is below; practice SPRI extraction on a DNA ladder or RNA ladder and ensure full recovery.
-   - Add appropriate ratio of beads to sample in PCR tube, pipette up and down 10x gently.
-   - Incubate beads and sample at room temperature for 15min to bind.
-   - Place on 96R plate magnet for 5min, until solution is clear
-   - Pipette out and discard clear solution (save this for troubleshooting)
-   - Wash: Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off clear solution.
-   - Repeat 80% EtOH wash, use additional 10uL pipette to remove residual EtOH if necessary.
-   - Let air dry for 2min. Apparently, drying too short is bad because residual ethanol interferes with downstream reactions, and too long is bad because beads may crack and/or bind hydrophobically, overly strongly, to your NA.
-   - Elute: remove from magnet, pipette 40uL water or low TE buffer onto beads, pipette up and down 10X, replace on magnet and wait 5min (this is easiest with at least 40uL, hellish with 10uL).
-   - Unless otherwise specified, take clear liquid to new tube, carefully not disturbing beads.
-- Barcoded adaptors are listed in appendix, requiring 5’ Phosphate group (/5Phos/) and 3’ blocking spacer (/3SpC3/). The combination to use should be chosen carefully: plan a spreadsheet listing the sample name, conditions, and which RNAtag adaptor (step 3) and P7 adaptor (step 14/17, PCR after pooling) will be used. In each set of sequencing libraries combined on an Illumina sequencing run, there must be at least 3 distinct nt in all of the initial 4 nt of the sequenced adaptor for the sequencing machine to recognize clusters properly. (e.g. ATTA, GCAC, CAGT work, ATTA, GTAC, CTGT don’t due to the common T.)
 
 &nbsp;
 &nbsp;
@@ -118,7 +130,22 @@ WE NEED TO PUT A NEW TRACE HERE
 &nbsp;
 &nbsp;
 &nbsp;
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
@@ -312,6 +339,9 @@ WE NEED TO PUT A NEW TRACE HERE
   - Heat the mixture to 70°C for 2 min and immediately place on cold block on ice
 
 **MUST CONTINUE**
+&nbsp;
+&nbsp;
+&nbsp;
 
 #### 9) Second Strand cDNA synthesis : 15 prep + 55 INC
 
@@ -344,9 +374,7 @@ WE NEED TO PUT A NEW TRACE HERE
   
 **MUST CONTINUE**
 
-&nbsp;
-&nbsp;
-&nbsp;
+
 
 #### 11) Cleanup reverse transcription (2x SPRI) to remove enzyme, primers, and reaction buffer : 40 minutes
 
@@ -397,11 +425,7 @@ WE NEED TO PUT A NEW TRACE HERE
 
 **MUST CONTINUE**
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+
 
 
 #### 13) Cleanup (2x SPRI) to remove adaptors : 1 hour 45 min
@@ -450,9 +474,7 @@ WE NEED TO PUT A NEW TRACE HERE
   - Add 5 uL of cDNA, or water (for negative control)
   - Place each of the three PCR tubes at different cycling conditions (negative control was in 12 cycle) 
   
-&nbsp;
-&nbsp;
-&nbsp;
+
 
 
 Place each in a thermal cycler with cycling conditions:
@@ -510,10 +532,7 @@ Place each in a thermal cycler with cycling conditions:
   - Add 10 uL of ss cDNA
 
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+
 
 Place each in a thermal cycler with the cycling conditions:
 
@@ -547,20 +566,6 @@ Place each in a thermal cycler with the cycling conditions:
 
 #### 19) Check quantity/quality on Tapestation. 30 minutes
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 Reagents
 ---
@@ -600,6 +605,3 @@ is a fluorescent positive control oligo for first ligation and sample pooling. U
 - TagDNA+
    - 5’-TAC ACG ACG CTC TTC CGA TCT TCA GTC AGT ATG TAC GCG TAG CGC AGC GAG CGG CGG GTG GCC ACG TCG CGG CAC ACG CGG ATG GAC AGG ATC GGG CCG GCG GGC AGG AAC TTC TCG TAG AGC ATG GCC TCG GTC ACG TCG GCG TGC AGG TCG CCC ACG TAG AGC GAG GCC AGC GGG TAC CCC GGG CCG CTG GCG TTC AT - 3’
 is a 200bp oligo as positive control for 2nd ligation through PCR. Use 1.25uM (0.5uL of 100uM stock) in place of cDNA in control reaction in step 11. Its 3’ end resembles a cDNA product for a library with Tag barcode CTGACTGA (distinct from Tag1-32, Tag33FAM), and the insert is “random” (elephant PABP 1st exon).
-
-
----
