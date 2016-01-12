@@ -189,13 +189,13 @@ WE NEED TO PUT A NEW TRACE HERE
 - Vortex and place the tubes on HULA MIXER and incubate at room temperature for 10 minutes to allow the RNA to bind to the beads.
 - Place tubes on the magnetic rack at room temperature for 2 minutes to separate the poly-A RNA bound to the beads from the solution
 - Remove and discard all of the supernatant. Take care not to disturb the beads
-- Remove the plate from the magnetic rack
+- Remove the tubes from the magnetic rack
 - Wash the beads twice with 200 μl of Wash Buffer to remove unbound RNA. Pipette the entire volume up and down 6 times to mix thoroughly.
 - Place the tubes on the magnetic rack at room temperature for 2 minutes.
-- Remove and discard all the supernatant from each well of the plate using a multichannel pipette. Take care not to disturb the beads.
+- Remove and discard all the supernatant from each of the tubes. Take care not to disturb the beads.
 - Remove the tubes from the magnetic rack.
 - Spin down sample so beads/RNA collect at the bottom of the tube.
-- Add 50 μl of Tris buffer to each well of the plate. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+- Add 50 μl of Tris buffer to each of the tubes. Gently pipette the entire volume up and down 6 times to mix thoroughly.
 - Place the tubes on the thermal cycler. Close the lid and heat the sample at 80°C for 2 minutes, then hold at 25°C to elute the poly-A RNA from the beads
 - Remove the tubes from the thermal cycler when the temperature reaches 25°C
 
@@ -211,8 +211,7 @@ WE NEED TO PUT A NEW TRACE HERE
 - Remove and discard all of the supernatant from each tube. Take care not to disturb the beads.
 - Remove the tubes from the magnetic stand.
 - Spin down so beads/RNA collect at the bottom of the tube.
-- Remove the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. 
-- (NOTE this is a different elution amount than listed in the product manufacturers' protocol)
+- Remove the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. (NOTE this is a different elution amount than listed in the product manufacturers' protocol)
 - Immediately, place the tubes on the magnetic rack
 - Collect the purified mRNA by transferring the supernatant to a clean nuclease-free PCR Tube
 - QC: Take 1uL for tapestation. 
@@ -221,9 +220,9 @@ WE NEED TO PUT A NEW TRACE HERE
 
 #### 3) Fragment RNA using 2x FastAP buffer : 5 min
 
-  - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 (up to 1 ug) and mix well.
+  - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 and mix well.
   - Incubate on preheated thermal cycler for 3 min at 92°C.
-  - Place on cold block on ice.
+  - Place on ice.
 
 **MUST CONTINUE**
 
@@ -262,17 +261,17 @@ WE NEED TO PUT A NEW TRACE HERE
   - Place on magnet for 5min, until solution is clear
   - Pipette out and discard clear solution
   - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off supernatant.
-  - Repeat 80% EtOH wash. Let air dry for 5min
-  - Elute off beads with 8 uL nuclease free water if you are not trying to have any in reserve, which is what we are doing now
+  - Repeat 80% EtOH wash. Let air dry for 3min
+  - Elute off beads with 8 uL nuclease free water (uing the whole sample - not trying to have any in reserve)
 
 
 
 #### QC
 
   - QC: Save 1.2 uL from remaining RNA before addition of SUPERase-IN
-  - Run 8 random samples on Qubit and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
+  - Run 8 random samples on Qubit (hsRNA) and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
   - **If only running 8 samples total, do all on Tapestation and Qubit
-  - Add 1uL SUPERase-IN (20U/uL) to the sample and store at -80°C if not proceeding to ligation today. 
+  - Add 1uL SUPERase-IN (20U/uL) to the sample and store at -80°C if not proceeding to ligation. 
 
 **PAUSE POINT**
 
@@ -298,7 +297,6 @@ WE NEED TO PUT A NEW TRACE HERE
    | Total	| 14.1 uL	| 141 uL| 
 
  - make up the MM without the enzyme with all the other reagents at room temperature, and then wait till the last possible minute to add the enzyme to the master mix, right before you use the MM.
-
   - Mix really well by extensive vortexing tube since the solution is very viscous, then spin down briefly in microfuge
   - Add 14.1 uL of ligation master mix to each tube/well containing 6 uL denatured RNA + adaptor (for a 20.1 uL total reaction volumne).
   - Mix well many times; mix by flicking since the solution is very viscous
@@ -339,6 +337,10 @@ WE NEED TO PUT A NEW TRACE HERE
   - Heat the mixture to 70°C for 2 min and immediately place on cold block on ice
 
 **MUST CONTINUE**
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
