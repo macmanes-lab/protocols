@@ -307,24 +307,11 @@ WE NEED TO PUT A NEW TRACE HERE
 **MUST CONTINUE**
 
 
-#### 7) Pool barcoded RNA:  Zymo column : 45 min + 30 min QC
+#### 7) Pool barcoded RNA:  RNABeads
 
   - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. 
 
-- Pool all 8 samples into one tube (160 uL total)
-- Add 2 volumes (320uL) of RNA Binding Buffer to each sample, and vortex. (You will have a total of 480 uL liquid).
-- Add an equal volume (480 uL) of 100% Ethanol and votex. (You have a total of 960 uL of liquid).
-- You can add a maximum of 700 uL of your pooled samples to a single zymo column (Therefore add 480 uL twice). Spin at Room Temperature for 30 seconds at 10,000g.
-- Discard the flow-through, keep the column, and add another maximum of 700 uL of the pooled samples, then centrifuge for 30 seconds at 10,000g.
-- Repeat the previous step until you have spun all of your pooled sample through the single zymo column (discarding all the flow-through).
-- Add 400 uL of RNA Prep Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
-- Add 700 uL of RNA Wash Buffer to the column and centrifuge for 30 seconds at 10,000g, then discard the flow-through.
-- Add ANOTHER 400 uL of RNA Wash Buffer to the column and centrifuge for 2 minutes at 10,000g, then discard the flow-through.
-- Transfer the zymo column into an RNase-free epindorf tube (cut off the cap) and add 13 uL of DNase/RNase-free water directly to the column filter and centrifuge for 30 seconds at 10,000g.
-- KEEP flow-through in the epindorf tube and add an additional 13 uL of water to the column filter, and centrifuge for 30 seconds at 10,000g.
-- KEEP flow through. You have ~26 uL of RNA. 
-- QC on tape station with 2 uL sample
-- Use immediately or store at -80 degrees Celcius.
+- final elution 26uL
 
 **PAUSE POINT** 
 
