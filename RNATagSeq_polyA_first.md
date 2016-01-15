@@ -448,7 +448,7 @@ WE NEED TO PUT A NEW TRACE HERE
  
 
    | Reagent (for PCR master mix)	| 1 rxn	| 
-   | -------------------------------| 
+   | -------------------------------| ---- |
    | Water, PCR-clean	| 15.4 uL	| 
    | 10X AccuPrime Buffer	| 2.5 uL	| 
    | enrF (P5_RNATag, 12.5 uM)	| 1 uL	| L
