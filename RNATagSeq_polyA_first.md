@@ -91,7 +91,7 @@ This is an important QC point. You should have  > 2000 pg/uL (per Tapestation) a
 ## Day 2
 
 #### Step 6. Ligate 3’ barcoded Adaptor : 40 min prep + 1 1/2 hour INC
-#### Step 7. Pool barcoded RNA with Zymo : 45 min + 30 min QC
+#### Step 7. Pool barcoded RNA: RNAClean XP Beads : 45 min + 30 min QC
 QC Step: You should have x ng/uL (per Qubit) and a Tapestation trace like this.
 
 
@@ -309,7 +309,7 @@ WE NEED TO PUT A NEW TRACE HERE
 **MUST CONTINUE**
 
 
-#### 7) Pool barcoded RNA:  RNAClean XP Beads
+#### 7) Pool barcoded RNA- RNAClean XP Beads: 45 min + 30 min QC
 
   - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled into a single tube (1.7 mL eppendorf tube)
   - Pool all 8 samples into a single tube (160 uL total for 8 samples)
@@ -317,9 +317,9 @@ WE NEED TO PUT A NEW TRACE HERE
   - Incubate at room temperature, on HULA MIXER for 15min to bind RNA
   - Place on magnet for 5min, until solution is clear
   - Pipette out and discard clear solution
-  - Remove from magnet, add 200uL fresh 80% EtOH, and completely resuspend beads. 
+  - Remove from magnet, add 400uL fresh 80% EtOH, and completely resuspend beads. 
   - Place on magnet for 3 minutes (or until solution is clear), pipette out and discard supernatant.
-  - Add another 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette out and discard supernatant.
+  - Add another 400uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette out and discard supernatant.
   - Spin down beads to bottom of tubes.
   - Let air dry for 3min
   - Resuspend beads in 28 uL nuclease free water (using the whole sample - not trying to have any in reserve)
@@ -336,7 +336,7 @@ WE NEED TO PUT A NEW TRACE HERE
 #### 8) Synthesize First Strand cDNA : 10 minutes
 
   - Take 24 uL mRNA (use all the material from previous step) 
-  - Add 4 uL (50 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’ 
+  - Add 4 uL (100 pmoles) of AR2 primer (25 uM) 5’-TAC ACG ACG CTC TTC CGA T-3’ 
   - Mix well
   - Heat the mixture to 70°C for 2 min and immediately place on cold block on ice
 
