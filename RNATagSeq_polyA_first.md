@@ -3,7 +3,7 @@
 
 @(RNATagSeq)[TagSeq, Protocol, Slack]
 
-**VERSION Monday, January 12, 2016**
+**VERSION Tuesday, January 19, 2016**
 
 ***This protocol reflects the notes in the protocol LK and AL were trouble-shooting.***
 
