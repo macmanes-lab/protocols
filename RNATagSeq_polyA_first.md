@@ -206,12 +206,12 @@ WE NEED TO PUT A NEW TRACE HERE
 - Place the tubes on the magnetic stand at room temperature for 2 minutes.
 - Remove and discard all of the supernatant from each tube. Take care not to disturb the beads.
 - Remove the tubes from the magnetic stand.
-- Wash the beads twice with 200 μl of Wash Buffer. Gently pipette the entire volume up and down 6 times to mix thoroughly.
+- Wash the beads ONCE with 200 μl of Wash Buffer. Gently pipette the entire volume up and down 6 times to mix thoroughly.
 - Place tube on magnetic rack for 2 minutes.
 - Remove and discard all of the supernatant from each tube. Take care not to disturb the beads.
 - Remove the tubes from the magnetic stand.
 - Spin down so beads/RNA collect at the bottom of the tube.
-- Remove the mRNA from the beads by adding 32 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. (NOTE this is a different elution amount than listed in the product manufacturers' protocol)
+- Remove the mRNA from the beads by adding 35 µl of the Tris Buffer and incubating the sample at 80°C for 2 minutes. (NOTE this is a different elution amount than listed in the product manufacturers' protocol)
 - Immediately, place the tubes on the magnetic rack
 - Collect the purified mRNA by transferring the supernatant to a clean nuclease-free PCR Tube
 - QC: Take 2uL for tapestation (RNA High Sensitivity). 
@@ -221,7 +221,7 @@ WE NEED TO PUT A NEW TRACE HERE
 #### 3) Fragment RNA using 2x FastAP buffer : 5 min
 
   - Add 8 uL of 10X FastAP buffer to 32 uL RNA from step 1 and mix well.
-  - Incubate on preheated thermal cycler for 3 min at 92°C.
+  - Incubate on preheated thermal cycler for 2 1/2 min at 92°C.
   - Place on ice.
 
 **MUST CONTINUE**
@@ -233,18 +233,18 @@ WE NEED TO PUT A NEW TRACE HERE
 
    | Reagent (for 2X FastAP master)	| Amount	| For 8rxn| 
    | ------------------------------ |-----------| ------ | 
-   | nuclease-free water	| 10 uL	| 85uL |
-   | RNase Inhibitor, Murine (40U/uL)	| 2 uL	| 17uL| 
-   | TURBO DNase (2U/uL)	| 8 uL	| 65uL| 
-   | FastAP (1U/uL)	| 20 uL	| 165uL| 
-   | Total	| 40 uL	| | 
+   | nuclease-free water	| 10 uL	| 85 uL |
+   | RNase Inhibitor, Murine (40U/uL)	| 2 uL	| 17 uL| 
+   | TURBO DNase (2U/uL)	| 8 uL	| 68 uL| 
+   | FastAP (1U/uL)	| 20 uL	| 170 uL| 
+   | Total	| 40 uL	| 340 uL | 
 
   - Mix well
   - Aliquot 40 uL into each tube/well with the 40uL of fragmented RNA from step 3.
   - Mix well
   - Incubate on preheated thermal cycler for 30 min at 37°C
  
-****AT THIS TIME, PUT ALL LIGATION REAGENTS AT ROOM TEMPERATURE 
+****AT THIS TIME, PUT ALL LIGATION REAGENTS AT ROOM TEMPERATURE ONLY IF PROCEEDING TO LIGATION TODAY
 
 **MUST CONTINUE**
 
@@ -260,17 +260,19 @@ WE NEED TO PUT A NEW TRACE HERE
   - Incubate at room temperature, on HULA MIXER for 15min to bind RNA
   - Place on magnet for 5min, until solution is clear
   - Pipette out and discard clear solution
-  - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette off supernatant.
-  - Repeat 80% EtOH wash. Let air dry for 3min
-  - Elute off beads with 8 uL nuclease free water (using the whole sample - not trying to have any in reserve)
+  - Add 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette out and discard supernatant.
+  - Repeat 80% EtOH wash (discard supernatant).
+  - Spin down beads to bottom of tubes.
+  - Let air dry for 3min
+  - Resuspend beads in 8 uL nuclease free water (using the whole sample - not trying to have any in reserve)
+  - Place on magnet for 2 minutes, and elute sample from beads, KEEEP supernatant!
 
 
 
 #### QC
 
   - QC: Save 2 uL from remaining RNA before addition of SUPERase-IN
-  - Run 8 random samples on Qubit (hsRNA) and another 8 on Tapestation RNA High Sensitivity tape to check the fragmentation profile.
-  - **If only running 8 samples total, do all on Tapestation and Qubit
+  - Run on HSRNA Tapestation
   - Add 1uL SUPERase-IN (20U/uL) to the sample and store at -80°C if not proceeding to ligation. 
 
 **PAUSE POINT**
@@ -307,12 +309,27 @@ WE NEED TO PUT A NEW TRACE HERE
 **MUST CONTINUE**
 
 
-#### 7) Pool barcoded RNA:  RNABeads
+#### 7) Pool barcoded RNA:  RNAClean XP Beads
 
-  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled on the same spin column. Do not exceed 5ug RNA per pool, the maximum binding capacity of columns. 
+  - NOTE: At this point, multiple samples with distinct RNAtag adaptors will be pooled into a single tube (1.7 mL eppendorf tube)
+  - Pool all 8 samples into a single tube (160 uL total for 8 samples)
+  - Add 2.0x reaction volume of Agencourt RNAClean XP beads (320 uL) and capture RNA on beads:
+  - Incubate at room temperature, on HULA MIXER for 15min to bind RNA
+  - Place on magnet for 5min, until solution is clear
+  - Pipette out and discard clear solution
+  - Remove from magnet, add 200uL fresh 80% EtOH, and completely resuspend beads. 
+  - Place on magnet for 3 minutes (or until solution is clear), pipette out and discard supernatant.
+  - Add another 200uL fresh 80% EtOH without removing from magnet, incubate for 30sec, Pipette out and discard supernatant.
+  - Spin down beads to bottom of tubes.
+  - Let air dry for 3min
+  - Resuspend beads in 28 uL nuclease free water (using the whole sample - not trying to have any in reserve)
+  - Place on magnet for 2 minutes, and elute sample from beads, KEEEP supernatant!
 
-- final elution 26uL
+#### QC
 
+  - QC: Save 3 uL from remaining RNA before addition of SUPERase-IN
+  - Run on HSRNA Tapestation and HS Qubit
+ 
 **PAUSE POINT** 
 
 
