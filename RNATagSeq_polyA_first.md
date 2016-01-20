@@ -440,7 +440,8 @@ WE NEED TO PUT A NEW TRACE HERE
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off discard the EtOH.
   - Repeat 80% EtOH wash, and let air dry for 3min
-  - Elute DNA by adding 30 uL RNase/DNase free water, transfer to new tube.
+  - Resuspend beads in 30 uL nuclease free water 
+  - Place on magnet for 2 minutes, and elute sample from beads, KEEEP supernatant! Transfer to new tube.
 
 **2nd Cleanup (1.5x SPRI) to remove the remaining adaptors**
 
@@ -450,7 +451,8 @@ WE NEED TO PUT A NEW TRACE HERE
   - Pipette out and discard clear solution
   - Wash: Add 200 uL fresh 80% EtOH without removing from magnet and incubate for 30 sec. Pipette off and discard the EtOH.
   - Repeat 80% EtOH wash, and let air dry for 3min 
-  - Elute DNA by adding 25 uL RNase/DNase free water, transfer to new tube.
+  - Resuspend beads in 25 uL nuclease free water 
+  - Place on magnet for 2 minutes, and elute sample from beads, KEEEP supernatant! Transfer to new tube. 
 
 **PAUSE POINT**
 
@@ -464,17 +466,17 @@ WE NEED TO PUT A NEW TRACE HERE
   - Add in order:
  
 
-   | Reagent (for PCR master mix)	| 1 rxn	| 
-   | -------------------------------| ---- |
-   | Water, PCR-clean	| 15.4 uL	| 
-   | 10X AccuPrime Buffer	| 2.5 uL	| 
-   | enrF (P5_RNATag, 12.5 uM)	| 1 uL	| L
-   | P7enr1 (P7 index primer, 12.5 uM) | 1uL | 
-   | AccuPrime HiFi Taq | 0.1uL 
-   | Total	| 20 uL	| 
+   | Reagent (for PCR master mix)	| 1 rxn	| 4 rxn |
+   | -------------------------------| ---- | ---- |
+   | Water, PCR-clean	| 15.4 uL	| 61.6 uL |
+   | 10X AccuPrime Buffer	| 2.5 uL	| 10 uL |
+   | enrF (P5_RNATag, 12.5 uM)	| 1 uL | 4 uL |
+   | P7enr1 (P7 index primer, 12.5 uM) | 1uL | 4 uL |
+   | AccuPrime HiFi Taq | 0.1uL | 0.4 uL |
+   | Total	| 20 uL	| 80 uL |
 
   - Mix well
-  - Aliquot 20 uL / sample into PCR tubes
+  - Aliquot 20 uL of master mix into 3 PCR tubes and the remaining ~20 ul of master mix into a 4th tube for a negative control
   - Add 5 uL of cDNA, or water (for negative control)
   - Place each of the three PCR tubes at different cycling conditions (negative control was in 12 cycle) 
   
@@ -483,9 +485,10 @@ WE NEED TO PUT A NEW TRACE HERE
 
 Place each in a thermal cycler with cycling conditions:
 
-  - start: 98°C, 3min
-  - cycle: 9, 12, 15 cycles (for test PCR) 98°C, 30sec; 55°C, 30sec; 65°C, 30sec
-  - end: °65C, 2min; 4°C, hold
+  - start: 95°C, 3min 
+  - cycle: 9, 12, 15 cycles (for test PCR) 95°C, 30sec; 55°C, 30sec; 68°C, 60sec
+  - end: 68°C, 10min; 4°C, hold
+  
 
 
 
@@ -518,33 +521,31 @@ Place each in a thermal cycler with cycling conditions:
   - Choose the optimal PCR cycle # based on Bioanalyzer QC of test (step 15).
   - Include a negative control (water) for each primer set
   - Make PCR Master Mix (make additional reaction volume for neg/pos control):
-
+ 
   - Add in order:
+ 
 
-test
-
-
-   | Reagent (for PCR master mix)  | 1 rxn |
-   | -------------------------------|
-   | Water, PCR-clean	| 30.8 uL |
-   | 10X AccuPrime PCR Buffer 1	| 5 uL |
-   | enrF (12.5 uM)	| 2 uL |
-   | p7enr1 (12.5 uM)	| 2 uL |
-   | AccuPrime HiFi Taq (5U/uL)	| 0.2 uL |
-   | Total	| 40 uL |
+   | Reagent (for PCR master mix)	| 1 rxn	| 1.5 rxn |
+   | -------------------------------| ---- | ---- |
+   | Water, PCR-clean	| 30.8 uL	| 46.2 uL |
+   | 10X AccuPrime PCR Buffer 1	| 5 uL | 7.5 uL | 
+   | enrF (P5_RNATag, 12.5 uM)	| 2 uL | 3 uL |
+   | P7enr1 (P7 index primer, 12.5 uM) | 2uL | 3 uL |
+   | AccuPrime HiFi Taq | 0.2uL | 0.3 |
+   | Total	| 40 uL | 60 uL | 
 
   - Mix well
-  - Aliquot 40 uL / sample into PCR tubes
-  - Add 10 uL of ss cDNA
+  - Aliquot 40 uL of master mix into a PCR tube and the remaining ~20 uL into a second tube for a negative control. 
+  - Add 10 uL of ss cDNA to the tube containing 40 uL master mix and 5 uL Sterile H2O to the tube containing 20 uL master mix. 
 
 
 
 
 Place each in a thermal cycler with the cycling conditions:
 
-  - start: 98°C, 3min  
-  - cycle: # determined from test PCR 98°C, 30sec; 55°C, 30sec; 65°C, 30sec
-  - end: 65°C, 2min; 4°C, hold
+  - start: 95°C, 3min  
+  - cycle: # determined from test PCR 95°C, 30sec; 55°C, 30sec; 68°C, 60sec
+  - end: 68°C, 10min; 4°C, hold
 
 **MUST CONTINUE**
 
